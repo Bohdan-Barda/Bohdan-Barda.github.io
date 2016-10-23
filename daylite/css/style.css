@@ -8104,6 +8104,7 @@ button.close {
 .icon-5,
 .icon-6 {
     display: inline-block;
+    background: url('sprite.png') no-repeat;
     overflow: hidden;
     text-indent: -9999px;
     text-align: left;
@@ -8336,6 +8337,7 @@ p {
 .site-header .main-logo {
     width: 109px;
     height: 37px;
+    background-image: url(/logo.png);
     background-size: auto;
     display: inline-block;
 }
@@ -8420,6 +8422,7 @@ p {
 .section-1 .ipad {
     height: 384px;
     width: 300px;
+    background: url(i-pad.png);
     margin: 60px 0;
 }
 
@@ -8481,6 +8484,7 @@ p {
 }
 
 .section-3 .arrow {
+    background-image: url(/arrow.png);
     width: 9px;
     height: 13px;
     position: relative;
@@ -8575,6 +8579,7 @@ p {
 }
 
 .section-5 .circle {
+    background-image: url(/circl.png);
     width: 6px;
     height: 6px;
     display: inline-block;
