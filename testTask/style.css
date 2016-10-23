@@ -1,0 +1,605 @@
+body {
+    width: 1350px;
+}
+
+.contacts {
+    height: 90px;
+    text-align: center;
+}
+
+.logo {
+    width: 215px;
+    margin-bottom: 30px;
+}
+
+.contact {
+    display: inline-block;
+    margin-left: 85px;
+    margin-top: 20px;
+}
+
+.contact a {
+    color: #00acac;
+}
+
+.skype {
+    margin-right: 35px;
+}
+
+.tel {
+    display: inline-block;
+    color: #415959;
+    margin-left: 30px;
+}
+
+.aves {
+    color: #B5B5B5;
+}
+
+.contact,
+.tel {
+    font-size: 17px;
+    font-family: "roboto";
+}
+
+.tel2 {
+    margin-left: 8px;
+}
+
+.btn {
+    font-family: "roboto";
+    font-size: 16px;
+}
+
+.sing_up {
+    margin-bottom: 30px;
+    margin-left: 70px;
+    width: 210px;
+}
+
+.caret {
+    color: #32BCBC;
+}
+
+.btn-default {
+    border: none;
+}
+
+.lang {
+    margin-left: 45px;
+    margin-bottom: 30px;
+}
+
+.navbar-default {
+    background-color: #00acac;
+    border: none;
+    border-bottom: solid 2px #009A9A;
+    border-radius: 0px;
+}
+
+.caret1 {
+    color: white;
+}
+
+.search {
+    color: white;
+    left: 76px;
+    position: relative;
+}
+
+.container {
+    padding-right: 0px;
+    padding-left: 0px
+}
+
+.row {
+    margin-right: -20px;
+    margin-left: -20px
+}
+
+.nav > li > a {
+    padding: 10px 15.5px;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: "roboto";
+}
+
+.navbar-nav {
+    padding-top: 5px;
+}
+
+.dropdown-menu li a {
+    font-family: "roboto";
+    font-weight: bold;
+    background-color: transparent;
+}
+
+.eqq_and {
+    height: 250px;
+    margin-top: -20px;
+    text-align: center;
+    background-image: url(KLOPPEX.RU_rebenok_devushka_lico_mat_materinstvo.jpg);
+}
+
+.ome {
+    margin-top: 15px;
+    margin-right: 930px;
+    color: white;
+    font-family: "roboto";
+    font-size: 14px;
+    display: inline-block;
+}
+
+.ome:hover {
+    color: #009A9A
+}
+
+.ome1 {
+    margin-top: 5px;
+    margin-right: 1050px;
+    color: white;
+    font-family: "roboto";
+    font-size: 14px;
+    display: inline-block;
+}
+
+.ome1:hover {
+    color: #009A9A
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+h2 a:hover {
+    text-decoration: none;
+    color: white
+}
+
+h2 a {
+    text-decoration: none;
+    color: white;
+    font-size: 60px;
+    font-family: "roboto";
+    margin-top: 35px;
+    display: inline-block
+}
+
+.sidebar {
+    width: 325px;
+    height: 650px;
+    text-decoration: none;
+    list-style: none;
+    margin-top: 40px;
+    display: inline-block
+}
+
+.sidebar a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: "roboto";
+    color: #415959;
+    margin-top: 10px
+}
+
+.sidebar li {
+    height: 45px;
+    margin-bottom: 10px;
+    margin-top: -20px;
+}
+
+.sidebar li:hover {
+    color: white;
+    background-color: #00acac;
+}
+
+.sidebar hr {
+    margin-top: -10px;
+}
+
+.sidebar span {
+    margin-left: 20px;
+    display: inline-block;
+    margin-top: 12px;
+}
+
+.article {
+    display: inline-bloc;
+    font-size: 16px;
+    font-family: "roboto";
+    color: #415959;
+    height: 100%;
+    max-width: 355px;
+    margin-left: 370px;
+    margin-top: -1125px
+}
+
+h3 {
+    color: #00acac;
+    font-size: 30px
+}
+
+.show {
+    margin-top: 20px
+}
+
+.article1 {
+    font-size: 16px;
+    font-family: "roboto";
+    color: #415959;
+    height: 100%;
+    max-width: 355px;
+    margin-top: 245px;
+    margin-left: 370px
+}
+
+.carousel {
+    height: 335px;
+    width: 395px;
+}
+
+.slider-1 {
+    background-image: url(doktor.png);
+    height: 300px;
+    background-position: center
+}
+
+.slider-2 {
+    background-image: url(child.png);
+    height: 300px;
+}
+
+.slider-3 {
+    background-image: url(doktor.png);
+    height: 300px
+}
+
+.carousel-indicators {
+    position: relative;
+    top: 350px;
+}
+
+.carousel-indicators .active {
+    background-color: #00acac;
+}
+
+.carousel-indicators li {
+    border-color: #00acac;
+}
+
+.slider1 {
+    margin-left: 765px;
+    margin-top: -515px
+}
+
+.slider2 {
+    margin-left: 765px;
+    margin-top: -575px
+}
+
+.contact_us {
+    width: 285px;
+    height: 365px;
+    background-color: #ECF7F7;
+    margin-left: 40px;
+    margin-top: 70px
+}
+
+.form-group input {
+    border: solid 0.5px #00acac;
+    border-radius: 5px;
+    margin-left: 15px;
+    margin-top: -10px
+}
+
+.interested {
+    border: solid 0.5px #00acac;
+    padding-right: 108px
+}
+
+.iam {
+    position: relative;
+    bottom: 10px;
+    left: 15px
+}
+
+.caret2 {
+    position: relative;
+    left: 100px;
+    transform: scale(1.3)
+}
+
+button[type="submit"] {
+    position: relative;
+    top: 10px;
+    left: 15px
+}
+
+.contact_us h3 {
+    padding: 20px 0px 15px 0px;
+    margin-left: 45px
+}
+
+input[type="text"] {
+    width: 256px
+}
+
+.banner {
+    width: 285px;
+    height: 180px;
+    background-color: #A8B9C6;
+    margin-left: 40px;
+    margin-top: 280px
+}
+
+.banner span {
+    color: white;
+    font-size: 26px;
+    font-family: "roboto";
+    margin-left: 105px;
+    margin-top: 75px;
+    display: inline-block
+}
+
+.infertility {
+    height: 410px;
+    width: 100%;
+    background-image: url(background_infertility.png);
+    margin-top: 50px;
+    text-align: center;
+}
+
+.infertility h3 {
+    color: white;
+    font-size: 30px;
+    font-family: "roboto";
+    position: relative;
+    top: 30px
+}
+
+.cube {
+    width: 270px;
+    height: 250px;
+    background-image: url(Background_read.png);
+    display: inline-block;
+    margin-top: 60px;
+    margin-left: 15px;
+    vertical-align: middle;
+}
+
+.cube h3 {
+    font-size: 26px;
+    margin-top: 45px
+}
+
+.read_more {
+    background-color: transparent;
+    color: white;
+    border: solid 2px white;
+    font-family: "roboto";
+    margin-top: 35px
+}
+
+.cube1 h3 {
+    position: relative;
+    top: 45px;
+    margin-bottom: 25px
+}
+
+footer {
+    height: 440px;
+    text-align: center;
+    background-color: #2D2D2D;
+    margin-top: 25px
+}
+
+footer div {
+    display: inline-block;
+    margin-top: 50px;
+    height: 60%;
+}
+
+.information {
+    width: 103px
+}
+
+footer div ul {
+    list-style: none;
+}
+
+footer div a {
+    text-decoration: none;
+    color: #9B9B9B;
+    font-size: 16px;
+    font-family: "roboto";
+    float: left;
+    margin-top: 8px;
+    text-align: left;
+}
+
+footer div a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+footer hr {
+    border-top: 1px solid #9B9B9B
+}
+
+h4 {
+    color: white;
+    font-size: 16px;
+    font-family: "roboto";
+    float: left;
+    margin-bottom: 0px;
+    text-align: left
+}
+
+.patient {
+    margin-left: 40px
+}
+
+.social a {
+    display: inline-block;
+    font-size: 40px;
+    margin-top: -70px;
+    width: 100px;
+    height: 100px;
+}
+
+.social a i {
+    margin-top: 30px;
+    margin-left: 35px
+}
+
+.prices {
+    margin-top: 20px
+}
+
+.social {
+    color: #9B9B9B;
+    height: 0;
+    margin-left: 200px
+}
+
+.social a:first-child:hover {
+    background-color: #417ED6
+}
+
+.social a:nth-child(2):hover {
+    background-color: #1DA1F2
+}
+
+.social a:nth-child(3):hover {
+    background-color: #E93E35
+}
+
+.social a:nth-child(4):hover {
+    background-color: #DB5232
+}
+
+.year {
+    color: #9B9B9B;
+    position: relative;
+    left: -50px;
+    top: -15px
+}
+
+.otakoyi a:hover {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.otakoyi a {
+    color: #9B9B9B;
+}
+
+.otakoyi {
+    position: relative;
+    right: -100px;
+    bottom: 15px
+}
+
+.contact_ua {
+    position: fixed;
+    right: 0px;
+    z-index: 100
+}
+
+.contact_ua:hover {
+    filter: contrast(1.5)
+}
+
+.up i {
+    color: white;
+    font-size: 40px;
+    transform: rotate(90deg);
+    margin-right: 10px
+}
+
+.up {
+    padding-left: 12px;
+    padding-top: 18px;
+    background-color: #00acac;
+    position: relative;
+    bottom: 220px;
+    left: 80px;
+    z-index: 1
+}
+
+.ome1 {
+    display: none
+}
+
+ul li:nth-child(9) {
+    display: none
+}
+
+@media all and (max-width: 1350px) {
+    .up {
+        display: none
+    }
+    .contact_ua {
+        display: none
+    }
+}
+
+@media all and (max-width: 1200px) {
+    ul li:nth-child(6) {
+        display: none
+    }
+    ul li:nth-child(7) {
+        display: none
+    }
+    ul li:nth-child(8) {
+        display: none
+    }
+    ul li:nth-child(9) {
+        display: block
+    }
+    .sidebar {
+        margin-left: -110px
+    }
+    .contact_us {
+        margin-left: -70px
+    }
+    .banner {
+        margin-left: -70px
+    }
+    .article {
+        margin-left: 250px
+    }
+    .slider1 {
+        margin-left: 650px
+    }
+    .article1 {
+        margin-left: 250px
+    }
+    .slider2 {
+        margin-left: 650px
+    }
+    .otakoyi {
+        margin-right: 15px
+    }
+    .navbar-collapse {
+        margin-left: -80px
+    }
+    .fa-search {
+        margin-left: 260px
+    }
+    .logo {
+        margin-right: -30px
+    }
+    .ome {
+        display: none
+    }
+    .ome1 {
+        display: block
+    }
+}

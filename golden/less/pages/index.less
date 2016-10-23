@@ -1,0 +1,250 @@
+    header {
+        background: url(/img/header-background.png) no-repeat;
+        background-size: cover;
+        text-align: center;
+        .logo {
+            background-image: url(/img/my-logo.png);
+            margin-top: 44px;
+            float: left;
+            height: 28px;
+            width: 79px;
+        }
+        .site-header {
+            z-index: 2
+        }
+        ul {
+            display: inline-block;
+            margin-top: 54px;
+            float: right;
+        }
+        li {
+            padding-left: 42px;
+            padding-bottom: 212px;
+        }
+        a {
+            color: white;
+            transition: all 0.3s ease-in-out;
+            font-weight: 400;
+            font-family: Arial;
+        }
+        a:hover {
+            color: @gold;
+            text-decoration: none
+        }
+        .active {
+            color: @gold
+        }
+        .nice {
+            z-index: 1
+        }
+        .welcome {
+            font-size: 40px;
+            color: #ffffff;
+        }
+    }
+    
+    .section-services {
+        text-align: center;
+        .proin {
+            padding-bottom: 70px;
+        }
+        .padding-bottom {
+            padding-bottom: 110px;
+            padding-top: 15px;
+            width: 80%;
+            display: inline-block;
+        }
+    }
+    
+    .section-portfolio {
+        text-align: center;
+        background-color: #F5F5F5;
+        padding-bottom: 70px;
+        h3 {
+            margin-bottom: 0px;
+            margin-top: 25px;
+        }
+        .proin {
+            padding-bottom: 70px;
+        }
+        .portfolio-h3 {
+            background-color: #fff;
+            display: inline-block;
+            margin-top: -4px;
+            height: 93px;
+            width: 291px;
+            p {
+                transition: all 0.3s ease-in-out;
+            }
+            p:hover {
+                color: black
+            }
+        }
+        .portfolio-padding {
+            margin-bottom: 50px;
+            a {
+                text-decoration: none;
+                color: black;
+                transition: all 0.3s ease-in-out;
+            }
+            a:hover {
+                color: @gold
+            }
+        }
+    }
+    
+    .about-us {
+        text-align: center;
+        .proin {
+            margin-bottom: 84px;
+        }
+        .text-left {
+            text-align: right;
+            width: 289px;
+            right: 61.25%;
+            position: absolute;
+            span {
+                font: 400 16px 'Times New Roman';
+                color: #777777;
+            }
+        }
+        .text-right {
+            text-align: left;
+            position: absolute;
+            width: 289px;
+            left: 61.25%;
+            span {
+                font: 400 16px 'Times New Roman';
+                color: #777777;
+            }
+        }
+        .img {
+            z-index: 100;
+            position: relative;
+            padding-bottom: 107px;
+        }
+        .cont {
+            width: 100%;
+        }
+        .line {
+            width: 3px;
+            height: 1050px;
+            background-color: #f1f1f1;
+            margin-left: 50%;
+            position: absolute;
+            z-index: 10;
+            margin-top: 60px;
+        }
+        .img-last {
+            width: 169px;
+            height: 169px;
+            border: solid 5px #F1F1F1;
+            margin-bottom: 130px;
+            background-color: #fed136;
+            font-size: 18px;
+            font-weight: 600;
+            padding-top: 30px;
+            border: solid 5px #F1F1F1;
+            border-radius: 50%;
+            display: inline-block;
+            a {
+                color: #ffffff;
+            }
+        }
+    }
+    
+    .section-amazing {
+        text-align: center;
+        background-color: #f9f9f9;
+        .amazing-team {
+            margin-bottom: 83px;
+        }
+        .black-circle {
+            width: 220px;
+            height: 220px;
+            background-color: #111111;
+            border: solid black;
+            border-radius: 50%;
+            display: inline-block;
+        }
+        .cite {
+            margin-bottom: 117px;
+            margin-top: 51px;
+        }
+    }
+    
+    .section-brand {
+        text-align: center;
+        padding: 61px 0;
+        .img-brand {
+            margin-bottom: 10px;
+        }
+    }
+    
+    .contact-us {
+        h2 {
+            .h2-white
+        }
+        text-align: center;
+        background-image: url(/img/word-background.png);
+        form {
+            padding-top: 75px;
+        }
+        input[type="text"] {
+            display: block;
+            margin-bottom: 29px;
+            width: 455px;
+            height: 50px;
+            padding-left: 10px;
+            float: right;
+        }
+        textarea {
+            height: 208px;
+            float: left;
+            padding: 15px 0 0 10px;
+        }
+        .center {
+            margin: 0 auto;
+            margin-bottom: 115px;
+        }
+        ::-webkit-input-placeholder {
+            /* Chrome/Opera/Safari */
+            text-transform: uppercase;
+        }
+        ::-moz-placeholder {
+            /* Firefox 19+ */
+            text-transform: uppercase;
+        }
+        :-ms-input-placeholder {
+            /* IE 10+ */
+            text-transform: uppercase;
+        }
+        :-moz-placeholder {
+            /* Firefox 18- */
+            text-transform: uppercase;
+        }
+    }
+    
+    .footer {
+        display: inline-block;
+        text-align: center;
+        width: 100%;
+        a {
+            text-decoration: none;
+        }
+        .social {
+            display: inline-block;
+            margin-top: 10px;
+            margin-bottom: 20px;
+            margin-right: 20%;
+        }
+        .copyright {
+            left: 10%;
+            float: left;
+            top: 20px;
+            font-size: 14px;
+            display: inline-block;
+            position: relative;
+            padding-right: 0;
+        }
+    }

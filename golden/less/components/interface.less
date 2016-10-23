@@ -1,0 +1,89 @@
+//forms, buttons, dialogs etc.
+.btn {
+    margin-top: 59px;
+    margin-bottom: 160px;
+    padding: 23px 30px;
+    background-color: @gold;
+    color: #ffffff;
+    font-size: 24px;
+    line-height: 1;
+    border: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    transition: all 0.3s ease-in-out;
+    display: inline-block;
+}
+
+.btn:hover {
+    color: @gold;
+    background-color: transparent;
+}
+
+.trigger-nav {
+    display: none;
+    font-size: 40px;
+    color: white;
+    float: right;
+    line-height: 1;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+    margin-top: 40px;
+    &:hover {
+        color: @gold
+    }
+}
+
+@media (max-width:992px) {
+    .nice {
+        margin-top: 120px;
+    }
+    //menu responsive
+    .trigger-nav {
+        display: block;
+        margin-right: 10px;
+    }
+    .logo {
+        margin-left: 10px;
+    }
+    .site-header {
+        position: relative;
+    }
+    .site-header .horizontal-nav {
+        display: none;
+        position: absolute;
+        top: 30%;
+        left: 0;
+        background-color: rgba(0, 0, 0, .9);
+        width: 100%;
+        padding-left: 0;
+        li {
+            width: 100%;
+            display: block;
+            padding: 20px 20px;
+            border-bottom: 1px solid;
+        }
+        a {
+            display: inline-block;
+            padding-top: 5px;
+            &.active {
+                border-color: transparent;
+            }
+        }
+    }
+}
+
+@media (max-width:592px) {
+    .welcome {
+        font-size: 33px;
+        line-height: 33px;
+    }
+    .nice h1 {
+        font-size: 55px;
+    }
+}
+
+@media (max-width:592px) {
+    .section-portfolio {
+        text-align: center;
+    }
+}

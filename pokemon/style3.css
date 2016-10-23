@@ -1,0 +1,32 @@
+
+body{background-image: url(Beautiful-Pok%C3%A9mon-GO-Wallpaper.jpg);
+   max-width:1000px; text-align: center;
+   
+
+    }
+
+*{margin:0 auto;
+  padding: 0;}
+
+.search{position: relative;
+    right:%;
+    top:6px;
+    width:300px;
+    border: solid 1px black;
+    color:blue;
+    height: 60px;
+    font-size: 30px
+}
+
+.button{width: 60px;
+    height: 60px;
+    position: relative;
+    background-image: url(search.png);
+    background-position: center;
+    cursor: pointer;
+    border: solid 1px black;
+    }
+h1{ text-shadow: 1px 1px 5px black;color: azure}
+
+
+@media screen and (max-width:500px){.button{margin-top:7px}}

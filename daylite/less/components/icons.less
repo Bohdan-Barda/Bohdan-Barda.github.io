@@ -1,0 +1,94 @@
+//adding icon fonts, icon sprite sheets
+.icon-1,
+.icon-2,
+.icon-3,
+.icon-4,
+.icon-5,
+.icon-6 {
+    display: inline-block;
+    background: url('/img/sprite.png') no-repeat;
+    overflow: hidden;
+    text-indent: -9999px;
+    text-align: left;
+}
+
+.icon-1 {
+    background-position: -0px -0px;
+    width: 90px;
+    height: 90px;
+}
+
+.icon-2 {
+    background-position: -0px -90px;
+    width: 90px;
+    height: 90px;
+}
+
+.icon-3 {
+    background-position: -0px -180px;
+    width: 90px;
+    height: 90px;
+}
+
+.icon-4 {
+    background-position: -0px -270px;
+    width: 90px;
+    height: 90px;
+}
+
+.icon-5 {
+    background-position: -0px -360px;
+    width: 60px;
+    height: 60px;
+}
+
+.icon-6 {
+    background-position: -0px -420px;
+    width: 60px;
+    height: 60px;
+}
+
+//font icon
+@font-face {
+    font-family: 'ic';
+    src: url('fonts/ic.eot?5u14ab');
+    src: url('fonts/ic.eot?5u14ab#iefix') format('embedded-opentype'), url('fonts/ic.ttf?5u14ab') format('truetype'), url('fonts/ic.woff?5u14ab') format('woff'), url('fonts/ic.svg?5u14ab#ic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="ic-"],
+[class*=" ic-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'ic' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.ic-map-marker:before {
+    content: "\f041";
+    color: @gold;
+}
+
+.ic-phone:before {
+    content: "\f095";
+    color: @gold;
+}
+
+.ic-twitter:before {
+    content: "\f099";
+    color: @gold;
+}
+
+.ic-envelope:before {
+    content: "\f0e0";
+    color: @gold;
+    font-size: 11px;
+}

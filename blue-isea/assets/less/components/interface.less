@@ -1,0 +1,165 @@
+//forms, buttons, dialogs etc.
+//menu
+.horizontal-nav {
+    &:extend(.ul-unstyled); // зімає всі стилі з тега ul
+    float: right;
+    li {
+        display: inline-block;
+        margin-left: 15px;
+        a {
+            .transition(); // добавляє плавну зміну кольору при навденні на ссилку 
+            display: block;
+            border: solid 2px transparent;
+            color: white;
+            font-weight: 600;
+            text-decoration: none;
+            text-transform: uppercase; //всі букви в тексті великі
+            padding: 10px 17px;
+            line-height: 1; // міжрядковий інтервал
+            &.active {
+                border-color: @accent; // коли ссилка активна приміняється колір
+                color: @accent;
+            }
+            &:hover {
+                color: @accent; // ефект змыни кольору при наведенні на ссилку :hover
+            }
+        }
+    } //li
+    &.black-font a {
+        color: @font
+    }
+}
+
+//робимо меню адаптивним 
+.main-nav-trigger {
+    font-size: 40px;
+    color: white;
+    float: right;
+    line-height: 1;
+    display: none;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+    &:hover {
+        color: @accent
+    }
+}
+
+@media (max-width:992px) {
+    .main-logo {
+        float: left;
+    }
+    .main-nav-trigger {
+        display: block;
+    }
+    .site-nav {
+        position: relative;
+    }
+    .site-nav .horizontal-nav {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: @overlay;
+        width: 100%;
+        li {
+            width: 100%;
+            display: block;
+            margin-left: 0;
+            text-align: center;
+            padding: 20px 30px;
+            border-bottom: 1px solid lighten(@overlay, 5%);
+        }
+        a {
+            display: inline-block;
+            &.active {
+                border-color: transparent;
+            }
+        }
+    }
+} //робимо меню адаптивним 
+//iframe добавляє адаптивність відео плеєра
+.videoWrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    /* 16:9 */
+    padding-top: 25px;
+    height: 0;
+}
+
+.videoWrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+//кнопка для розділу відео
+.btn-ghost(@c: #353f46, @c-hover: #fff, @font: 1em) {
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: @c;
+    border: 2px solid @c;
+    transition: all .3s ease-in-out;
+    padding: 1.07em 2.857em;
+    line-height: 1;
+    font: 1em;
+    &:hover {
+        text-decoration: none;
+        color: @c-hover;
+        border-color: @c-hover;
+    }
+}
+
+.btn-ghost-grey {
+    .btn-ghost
+}
+
+//from iput
+.frm-group {
+    margin-bottom: 30px;
+}
+
+.from-control {
+    background-color: transparent;
+    border: 2px solid white;
+    height: 60px;
+    width: 100%;
+    padding: 0 5px;
+    font-size: 30px;
+    color: @accent;
+    font-weight: 300;
+}
+
+textarea.from-control {
+    height: 215px;
+}
+
+label {
+    text-transform: uppercase;
+    font-weight: 600;
+    display: block;
+}
+
+.button-submit {
+    width: 100%;
+    background-color: @accent;
+    border: none;
+    text-transform: uppercase;
+    line-height: 1;
+    padding: 25px 0;
+    font-weight: 600;
+    border: 2px solid @accent;
+    transition: all .3s ease-in-out;
+    &:hover {
+        background-color: transparent;
+        color: @accent
+    }
+}
+
+.form-text-col {
+    margin-top: 18px;
+    @media (max-width: 768px) {
+        margin-top: 0;
+    }
+}
