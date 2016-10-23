@@ -8337,7 +8337,7 @@ p {
 .site-header .main-logo {
     width: 109px;
     height: 37px;
-    background-image: url(daylite/img/logo.png);
+    background-image: url(/daylite/img/logo.png);
     background-size: auto;
     display: inline-block;
 }
@@ -8422,7 +8422,7 @@ p {
 .section-1 .ipad {
     height: 384px;
     width: 300px;
-    background: url(/img/i-pad.png);
+    background: url(/daylite/img/i-pad.png);
     margin: 60px 0;
 }
 
@@ -8484,7 +8484,7 @@ p {
 }
 
 .section-3 .arrow {
-    background-image: url(/img/arrow.png);
+    background-image: url(/daylite/img/arrow.png);
     width: 9px;
     height: 13px;
     position: relative;
@@ -8579,7 +8579,7 @@ p {
 }
 
 .section-5 .circle {
-    background-image: url(/img/circl.png);
+    background-image: url(/daylite/img/circl.png);
     width: 6px;
     height: 6px;
     display: inline-block;
