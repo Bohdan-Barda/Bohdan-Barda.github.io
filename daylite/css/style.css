@@ -8104,7 +8104,7 @@ button.close {
 .icon-5,
 .icon-6 {
     display: inline-block;
-    background: url('sprite.png') no-repeat;
+    background: url('/sprite.png') no-repeat;
     overflow: hidden;
     text-indent: -9999px;
     text-align: left;
@@ -8337,12 +8337,9 @@ p {
 .site-header .main-logo {
     width: 109px;
     height: 37px;
-<<<<<<< HEAD
-    background-image: url(/logo.png);
-=======
-    background-image: url(/daylite/img/logo.png);
->>>>>>> origin/master
-    background-size: auto;
+    <<<<<<< HEAD background-image: url(/logo.png);
+    =======background-image: url(/daylite/img/logo.png);
+    >>>>>>> origin/master background-size: auto;
     display: inline-block;
 }
 
@@ -8426,12 +8423,9 @@ p {
 .section-1 .ipad {
     height: 384px;
     width: 300px;
-<<<<<<< HEAD
-    background: url(i-pad.png);
-=======
-    background: url(/daylite/img/i-pad.png);
->>>>>>> origin/master
-    margin: 60px 0;
+    <<<<<<< HEAD background: url(/i-pad.png);
+    =======background: url(/daylite/img/i-pad.png);
+    >>>>>>> origin/master margin: 60px 0;
 }
 
 .section-1 .class {
@@ -8492,12 +8486,9 @@ p {
 }
 
 .section-3 .arrow {
-<<<<<<< HEAD
-    background-image: url(/arrow.png);
-=======
-    background-image: url(/daylite/img/arrow.png);
->>>>>>> origin/master
-    width: 9px;
+    <<<<<<< HEAD background-image: url(/arrow.png);
+    =======background-image: url(/daylite/img/arrow.png);
+    >>>>>>> origin/master width: 9px;
     height: 13px;
     position: relative;
     bottom: 55px;
@@ -8591,12 +8582,9 @@ p {
 }
 
 .section-5 .circle {
-<<<<<<< HEAD
-    background-image: url(/circl.png);
-=======
-    background-image: url(/daylite/img/circl.png);
->>>>>>> origin/master
-    width: 6px;
+    <<<<<<< HEAD background-image: url(/circl.png);
+    =======background-image: url(/daylite/img/circl.png);
+    >>>>>>> origin/master width: 6px;
     height: 6px;
     display: inline-block;
     position: relative;
