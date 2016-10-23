@@ -8337,7 +8337,7 @@ p {
 .site-header .main-logo {
     width: 109px;
     height: 37px;
-    background-image: url(/img/logo.png);
+    background-image: url(daylite/img/logo.png);
     background-size: auto;
     display: inline-block;
 }
