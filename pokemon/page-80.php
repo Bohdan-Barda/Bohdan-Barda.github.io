@@ -1,45 +1,22 @@
 
-   <!DOCTYPE html>
-<html lang="uk">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
-        
-        
-        <link href="<?= bloginfo('template_directory'); ?>/style2.css" rel="stylesheet" type="text/css" />
-     
-         </head>
-    <body>
-    <header>
-        <div class="menu menu1"><a href="index3.html"><span>Встановити Pokemon GO</span></a></div>
-        <div class="menu menu2"><a href="index4.html"><span>PvP в Pokemon GO</span></a></div>
-        <div class="menu menu3"><a href="index5.html"><span>Прокачка покемонів</span></a></div>
-        <div class="menu menu4"><a href="index6.html"><span>Яйця в Pokemon GO</span></a></div>
-        <div class="menu menu5"><a href="index7.html"><span>Типи покемонів в Pokemon GO</span></a></div>
-        <div class="menu menu6"><a href="index8.html"><span>Рідкість покемонів</span></a></div>
-        </header>
-       
+   <?php 
+if (is_page('80')) {
+ include(TEMPLATEPATH.'/headerg.php');
+ } ?>
         <main>
             <h2>Що таке <b> P</b>okémon <b>GO</b>?</h2>
-        <img src="http://siteite.com/wp-content/uploads/2016/08/pokelov.png" alt="pokemons" class="image">
- <b>Pokemon Go</b> - це проект в стилі Ingress в так званій « доповненій реальності » для смартфонів і планшетів на базі операційних систем Android і iOS . Гравцям належить шукати  покемонів в містах , де вони живуть , викликати їх на поєдинки і ловити в разі перемоги . Крім того , покемонів можна отримувати з яєць , для чого доведеться не ловити їх , а пішки переміщатися по місту на певну відстань ( від двох до десяти кілометрів ) .
+        <img src="http://siteite.com/wp-content/uploads/2016/08/pokelov.png" alt="pokemons" class="image" alt="Зловити покемона ">
+ <b>Pokemon Go</b> - це проект в стилі Ingress в так званій « доповненій реальності » для смартфонів і планшетів на базі операційних систем Android і iOS . Гравцям необхідно шукати  покемонів в містах , де вони живуть , викликати їх на поєдинки і ловити в разі перемоги . Крім того , покемонів можна отримувати з яєць , для чого доведеться не ловити їх , а пішки переміщатися по місту на певну відстань ( від двох до десяти кілометрів ) .
             <br>
             <br>
             
-            Ловлячи або вирощуючи нових покемонів , гравці збільшують свій рівень , що дозволяє ловити сильніших монстрів і отримувати великі нагороди за це . Після досягнення п'ятого рівня гравці можуть приєднуватися до однієї з трьох команд , що дасть можливість битися за " гіми " . " Гіми " розташовані в людних місцях , і в них гравці можуть битися один з одним за контроль над територією і престиж . Тренувати покемонів можна тільки в " гімах " своєї команди , тому бої за володіння ними  є важливим елементом геймплея.
+            Ловлячи або вирощуючи нових покемонів , гравці збільшують свій рівень , що дозволяє ловити сильніших покемонів і отримувати великі нагороди за це . Після досягнення п'ятого рівня гравці можуть приєднуватися до однієї з трьох команд , що дасть можливість битися за " гіми " . " Гіми " розташовані в людних місцях , і в них гравці можуть битися один з одним за контроль над територією і престиж . Тренувати покемонів можна тільки в " гімах " своєї команди , тому бої за володіння ними  є важливим елементом геймплея.
             <br>
             <br>
             
             Покемонам вдалося те, що не вдавалося тисячам медиків і фітнес - тренерам ,відірвати сучасних людей від комп'ютерів і вигнати їх на піші прогулянки . Заради <b>Pokemon Go</b> ! гравці закинули Твіттер , Фейсбук і Інстаграм . Відстань, яку проходить середньостатистичний геймер протягом дня , перевищує 10 км . Що дивно , цю відстань геймери проходять непомітно для себе : рух від покемона до покемону затягує , як гриби збирати .
         </main>
-    <footer>
-        <div class="menu menu1"><a href="index3.html"><span>Встановити Pokemon GO</span></a></div>
-        <div class="menu menu2"><a href="index4.html"><span>PvP в Pokemon GO</span></a></div>
-        <div class="menu menu3"><a href="index5.html"><span>Прокачка покемонів</span></a></div>
-        <div class="menu menu4"><a href="index6.html"><span>Яйця в Pokemon GO</span></a></div>
-        <div class="menu menu5"><a href="index7.html"><span>Типи покемонів в Pokemon GO</span></a></div>
-        <div class="menu menu6"><a href="index8.html"><span>Рідкість покемонів</span></a></div>
-        
-        </footer>
-    </body>
-</html>
+    <?php 
+if (is_page('80')) {
+ include(TEMPLATEPATH.'/footerg.php');
+ } ?>
