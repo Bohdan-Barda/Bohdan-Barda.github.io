@@ -8225,6 +8225,7 @@ header {
     text-align: center;
     height: 700px;
     background-image: url(Untitled-2.jpg);
+    background-repeat: no-repeat;
 }
 
 header .logo {
@@ -8233,6 +8234,7 @@ header .logo {
     float: left;
     height: 28px;
     width: 79px;
+    background-repeat: no-repeat;
 }
 
 header .site-header {
