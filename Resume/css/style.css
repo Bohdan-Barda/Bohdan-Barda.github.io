@@ -8203,10 +8203,10 @@ header {
   background-size: cover;
   text-align: center;
   height: 700px;
-  background-image: url(/img/Untitled-2.jpg);
+  background-image: url(img/Untitled-2.jpg);
 }
 header .logo {
-  background-image: url(/img/my-logo.png);
+  background-image: url(img/my-logo.png);
   margin-top: 44px;
   float: left;
   height: 28px;
