@@ -1,0 +1,735 @@
+                                                @import "fonts.less";
+                                                @import "icons.less";
+                                                @import "base.less";
+                                                //header
+                                                header {
+                                                    .logo {
+                                                        margin-top: 35px;
+                                                        position: relative;
+                                                        float: left;
+                                                        span {
+                                                            font: 400 30px / 24px Rockwell;
+                                                            color: #202242;
+                                                            margin-left: 25px;
+                                                            position: absolute;
+                                                            top: 15px;
+                                                            b {
+                                                                font: 700 30px / 24px 'Myriad Pro';
+                                                            }
+                                                        }
+                                                    }
+                                                    ul {
+                                                        margin-left: 505px;
+                                                        margin-top: 50px;
+                                                        li {
+                                                            display: inline-block;
+                                                            margin-left: 40px;
+                                                            a {
+                                                                font: 400 16px / 24px 'Myriad Pro';
+                                                                text-transform: uppercase;
+                                                                color: #1f2532;
+                                                                transition: all .3s ease-in-out;
+                                                            }
+                                                            a:hover {
+                                                                color: #ffe13e;
+                                                            }
+                                                        }
+                                                        li:first-child {
+                                                            margin-left: 0;
+                                                        }
+                                                        .active {
+                                                            font: 700 16px / 24px Raleway;
+                                                            color: #ffe13e;
+                                                        }
+                                                    }
+                                                }
+                                                
+                                                //header-end  
+                                                @media (max-width: 1210px) {
+                                                    header ul li {
+                                                        margin-left: 20px;
+                                                    }
+                                                    header ul li a {
+                                                        font-size: 14px;
+                                                    }
+                                                    header ul {
+                                                        margin-left: 300px;
+                                                    }
+                                                }
+                                                
+                                                @media (max-width: 1000px) {
+                                                    header ul li a {
+                                                        font-size: 12px;
+                                                    }
+                                                    header ul {
+                                                        margin-left: 250px;
+                                                    }
+                                                }
+                                                
+                                                @media (max-width: 740px) {
+                                                    header ul {
+                                                        display: none;
+                                                    }
+                                                }
+                                                
+                                                //responsive menu 
+                                                #responsiv-menu {
+                                                    width: 100%;
+                                                    text-align: center;
+                                                    display: none;
+                                                    position: absolute;
+                                                    background-color: #fff;
+                                                    top: 100px;
+                                                    height: 435px;
+                                                    a {
+                                                        font: 400 16px / 24px 'Myriad Pro';
+                                                        text-transform: uppercase;
+                                                        color: #1f2532;
+                                                        transition: all .3s ease-in-out;
+                                                    }
+                                                    a:hover {
+                                                        color: #ffe13e;
+                                                    }
+                                                    .active {
+                                                        font: 700 16px / 24px Raleway;
+                                                        color: #ffe13e;
+                                                    }
+                                                }
+                                                
+                                                #responsiv-on {
+                                                    float: right;
+                                                    font-size: 40px;
+                                                    margin-right: 20px;
+                                                    margin-top: -40px;
+                                                    transition: all .3s ease-in-out;
+                                                    cursor: pointer;
+                                                    display: none;
+                                                }
+                                                
+                                                #responsiv-on:hover {
+                                                    color: #ffe13e;
+                                                }
+                                                
+                                                @media (max-width: 740px) {
+                                                    #responsiv-on {
+                                                        display: block;
+                                                    }
+                                                }
+                                                
+                                                //responsiv end
+                                                .bg {
+                                                    height: 253px;
+                                                    background-image: url(../img/header-bg.png);
+                                                    margin-top: 45px;
+                                                    background-position: -20px -115px;
+                                                    h1 {
+                                                        font: 700 48px / 24px Raleway-Bold;
+                                                        color: #ffffff;
+                                                        text-align: center;
+                                                        margin-top: 87px;
+                                                        line-height: 1;
+                                                    }
+                                                    ul {
+                                                        text-align: center;
+                                                        margin-top: -20px;
+                                                        li {
+                                                            display: inline-block;
+                                                            color: #ffffff;
+                                                            font-size: 24px;
+                                                            a {
+                                                                font: 500 24px / 24px Raleway-Medium;
+                                                                color: #ffffff;
+                                                                text-decoration: none;
+                                                                transition: all .3s ease-in-out;
+                                                            }
+                                                        }
+                                                        a:hover {
+                                                            color: #ffe13e;
+                                                        }
+                                                    }
+                                                }
+                                                
+                                                // end 
+                                                .block {
+                                                    margin-top: 110px;
+                                                    text-align: center;
+                                                    .q-block-1,
+                                                    .q-block-2,
+                                                    .q-block-3,
+                                                    .q-block-4,
+                                                    .q-block-5,
+                                                    {
+                                                        text-align: left;
+                                                        max-width: 1171px;
+                                                        margin-top: 5px;
+                                                    }
+                                                    .qq-1,
+                                                    .qq-2,
+                                                    .qq-3,
+                                                    .qq-4,
+                                                    .qq-5,
+                                                    {
+                                                        cursor: pointer;
+                                                        background-color: #343945;
+                                                        .plus:before {
+                                                            content: "+";
+                                                            font: 400 20px Raleway-Light;
+                                                            font-weight: bold;
+                                                            margin-left: 15px;
+                                                            margin-right: 15px;
+                                                            position: relative;
+                                                            top: 2px;
+                                                        }
+                                                        .minus:before {
+                                                            content: "-";
+                                                            font: 400 20px Raleway-Light;
+                                                            font-weight: bold;
+                                                            margin-left: 15px;
+                                                            margin-right: 15px;
+                                                            position: relative;
+                                                            top: 0px;
+                                                        }
+                                                        .q-qube-1,
+                                                        .q-qube-2,
+                                                        .q-qube-3,
+                                                        .q-qube-4,
+                                                        .q-qube-5 {
+                                                            display: inline-block;
+                                                            background-color: #FDDF3D;
+                                                            font: 700 28.83px / 31px Raleway-Medium;
+                                                            padding: 28px;
+                                                        }
+                                                        .text-1,
+                                                        .text-2,
+                                                        .text-3,
+                                                        .text-4,
+                                                        .text-5,
+                                                        {
+                                                            font: 600 13.75px / 29px Raleway-Light;
+                                                            color: #ffffff;
+                                                            margin-bottom: 10px;
+                                                            bottom: 5px;
+                                                            position: relative;
+                                                        }
+                                                    }
+                                                }
+                                                
+                                                .hover-activ {
+                                                    background-color: #343945 !important;
+                                                    color: #ffe13e;
+                                                }
+                                                
+                                                .hover-activ-1 {
+                                                    background-color: #edeef0 !important;
+                                                    color: #343945 !important;
+                                                }
+                                                
+                                                .minus:before {
+                                                    content: "-";
+                                                    font: 400 20px Raleway-Light;
+                                                    font-weight: bold;
+                                                    margin-left: 15px;
+                                                    margin-right: 15px;
+                                                    position: relative;
+                                                    top: 3px;
+                                                }
+                                                
+                                                button {
+                                                    text-transform: uppercase;
+                                                    font: 700 23.03px / 24px Raleway;
+                                                    color: #202242;
+                                                    width: 371px;
+                                                    height: 74px;
+                                                    background-color: #ffe13e;
+                                                    border: none;
+                                                    margin-top: 93px;
+                                                    margin-bottom: 83px;
+                                                    text-align: center;
+                                                }
+                                                
+                                                @media (max-width: 690px) {
+                                                    .text-1,
+                                                    .text-2,
+                                                    .text-3,
+                                                    .text-4,
+                                                    .text-5 {
+                                                        width: 280px;
+                                                        margin-left: 5px;
+                                                        display: inline-block;
+                                                        position: relative;
+                                                        top: 10px;
+                                                        text-align: left;
+                                                    }
+                                                    .drop-1 span a {
+                                                        margin: 0;
+                                                        line-height: 5;
+                                                    }
+                                                    .drop-2 span a {
+                                                        margin: 0;
+                                                        line-height: 5;
+                                                    }
+                                                    .drop-3 span a {
+                                                        margin: 0;
+                                                        line-height: 5;
+                                                    }
+                                                    .drop-4 span a {
+                                                        margin: 0;
+                                                        line-height: 5;
+                                                    }
+                                                    .drop-5 span a {
+                                                        margin: 0;
+                                                        line-height: 5;
+                                                    }
+                                                    button {
+                                                        width: 200px;
+                                                    }
+                                                    .bg h1 {
+                                                        margin-top: 45px;
+                                                    }
+                                                    .block .q-block-1 .drop-1 a,
+                                                    {
+                                                        line-height: 1.4;
+                                                        margin-right: 10px;
+                                                    }
+                                                    .block .q-block-2 .drop-2 a,
+                                                    {
+                                                        line-height: 1.4;
+                                                        margin-right: 10px;
+                                                    }
+                                                    .block .q-block-3 .drop-3 a,
+                                                    {
+                                                        line-height: 1.4;
+                                                        margin-right: 10px;
+                                                    }
+                                                    .block .q-block-4 .drop-4 a,
+                                                    {
+                                                        line-height: 1.4;
+                                                        margin-right: 10px;
+                                                    }
+                                                    .block .q-block-5 .drop-5 a,
+                                                    {
+                                                        line-height: 1.4;
+                                                        margin-right: 10px;
+                                                    }
+                                                }
+                                                
+                                                .drop-1,
+                                                .drop-2,
+                                                .drop-3,
+                                                .drop-4,
+                                                .drop-5 {
+                                                    display: none;
+                                                    div {
+                                                        margin-left: 77px;
+                                                        background-color: #edeef0;
+                                                        height: 86px;
+                                                        max-width: 1095px;
+                                                        border-top: solid 1px #E7E4DD;
+                                                    }
+                                                    span {
+                                                        a {
+                                                            font: 500 10.31px / 49px Raleway-Light;
+                                                            color: #343945;
+                                                            margin-left: 45px;
+                                                            display: inline-block;
+                                                            margin-top: 20px;
+                                                        }
+                                                    }
+                                                }
+                                                
+                                                @media (max-width: 425px) {
+                                                    .block .qq-1 .text-1,
+                                                    .block .qq-2 .text-2,
+                                                    .block .qq-3 .text-3,
+                                                    .block .qq-4 .text-4,
+                                                    .block .qq-5 .text-5 {
+                                                        text-align: left;
+                                                        line-height: 1.4;
+                                                        width: 200px;
+                                                        font-size: 12px;
+                                                    }
+                                                }
+                                                
+                                                ////////////////
+                                                .wrapper {
+                                                    background-color: #1f2532;
+                                                    text-align: center;
+                                                    width: 100%;
+                                                    height: 737px;
+                                                    h2 {
+                                                        font: 700 34.12px / 24px Raleway-bold;
+                                                        color: white;
+                                                        margin-top: 100px;
+                                                    }
+                                                    p {
+                                                        font: 500 17px / 24px Raleway-light;
+                                                        color: white;
+                                                        margin-top: 15px;
+                                                    }
+                                                }
+                                                
+                                                .slider {
+                                                    z-index: 9;
+                                                    min-height: 500px;
+                                                    overflow: hidden;
+                                                    position: relative;
+                                                    margin-bottom: 50px;
+                                                    width: 100%;
+                                                }
+                                                
+                                                .slider ul,
+                                                .slider li {
+                                                    padding: 0;
+                                                    margin: 0;
+                                                    list-style-type: none;
+                                                }
+                                                
+                                                .slider ul {
+                                                    width: 9999px;
+                                                }
+                                                
+                                                .slider ul li {
+                                                    list-style-type: none;
+                                                    float: left;
+                                                    max-width: 1170px;
+                                                }
+                                                
+                                                .slider .nav {
+                                                    bottom: 0px;
+                                                    position: absolute;
+                                                    z-index: 1000;
+                                                    right: 0px;
+                                                    left: 0px;
+                                                    top: 485px;
+                                                }
+                                                
+                                                .slider .nav span {
+                                                    background-color: #1f2532;
+                                                    margin: 0 12px 0 12PX;
+                                                    width: 14px;
+                                                    height: 14px;
+                                                    border-radius: 50%;
+                                                    cursor: pointer;
+                                                    overflow: hidden;
+                                                    display: inline-block;
+                                                    border: 1px solid white;
+                                                }
+                                                
+                                                .slider .nav span.on {
+                                                    background: white;
+                                                }
+                                                
+                                                ////////////
+                                                .team-foto {
+                                                    display: inline-block;
+                                                    margin: 80px 6px 0px 6px;
+                                                    position: relative;
+                                                    .hover-1,
+                                                    .hover-2,
+                                                    .hover-3,
+                                                    .hover-4 {
+                                                        width: 270px;
+                                                        height: 300px;
+                                                        background-color: #FDDF3D;
+                                                        opacity: 0.95;
+                                                        position: absolute;
+                                                        top: 0;
+                                                        display: none;
+                                                        h4 {
+                                                            font: 500 16px / 24px Raleway-medium;
+                                                            color: #202242;
+                                                            padding: 40px 10px 5px 10px;
+                                                        }
+                                                        span {
+                                                            font: 300 16px / 32px Raleway-Light;
+                                                            color: #202242;
+                                                            padding: 5px 10px 0px 10px;
+                                                            display: inline-block;
+                                                            line-height: 1.5;
+                                                        }
+                                                        .social {
+                                                            width: 42px;
+                                                            height: 42px;
+                                                            background-color: #000000;
+                                                            display: inline-block;
+                                                            margin-top: 45px;
+                                                        }
+                                                        .soc-1 {
+                                                            background-image: url(.../img/sprite.png);
+                                                            background-position: left;
+                                                        }
+                                                        .soc-2 {
+                                                            background-image: url(.../img/sprite.png);
+                                                            background-position: center;
+                                                        }
+                                                        .soc-3 {
+                                                            background-image: url(.../img/sprite.png);
+                                                            background-position: right;
+                                                        }
+                                                    }
+                                                    h3 {
+                                                        color: #fbf8f1;
+                                                        font: 700 18px / 24px Raleway-Light;
+                                                        margin-top: 20px;
+                                                    }
+                                                    p {
+                                                        color: #fbf8f1;
+                                                        font: 400 16px / 24px Raleway-Light;
+                                                        margin-top: 5px;
+                                                    }
+                                                }
+                                                
+                                                @media (max-width: 1210px) {
+                                                    .slider {
+                                                        text-align: center;
+                                                        width: 99%;
+                                                    }
+                                                    .team-foto img {
+                                                        width: 170px;
+                                                        height: 200px;
+                                                    }
+                                                    .team-foto .hover-1 {
+                                                        width: 170px;
+                                                        height: 200px;
+                                                    }
+                                                    .team-foto .hover-2 {
+                                                        width: 170px;
+                                                        height: 200px;
+                                                    }
+                                                    .team-foto .hover-3 {
+                                                        width: 170px;
+                                                        height: 200px;
+                                                    }
+                                                    .team-foto .hover-4 {
+                                                        width: 170px;
+                                                        height: 200px;
+                                                    }
+                                                    .team-foto .hover-1 span {
+                                                        width: 170px;
+                                                        height: 200px;
+                                                        font: 300 12px / 32px Raleway-Light;
+                                                        color: #202242;
+                                                        padding: 5px 10px 0px 10px;
+                                                        display: inline-block;
+                                                        line-height: 1;
+                                                    }
+                                                    .team-foto .hover-2 span {
+                                                        width: 170px;
+                                                        height: 200px;
+                                                        font: 300 12px / 32px Raleway-Light;
+                                                        color: #202242;
+                                                        padding: 5px 10px 0px 10px;
+                                                        display: inline-block;
+                                                        line-height: 1;
+                                                    }
+                                                    .team-foto .hover-3 span {
+                                                        width: 170px;
+                                                        height: 200px;
+                                                        font: 300 12px / 32px Raleway-Light;
+                                                        color: #202242;
+                                                        padding: 5px 10px 0px 10px;
+                                                        display: inline-block;
+                                                        line-height: 1;
+                                                    }
+                                                    .team-foto .hover-4 span {
+                                                        width: 170px;
+                                                        height: 200px;
+                                                        font: 300 12px / 32px Raleway-Light;
+                                                        color: #202242;
+                                                        padding: 5px 10px 0px 10px;
+                                                        display: inline-block;
+                                                        line-height: 1;
+                                                    }
+                                                    .team-foto .hover-1 h4 {
+                                                        font: 500 14px / 24px Raleway-medium;
+                                                        color: #202242;
+                                                        padding: 15px 10px 5px 10px;
+                                                        line-height: 1;
+                                                    }
+                                                    .team-foto .hover-2 h4 {
+                                                        font: 500 14px / 24px Raleway-medium;
+                                                        color: #202242;
+                                                        padding: 15px 10px 5px 10px;
+                                                        line-height: 1;
+                                                    }
+                                                    .team-foto .hover-3 h4 {
+                                                        font: 500 14px / 24px Raleway-medium;
+                                                        color: #202242;
+                                                        padding: 15px 10px 5px 10px;
+                                                        line-height: 1;
+                                                    }
+                                                    .team-foto .hover-4 h4 {
+                                                        font: 500 14px / 24px Raleway-medium;
+                                                        color: #202242;
+                                                        padding: 15px 10px 5px 10px;
+                                                        line-height: 1;
+                                                    }
+                                                    .team-foto .hover-1 .social {
+                                                        width: 42px;
+                                                        height: 42px;
+                                                        background-color: #000000;
+                                                        display: inline-block;
+                                                        position: relative;
+                                                        top: -155px;
+                                                    }
+                                                    .team-foto .hover-2 .social {
+                                                        width: 42px;
+                                                        height: 42px;
+                                                        background-color: #000000;
+                                                        display: inline-block;
+                                                        position: relative;
+                                                        top: -155px;
+                                                    }
+                                                    .team-foto .hover-3 .social {
+                                                        width: 42px;
+                                                        height: 42px;
+                                                        background-color: #000000;
+                                                        display: inline-block;
+                                                        position: relative;
+                                                        top: -155px;
+                                                    }
+                                                    .team-foto .hover-4 .social {
+                                                        width: 42px;
+                                                        height: 42px;
+                                                        background-color: #000000;
+                                                        display: inline-block;
+                                                        position: relative;
+                                                        top: -155px;
+                                                    }
+                                                }
+                                                
+                                                .feedback {
+                                                    width: 100%;
+                                                    h2 {
+                                                        text-align: center;
+                                                        font: 700 48px / 24px Raleway-medium;
+                                                        margin-top: 100px;
+                                                    }
+                                                    p {
+                                                        text-align: center;
+                                                        font: 500 24px / 24px Raleway-light;
+                                                        margin-top: 14px;
+                                                    }
+                                                    .feed {
+                                                        margin-top: 150px;
+                                                        max-width: 1170px;
+                                                        height: 445px;
+                                                        background-color: #353a46;
+                                                        position: relative;
+                                                        margin-bottom: 150px;
+                                                        box-shadow: 0px 9px 51px 0.00px rgba(0, 0, 0, 0.26);
+                                                    }
+                                                    img {
+                                                        position: absolute;
+                                                        left: 80px;
+                                                        bottom: -45px;
+                                                        box-shadow: 0px 9px 51px 0.00px rgba(0, 0, 0, 0.26);
+                                                    }
+                                                    span {
+                                                        font: 300 16px / 30px Raleway;
+                                                        color: #ffffff;
+                                                        max-width: 500px;
+                                                        height: 100%;
+                                                        display: inline-block;
+                                                        margin-left: 600px;
+                                                        margin-top: 120px;
+                                                        position: relative;
+                                                        p {
+                                                            font: 700 16px / 30px Raleway;
+                                                            color: #ffffff;
+                                                            float: left;
+                                                            position: absolute;
+                                                        }
+                                                    }
+                                                    .im {
+                                                        position: absolute;
+                                                        top: -20px;
+                                                        left: -100px;
+                                                    }
+                                                }
+                                                
+                                                @media (max-width: 1070px) {
+                                                    .img-1 {
+                                                        display: none;
+                                                    }
+                                                    .feedback span {
+                                                        width: 100%;
+                                                        margin: 100px 0px 0px 30px;
+                                                    }
+                                                    .feedback h2 {
+                                                        line-height: 1;
+                                                    }
+                                                }
+                                                
+                                                //////////////////
+                                                #slider-wrap {
+                                                    width: 500px;
+                                                    h2 {
+                                                        text-align: center;
+                                                        font: 700 48px / 24px Raleway-medium;
+                                                        margin-top: 100px;
+                                                    }
+                                                    p {
+                                                        text-align: center;
+                                                        font: 700 16px / 30px Raleway-light;
+                                                        margin-top: 14px;
+                                                    }
+                                                    .feed {
+                                                        margin-top: 150px;
+                                                        max-width: 1170px;
+                                                        height: 445px;
+                                                        background-color: #353a46;
+                                                        position: relative;
+                                                        margin-bottom: 150px;
+                                                        box-shadow: 0px 9px 51px 0.00px rgba(0, 0, 0, 0.26);
+                                                    }
+                                                    img {
+                                                        position: absolute;
+                                                        left: 80px;
+                                                        bottom: -45px;
+                                                        box-shadow: 0px 9px 51px 0.00px rgba(0, 0, 0, 0.26);
+                                                    }
+                                                    .im {
+                                                        position: absolute;
+                                                        top: -50px;
+                                                        left: -100px;
+                                                    }
+                                                }
+                                                
+                                                #slider {
+                                                    width: 100%;
+                                                    height: 300px;
+                                                    overflow: hidden;
+                                                    position: relative;
+                                                    #prewbutton,
+                                                    #nextbutton {
+                                                        display: block;
+                                                        width: 15px;
+                                                        height: 100%;
+                                                        position: absolute;
+                                                        top: 100px;
+                                                        color: white;
+                                                        z-index: 3;
+                                                        font: 500 26px / 30px tahoma-light;
+                                                        cursor: pointer;
+                                                    }
+                                                    #prewbutton:hover,
+                                                    #nextbutton:hover {
+                                                        color: #ffe13e;
+                                                    }
+                                                    #prewbutton {
+                                                        right: 0px;
+                                                    }
+                                                    #nextbutton {
+                                                        right: 20px;
+                                                    }
+                                                }
+                                                
+                                                .slide {
+                                                    width: 490px;
+                                                    margin-top: 40px;
+                                                }
+                                                
+                                                .sli-links {
+                                                    display: none;
+                                                }
