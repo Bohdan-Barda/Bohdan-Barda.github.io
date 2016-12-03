@@ -1,5 +1,5 @@
 body {
-  background-image: url(../img/Untitled-2.jpg);
+  background-image: url(img/Untitled-2.jpg);
   overflow: hidden;
   background-color: #fff;
   font-family: Arial;
@@ -541,7 +541,7 @@ body {
 @font-face {
   font-family: 'ic';
   src: url('../font/ic.eot?murh1g');
-  src: url('../font/ic.eot?murh1g#iefix') format('embedded-opentype'), url('../font/ic.ttf?murh1g') format('truetype'), url('../fonts/ic.woff?murh1g') format('woff'), url('../font/ic.svg?murh1g#ic') format('svg');
+  src: url('../font/ic.eot?murh1g#iefix') format('embedded-opentype'), url('../font/ic.ttf?murh1g') format('truetype'), url('../font/ic.woff?murh1g') format('woff'), url('../font/ic.svg?murh1g#ic') format('svg');
   font-weight: normal;
   font-style: normal;
 }
