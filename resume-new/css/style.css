@@ -240,7 +240,7 @@ body {
   width: 40px;
   height: 40px;
   cursor: pointer;
-  background-image: url(../img/closed.png);
+  background-image: url(img/closed.png);
   background-size: 100%;
   transition: all 0.3s ease-in-out;
   position: absolute;
@@ -251,7 +251,7 @@ body {
   transform: rotate(180deg);
 }
 .section-services {
-  background-image: url(../img/bg-1.jpg);
+  background-image: url(img/bg-1.jpg);
   background-repeat: no-repeat;
   min-height: 700px;
   text-align: center;
@@ -540,8 +540,8 @@ body {
 }
 @font-face {
   font-family: 'ic';
-  src: url('font/ic.eot?murh1g');
-  src: url('font/ic.eot?murh1g#iefix') format('embedded-opentype'), url('font/ic.ttf?murh1g') format('truetype'), url('fonts/ic.woff?murh1g') format('woff'), url('/font/ic.svg?murh1g#ic') format('svg');
+  src: url('../font/ic.eot?murh1g');
+  src: url('../font/ic.eot?murh1g#iefix') format('embedded-opentype'), url('../font/ic.ttf?murh1g') format('truetype'), url('../fonts/ic.woff?murh1g') format('woff'), url('../font/ic.svg?murh1g#ic') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -575,13 +575,13 @@ body {
 }
 @font-face {
   font-family: Raleway-Bold;
-  src: url(font/Raleway-Bold.ttf);
+  src: url(../font/Raleway-Bold.ttf);
 }
 @font-face {
   font-family: Raleway-Medium;
-  src: url(font/Raleway-Medium.ttf);
+  src: url(../font/Raleway-Medium.ttf);
 }
 @font-face {
   font-family: Raleway-Light;
-  src: url(font/Raleway-Light.ttf);
+  src: url(../font/Raleway-Light.ttf);
 }
