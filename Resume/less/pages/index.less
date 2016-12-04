@@ -3,17 +3,13 @@
             text-align: center;
             height: 700px;
             background-image: url(/img/Untitled-2.jpg);
+            border-bottom: 3px solid white;
             .logo {
                 background-image: url(/img/my-logo.png);
-                margin-top: 44px;
+                margin-top: 40px;
                 float: left;
                 height: 28px;
                 width: 79px;
-            }
-            .site-header {
-                z-index: 2;
-                background-color: #0e3157;
-                height: 130px;
             }
             ul {
                 display: inline-block;
@@ -25,28 +21,20 @@
                 padding-bottom: 212px;
             }
             a {
-                color: #798593;
+                color: white;
                 transition: all 0.3s ease-in-out;
                 font-weight: 600;
-                font-family: "Arial";
+                font-family: "Raleway-medium";
             }
             a:hover {
-                color: @text;
+                color: @gold;
                 text-decoration: none;
-                border-bottom: solid 1px @gold;
             }
             .active {
-                color: @text;
-                border-bottom: solid 1px @gold;
+                color: @gold;
             }
             .nice {
                 z-index: 1;
-            }
-            .welcome {
-                font-size: 40px;
-                color: #e0e0e9;
-                line-height: 1;
-                float: right;
             }
         }
         
@@ -62,7 +50,7 @@
             .block {
                 position: absolute;
                 border: 20px solid transparent;
-                border-bottom: 30px solid green;
+                border-bottom: 30px solid white;
                 width: 20px;
                 transition: all 0.3s ease-in-out;
             }
@@ -76,58 +64,75 @@
         
         //good
         .section-services {
-            background-color: #0e3157;
+            background-image: url(/img/bg-1.jpg);
+            background-repeat: no-repeat;
+            min-height: 700px;
+            border-bottom: 3px solid white;
             text-align: center;
             .my-name {
                 font-size: 24px;
                 display: block;
-                color: #8eb3aa;
+                text-align: right;
+                margin-top: 50px;
+                margin-right: 5px;
             }
             img {
-                margin-top: 20px;
                 display: inline-block;
-                border: solid 4px #172540;
-            }
-            .years {
-                margin-top: 20px;
+                border-radius: 50%;
+                float: right;
+                margin-right: 40px;
+                margin-top: 30px;
             }
             span {
-                display: block;
-                color: #8eb3aa;
                 padding-bottom: 10px;
+                color: white;
+                text-align: left;
+                display: inline-block;
+                margin-left: 10px;
+                height: 20px;
+                line-height: 2.5;
+                font-family: "Arial";
+            }
+            span:last-child {
+                margin-top: 15px;
             }
             h3 {
-                margin-bottom: 20px;
-                color: #e0e0e9;
-            }
-            .master {
-                margin-top: 25px;
-                margin-bottom: 25px;
+                margin-bottom: 10px;
+                text-align: left;
+                margin-left: 10px;
             }
         }
         
         //good
         //services
         .section-skills {
-            text-align: center;
             padding-bottom: 70px;
-            background-color: #172540;
-            .progress {
-                margin-left: 10px;
-                margin-right: 10px;
-            }
+            background-image: url(/img/bg-2.png);
+            min-height: 700px;
+            border-bottom: 3px solid white;
+            ;
             h2 {
                 padding-bottom: 20px;
+            }
+            p {
+                margin-left: 10px;
+                color: @gold;
+                margin-top: 20px;
+            }
+            span {
+                color: white;
             }
         }
         
         //services
         .portfolio {
             text-align: center;
-            background-color: #0e3157;
+            background-image: url(/img/bg-3.jpg);
+            border-bottom: 3px solid white;
+            min-height: 700px;
             .port {
-                width: 270px;
-                height: 510px;
+                width: 269px;
+                height: 509px;
                 display: inline-block;
                 margin: 10px;
                 margin-bottom: 20px;
@@ -143,16 +148,17 @@
         //end
         .contact-us {
             text-align: center;
-            background-color: #172540;
+            background-image: url(/img/bg-4.jpg);
             span {
                 color: white;
                 font-family: "arial";
                 font-size: 20px;
             }
             h3 {
-                color: #8eb3aa;
+                color: white;
                 font-size: 20px;
                 font-family: "tahoma";
+                color: white;
             }
             form {
                 padding-top: 15px;
@@ -162,17 +168,26 @@
                 height: 50px;
                 padding-left: 10px;
                 font-size: 18px;
+                width: 95%;
+                opacity: 0.8;
+                border: none;
             }
             input[type="email"] {
                 margin-bottom: 29px;
                 height: 50px;
                 padding-left: 10px;
                 font-size: 18px;
+                width: 95%;
+                opacity: 0.8;
+                border: none;
             }
             textarea {
                 height: 208px;
                 padding: 15px 0 0 10px;
                 font-size: 18px;
+                width: 95%;
+                opacity: 0.8;
+                border: none;
             }
             .center {
                 margin: 0 auto;
@@ -194,21 +209,5 @@
             :-moz-placeholder {
                 /* Firefox 18- */
                 text-transform: uppercase;
-            }
-        }
-        
-        .footer {
-            display: inline-block;
-            text-align: center;
-            width: 100%;
-            .copyright {
-                left: 10%;
-                float: left;
-                top: 20px;
-                font-size: 14px;
-                display: inline-block;
-                position: relative;
-                padding-right: 0;
-                color: #172540
             }
         }
