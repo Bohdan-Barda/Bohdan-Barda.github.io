@@ -270,8 +270,8 @@
     .section-services {
         background-image: url(/img/bg-1.jpg);
         background-repeat: no-repeat;
-        min-height: 700px;
         text-align: center;
+        min-height: 700px;
         z-index: 9999;
         position: relative;
         bottom: 390px;
@@ -378,9 +378,27 @@
     @media (max-width:383px) {
         .section-services,
         .section-skills,
-        .portfolio,
+        .portfolio {
+            margin-top: -250px;
+        }
+        .circle-2 {
+            margin-top: 15px;
+        }
+        .circle-3 {
+            margin-top: -20px;
+        }
+    }
+    
+    @media (max-width:383px) {
+        .section-skills,
+        {
+            margin-top: -300px;
+        }
+    }
+    
+    @media (max-width:383px) {
         .contact-us {
-            margin-top: -310px;
+            margin-top: -295px;
         }
     }
     
@@ -388,6 +406,15 @@
         .section-services img {
             width: 150px;
             height: 150px;
+        }
+    }
+    
+    @media (max-width:1200px) {
+        #container {
+            display: none;
+        }
+        body {
+            overflow: auto;
         }
     }
     
