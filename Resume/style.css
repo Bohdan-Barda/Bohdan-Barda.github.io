@@ -2410,7 +2410,7 @@ header {
     background-size: cover;
     text-align: center;
     height: 700px;
-    background-image: url(Untitled-2.jpg);
+    background-image: url(img/Untitled-2.jpg);
     border-bottom: 3px solid white;
 }
 
@@ -2526,7 +2526,7 @@ header .nice {
 
 .section-skills {
     padding-bottom: 70px;
-    background-image: url(bg-2.png);
+    background-image: url(img/bg-2.png);
     min-height: 700px;
     border-bottom: 3px solid white;
 }
