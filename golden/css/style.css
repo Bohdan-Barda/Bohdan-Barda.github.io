@@ -6774,7 +6774,7 @@ button.close {
 .laptop,
 .security {
   display: inline-block;
-  background: url('/img/sptite.png') no-repeat;
+  background: url('img/sptite.png') no-repeat;
   overflow: hidden;
   text-indent: -9999px;
   text-align: left;
@@ -6803,7 +6803,7 @@ button.close {
 .twitter-hover,
 .twitter {
   display: inline-block;
-  background: url('/img/sprite-social.png') no-repeat;
+  background: url('img/sprite-social.png') no-repeat;
   overflow: hidden;
   text-indent: -9999px;
   text-align: left;
@@ -6857,7 +6857,7 @@ button.close {
 .twitter-black,
 .twitter-hover {
   display: inline-block;
-  background: url('/img/sprite-footer.png') no-repeat;
+  background: url('img/sprite-footer.png') no-repeat;
   overflow: hidden;
   text-indent: -9999px;
   text-align: left;
@@ -7020,12 +7020,12 @@ span {
   padding-top: 0;
 }
 header {
-  background: url(/img/header-background.png) no-repeat;
+  background: url(img/header-background.png) no-repeat;
   background-size: cover;
   text-align: center;
 }
 header .logo {
-  background-image: url(/img/my-logo.png);
+  background-image: url(img/my-logo.png);
   margin-top: 44px;
   float: left;
   height: 28px;
@@ -7197,7 +7197,7 @@ header .welcome {
 }
 .contact-us {
   text-align: center;
-  background-image: url(/img/word-background.png);
+  background-image: url(img/word-background.png);
 }
 .contact-us h2 {
   color: white;
