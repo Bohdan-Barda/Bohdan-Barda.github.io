@@ -1,14 +1,14 @@
 @font-face {
   font-family: Raleway-Bold;
-  src: url(/font/Raleway-Bold.ttf);
+  src: url(font/Raleway-Bold.ttf);
 }
 @font-face {
   font-family: Raleway-Medium;
-  src: url(/font/Raleway-Medium.ttf);
+  src: url(font/Raleway-Medium.ttf);
 }
 @font-face {
   font-family: Raleway-Light;
-  src: url(/font/Raleway-Light.ttf);
+  src: url(font/Raleway-Light.ttf);
 }
 a {
   text-decoration: none !important;
@@ -117,7 +117,7 @@ header ul .active {
 }
 .bg {
   height: 253px;
-  background-image: url(../img/header-bg.png);
+  background-image: url(img/header-bg.png);
   margin-top: 45px;
   background-position: -20px -115px;
 }
@@ -500,14 +500,14 @@ button {
 .team-foto .hover-2 .soc-2,
 .team-foto .hover-3 .soc-2,
 .team-foto .hover-4 .soc-2 {
-  background-image: url(/img/sprite.png);
+  background-image: url(img/sprite.png);
   background-position: center;
 }
 .team-foto .hover-1 .soc-3,
 .team-foto .hover-2 .soc-3,
 .team-foto .hover-3 .soc-3,
 .team-foto .hover-4 .soc-3 {
-  background-image: url(/img/sprite.png);
+  background-image: url(img/sprite.png);
   background-position: right;
 }
 .team-foto h3 {
