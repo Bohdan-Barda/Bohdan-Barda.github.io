@@ -268,8 +268,8 @@ th {
 @font-face {
   font-family: 'Glyphicons Halflings';
 
-  src: url('fonts/glyphicons-halflings-regular.eot');
-  src: url('fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('fonts/glyphicons-halflings-regular.woff2') format('woff2'), url('fonts/glyphicons-halflings-regular.woff') format('woff'), url('fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+  src: url('../fonts/glyphicons-halflings-regular.eot');
+  src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff2') format('woff2'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
 }
 .glyphicon {
   position: relative;
@@ -7020,7 +7020,7 @@ span {
   padding-top: 0;
 }
 header {
-  background: url(/img/header-background.png) no-repeat;
+  background: url(img/header-background.png) no-repeat;
   background-size: cover;
   text-align: center;
 }
@@ -7102,6 +7102,9 @@ header .welcome {
 }
 .section-portfolio .portfolio-padding {
   margin-bottom: 50px;
+  width: 291px;
+  display: inline-block;
+  margin: 0 30px 30px 30px;
 }
 .section-portfolio .portfolio-padding a {
   text-decoration: none;
