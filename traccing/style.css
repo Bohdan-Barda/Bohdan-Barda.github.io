@@ -266,6 +266,8 @@ header .arrow {
 .children .product button {
     border: none;
     background-color: #F5F6F7;
+    width:1px;
+    height:1px;
 }
 
 .men .product p,
