@@ -1,14 +1,23 @@
 /*fonts*/
 
 @font-face {
+<<<<<<< HEAD
     font-family: 'Quicksand-Bold';
     src: url('/font/Quicksand-Bold.eot');
     src: url('/font/Quicksand-Bold.woff2') format('woff2'), url('/font/Quicksand-Bold.woff') format('woff'), url('/font/Quicksand-Bold.ttf') format('truetype'), url('.../font/Quicksand-Bold.eot?#iefix') format('embedded-opentype');
     font-weight: normal;
     font-style: normal;
+=======
+  font-family: 'Quicksand-Bold';
+  src: url('.../font/Quicksand-Bold.eot');
+  src: url('.../font/Quicksand-Bold.woff2') format('woff2'), url('.../font/Quicksand-Bold.woff') format('woff'), url('.../font/Quicksand-Bold.ttf') format('truetype'), url('.../font/Quicksand-Bold.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+>>>>>>> 3e8ff8403dc65558eaffb0c59b51c9358abe2344
 }
 
 @font-face {
+<<<<<<< HEAD
     font-family: 'QuicksandBook-Regular';
     src: url('/font/QuicksandBook-Regular.eot');
     src: url('/font/QuicksandBook-Regular.woff2') format('woff2'), url('/font/QuicksandBook-Regular.woff') format('woff'), url('/font/QuicksandBook-Regular.ttf') format('truetype'), url('/font/QuicksandBook-Regular.eot?#iefix') format('embedded-opentype');
@@ -19,6 +28,14 @@
 
 /*fonts-end*/
 
+=======
+  font-family: 'QuicksandBook-Regular';
+  src: url('.../font/QuicksandBook-Regular.eot');
+  src: url('.../font/QuicksandBook-Regular.woff2') format('woff2'), url('.../font/QuicksandBook-Regular.woff') format('woff'), url('.../font/QuicksandBook-Regular.ttf') format('truetype'), url('/font/QuicksandBook-Regular.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+>>>>>>> 3e8ff8403dc65558eaffb0c59b51c9358abe2344
 body {
     background-color: #00497F;
     font-family: "Quicksand-Bold";
@@ -150,9 +167,15 @@ header .arrow {
 }
 
 .selected input[type=checkbox]:checked + label {
+<<<<<<< HEAD
     background-image: url(/img/checked.svg);
     background-repeat: no-repeat;
     background-position: center;
+=======
+  background-image: url(img/checked.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+>>>>>>> 3e8ff8403dc65558eaffb0c59b51c9358abe2344
 }
 
 .selected .button {
@@ -258,11 +281,19 @@ header .arrow {
 .men .left-null,
 .women .left-null,
 .children .left-null {
+<<<<<<< HEAD
     background-image: url(/img/arrow-product.png);
     width: 10px;
     height: 12px;
     cursor: pointer;
     display: inline-block;
+=======
+  background-image: url(img/arrow-product.png);
+  width: 10px;
+  height: 12px;
+  cursor: pointer;
+  display: inline-block;
+>>>>>>> 3e8ff8403dc65558eaffb0c59b51c9358abe2344
 }
 
 .men .right,
@@ -338,6 +369,7 @@ header .arrow {
 .men select,
 .women select,
 .children select {
+<<<<<<< HEAD
     position: absolute;
     cursor: pointer;
     top: 25px;
@@ -363,6 +395,32 @@ header .arrow {
     appearance: none!important;
 }
 
+=======
+  position: absolute;
+  cursor: pointer;
+  top: 25px;
+  left: 20px;
+  width: 60px;
+  height: 26px;
+  border-radius: 10px;
+  border: none;
+  -webkit-appearance: none;
+  background-image: url('img/size-arrow.png');
+  background-color: transparent;
+  text-transform: uppercase;
+  font-size: 16px;
+  background-position: right center;
+  background-repeat: no-repeat;
+  line-height: 1em;
+  /* for FF */
+  -moz-appearance: none;
+  text-indent: 0.01px;
+  text-overflow: '';
+  /* for IE */
+  -ms-appearance: none;
+  appearance: none!important;
+}
+>>>>>>> 3e8ff8403dc65558eaffb0c59b51c9358abe2344
 .men select::-ms-expand,
 .women select::-ms-expand,
 .children select::-ms-expand {

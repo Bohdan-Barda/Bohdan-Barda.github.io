@@ -1,0 +1,275 @@
+.mail,
+.earth,
+.skype,
+.telephone {
+  display: inline-block;
+  background: url('/img/sprite-header.png') no-repeat;
+  overflow: hidden;
+  text-indent: -9999px;
+  text-align: left;
+  margin-right: 8px;
+}
+.mail {
+  background-position: 0px 0px;
+  width: 14px;
+  height: 10px;
+  margin-bottom: 1px;
+}
+.earth {
+  background-position: 0px -10px;
+  width: 13px;
+  height: 13px;
+  margin-bottom: -1px;
+}
+.skype {
+  background-position: 0px -23px;
+  width: 12px;
+  height: 12px;
+}
+.telephone {
+  background-position: 0px -35px;
+  width: 9px;
+  height: 15px;
+}
+body {
+  max-width: 1600px;
+  font: 300 16px / 22px Roboto;
+  text-decoration: none;
+}
+body .container1 {
+  max-width: 1600px;
+}
+body a {
+  text-decoration: none !important;
+}
+body hr {
+  margin: 0;
+}
+header .logo {
+  margin: 15px 0 15px 0;
+}
+header .contact-header {
+  display: inline-block;
+  position: relative;
+  top: 14px;
+  margin-left: 85px;
+}
+header .contact-header .contact-1 {
+  display: inline-block;
+  font: 300 17px / 24px Roboto;
+  color: #415959;
+}
+header .contact-header .contact-1 span:last-child {
+  margin-left: 17px;
+}
+header .contact-header .contact-telephone {
+  margin-left: 30px;
+}
+header .contact-header a {
+  display: block;
+  font: 300 17px / 24px Roboto;
+  color: #00acac;
+  transition: all 0.3s ease-in-out;
+}
+header .contact-header a:last-child {
+  margin-left: 2px;
+}
+header .contact-header a:first-child {
+  font: 700 17px / 40px Roboto;
+  color: #00acac;
+  line-height: 1.5;
+}
+header .contact-header span {
+  display: block;
+}
+header button {
+  width: 211px;
+  height: 40px;
+  background-color: #4ab848;
+  color: #ffffff;
+  font: 700 16px / 40px Roboto;
+  border: #4ab848;
+  border-radius: 5px;
+  margin-left: 70px;
+  transition: all 0.3s ease-in-out;
+}
+header button:hover {
+  background-color: #00acac;
+}
+header .lang {
+  font: 700 14px / 24px Roboto;
+  color: #415959;
+  cursor: pointer;
+  display: inline-block;
+  margin-left: 45px;
+}
+header .lang .arrow {
+  border-color: transparent transparent #00acac transparent;
+  border-style: solid;
+  border-width: 0 5px 5px 5px;
+  height: 0px;
+  width: 0px;
+  display: inline-block;
+  transform: rotate(180deg);
+  margin-bottom: 1px;
+}
+.section-menu {
+  height: 60px;
+  background-color: #00acac;
+  text-transform: uppercase;
+  border-bottom: #009898 solid 3px;
+}
+.section-menu ul {
+  margin-top: 15px;
+  margin-left: 15px;
+}
+.section-menu li {
+  display: inline-block;
+  margin-right: 24px;
+}
+.section-menu li a {
+  color: #ffffff;
+  font: 700 14px / 29px Roboto;
+}
+.section-menu .arrow-white {
+  border-color: transparent transparent white transparent;
+  border-style: solid;
+  border-width: 0 3px 3px 3px;
+  height: 0px;
+  width: 0px;
+  display: inline-block;
+  transform: rotate(180deg);
+  margin-bottom: 2px;
+}
+.section-menu li:last-child {
+  margin-left: 64px;
+}
+.bg-head-img {
+  height: 250px;
+  background-image: url(/img/header-bg.png);
+  background-position: 0 -150px;
+}
+.bg-head-img span {
+  text-decoration: underline;
+}
+.bg-head-img h1 {
+  text-align: center;
+  font: 700 60px / 50px Roboto;
+  color: #ffffff;
+  margin-top: 62px;
+}
+.bg-head-img a {
+  font: 300 14px / 21px Roboto;
+  color: #e0dede;
+  margin-top: 15px;
+  display: inline-block;
+}
+.menu {
+  margin-top: 40px;
+  width: 255px;
+  float: left;
+}
+.menu ul li {
+  padding: 13px 0px 13px 0px;
+  position: relative;
+  left: 25px;
+  width: 199px;
+}
+.menu ul a:hover {
+  background-color: #4ab848;
+  color: white;
+}
+.menu ul a {
+  color: #415959;
+  font: 700 16px / 42px Roboto;
+  line-height: 1;
+  width: 255px;
+  display: inline-block;
+}
+.egg-donor {
+  width: 370px;
+  height: 422px;
+  float: left;
+  margin-left: 30px;
+  margin-top: 28px;
+}
+.egg-donor h2 {
+  font: 300 30px / 50px Roboto;
+  color: #00acac;
+  margin-bottom: 20px;
+  width: 349px;
+  line-height: 1;
+}
+.egg-donor span {
+  font: 300 16px / 22px Roboto;
+  color: #415959;
+}
+.egg-donor .buttun-dtabase {
+  width: 149px;
+  height: 40px;
+  background-color: #4ab848;
+  color: #ffffff;
+  font: 700 16px / 40px Roboto;
+  line-height: 1;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+  margin-top: 20px;
+  border: #4ab848;
+}
+.egg-donor button:hover {
+  background-color: #00acac;
+}
+.contact-us {
+  width: 256px;
+  height: 340px;
+  background-color: #ecf7f7;
+  margin-top: 70px;
+  padding-left: 0;
+}
+.contact-us h2 {
+  font: 300 30px / 50px Roboto;
+  color: #00acac;
+  text-align: center;
+  padding-top: 20px;
+}
+.contact-us input,
+.contact-us select {
+  width: 223px;
+  height: 33px;
+  border-radius: 5px;
+  font: 300 14px / 24px Roboto;
+  color: #cccccc;
+  padding-left: 10px;
+  border: solid 1px #A4D5D5;
+  margin-top: 7px;
+  margin-left: 15px;
+}
+.contact-us select {
+  font: 300 14px / 24px Roboto;
+  color: #415959;
+  padding-left: 7px;
+}
+.contact-us form button {
+  width: 76px;
+  height: 40px;
+  background-color: #4ab848;
+  color: #ffffff;
+  font: 700 16px / 40px Roboto;
+  line-height: 1;
+  border: #4ab848;
+  border-radius: 5px;
+  margin-top: 20px;
+  margin-left: 15px;
+}
+.banner {
+  width: 255px;
+  height: 180px;
+  background-color: rgba(11, 43, 86, 0.3);
+  text-align: center;
+  margin-top: 30px;
+}
+.banner p {
+  font: 700 26px / 28px Roboto;
+  color: #ffffff;
+  padding-top: 80px;
+}
