@@ -9,10 +9,12 @@
     <link rel="stylesheet" href="css/style.css" /> </head>
 
 <body>
+    <!---header--->
     <header>
         <div class="logo">
             <a href="/"><img src="/img/logo.svg" alt="logo"></a>
         </div>
+        <!---header-nav--->
         <ul class="nav">
             <li><a href="/">Home</a></li>
             <li><a href="#" id="products">Products</a></li>
@@ -20,12 +22,15 @@
                 <a href="#" id="cart"><img src="/img/cart.png" alt="cart"></a>
             </li>
         </ul>
+        <!---header-nav-end--->
         <h1>Our clothing , your comfort</h1> <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed <br> do eiusmod tempor incididunt ut labore et dolore <br>
  magna aliqua.</span>
         <div class="arrow">
             <a href="#"><img src="/img/arrow.png" id="arrow-down" alt="arrow"></a>
         </div>
     </header>
+    <!---header-end--->
+    <!---selected-men-women-children--->
     <div class="selected " id="selected">
         <div class="nav">
             <input type="checkbox" id="men" checked name="checkbox1">
@@ -36,6 +41,8 @@
             <label for="checkbox3"></label> <span>Children</span> </div>
         <div class="button" id="seeall"><span>see all products</span></div>
     </div>
+    <!---selected-men-women-children-end-->
+    <!---product-start-men-->
     <div class="men" id="men-product">
         <h2>Men</h2>
         <hr>
@@ -43,30 +50,36 @@
         <div class="product1">
             <div class="product">
                 <form action="" method="get" id="form">
+                    <!---product--men-size-->
                     <select class="size">
                         <option value="" hidden disabled selected>Size</option>
                         <option value="M">M</option>
                         <option value="L">L</option>
                         <option value="XL">XL</option>
                     </select>
+                    <!---product--men-size-end-->
+                    <!---product--men-color-->
                     <input id="blue" class="color" type="radio" value="blue" name="radio">
                     <label for="blue" class="blue"></label>
                     <input id="yellow" class="color" type="radio" value="yellow" name="radio">
                     <label for="yellow" class="yellow"></label>
                     <input id="black" class="color" type="radio" value="black" name="radio">
                     <label for="black" class="black"></label>
+                    <!---product--men-color-end-->
                     <button type="submit"> <img id="T-Shirt-black" src="/img/livello.png" width="146px" height="189px" alt="T-Shirt"> <img id="T-Shirt-blue" class="none" src="/img/livello-blue.png" width="146px" height="189px" alt="T-Shirt-blue"> <img id="T-Shirt-yellow" class="none" src="/img/livello-yellow.png" width="146px" height="189px" alt="T-Shirt-yellow"> <span class="name">T-Shirt</span> <span class="price">5,00 &euro;</span></button>
                 </form>
             </div>
             <div class="product">
                 <form action="" method="get" id="form">
+                    <!---product--men-size-->
                     <select class="size">
                         <option value="" hidden disabled selected>Size</option>
-                        <option value="M">M</option>
-                        <option value="L">L</option>
-                        <option value="XL">XL</option>
+                        <option value="M">40</option>
+                        <option value="L">42</option>
+                        <option value="XL">44</option>
                     </select>
-                    <button type="submit"><img src="/img/livello-3.png" width="116px" height="232px" alt="Pants"> <span class="name">Pants Forclaz</span> <span class="price">30,00 &euro;</span></button>
+                    <!---product--men-size-end-->
+                    <button type="submit"><img src="/img/livello-6.png" width="170px" height="170px" alt="Shoes"> <span class="name">Shoes</span> <span class="price">30,00 &euro;</span></button>
                 </form>
             </div>
             <div class="product">
@@ -76,6 +89,7 @@
                 </form>
             </div>
         </div>
+        <!---product-numb-2-->
         <div class="product2 none">
             <div class="product">
                 <form action="" method="get" id="form">
@@ -89,8 +103,10 @@
                 </form>
             </div>
         </div>
+        <!---product-numb-2-end-->
     </div>
-    </div>
+    <!---product-end-men-->
+    <!---product-women-start-->
     <div class="women none" id="women-product">
         <h2>WOMEN</h2>
         <hr>
@@ -98,38 +114,46 @@
             <br> <span class="left-null "></span> <span class="right-null "></span> </div>
         <div class="product">
             <form action="" method="get" id="form">
+                <!---product-women-size-->
                 <select class="size">
                     <option value="" hidden disabled selected>Size</option>
                     <option value="M">M</option>
                     <option value="L">L</option>
                     <option value="XL">XL</option>
                 </select>
+                <!---product-women-size-end-->
                 <button type="submit"> <img src="/img/livello-5.png" width="146px" height="189px" alt="T-Shirt"> <span class="name">Giacket</span> <span class="price">55,00 &euro;</span></button>
             </form>
         </div>
         <div class="product">
             <form action="" method="get" id="form">
+                <!---product-women-size-->
                 <select class="size">
                     <option value="" hidden disabled selected>Size</option>
                     <option value="M">40</option>
                     <option value="L">42</option>
                     <option value="XL">44</option>
                 </select>
+                <!---product-women-size-end-->
                 <button type="submit"> <img src="/img/livello-6.png" width="170px" height="170px" alt="Shoes"> <span class="name">Shoes</span> <span class="price">40,00 &euro;</span></button>
             </form>
         </div>
         <div class="product">
             <form action="" method="get" id="form">
+                <!---product-women-size-->
                 <select class="size">
                     <option value="" hidden disabled selected>Size</option>
                     <option value="M">M</option>
                     <option value="L">L</option>
                     <option value="XL">XL</option>
                 </select>
+                <!---product-women-size-end-->
                 <button type="submit"> <img src="/img/livello-7.png" width="150px" height="200px" alt="Backpack"> <span class="name">T-Shirt</span> <span class="price">4,00 &euro;</span></button>
             </form>
         </div>
     </div>
+    <!---product-women-end-->
+    <!---product-children-start-->
     <div class="children none" id="children-product">
         <h2>Children</h2>
         <hr>
@@ -137,48 +161,62 @@
             <br> <span class="left-null"></span> <span class="right-null"></span> </div>
         <div class="product">
             <form action="" method="get" id="form">
+                <!---product-children-size-->
                 <select class="size">
                     <option value="" hidden disabled selected>Size</option>
                     <option value="M">M</option>
                     <option value="L">L</option>
                     <option value="XL">XL</option>
                 </select>
+                <!---product-children-size-end-->
                 <button type="submit"> <img id="T-Shirt-black" src="/img/livello.png" width="146px" height="189px" alt="T-Shirt"> <img id="T-Shirt-blue" class="none" src="/img/livello-blue.png" width="146px" height="189px" alt="T-Shirt-blue"> <img id="T-Shirt-yellow" class="none" src="/img/livello-yellow.png" width="146px" height="189px" alt="T-Shirt-yellow"> <span class="name">T-Shirt</span> <span class="price">5,00 &euro;</span></button>
             </form>
         </div>
         <div class="product">
             <form action="" method="get" id="form">
+                <!---product-children-size-->
                 <select class="size">
                     <option value="" hidden disabled selected>Size</option>
                     <option value="M">40</option>
                     <option value="L">42</option>
                     <option value="XL">44</option>
                 </select>
+                <!---product-children-size-end-->
                 <button type="submit"> <img src="/img/livello-6.png" width="170px" height="170px" alt="Shoes"> <span class="name">Shoes</span> <span class="price">40,00 &euro;</span></button>
             </form>
         </div>
         <div class="product">
             <form action="" method="get" id="form">
+                <!---product-children-size-->
                 <select class="size">
                     <option value="" hidden disabled selected>Size</option>
                     <option value="M">M</option>
                     <option value="L">L</option>
                     <option value="XL">XL</option>
                 </select>
+                <!---product-children-size-end-->
                 <button type="submit"><img src="/img/livello-5.png" width="150px" height="200px" alt="Backpack"> <span class="name">T-Shirt</span> <span class="price">4,00 &euro;</span></button>
             </form>
         </div>
     </div>
+    <!---product-children-end-->
+    <!---product-modal-start-->
     <div class="form-product none" id="modal">
         <div class="closed " id="closed">Closed</div> <span>Now there are no goods in Your basket.</span> </div>
+    <!---product-modal-end-->
+    <!---about-us-start-->
     <div class="about-us">
         <div>
             <h2>About us</h2><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
  exercitation</span></div>
     </div>
+    <!---about-us-end-->
+    <!---twitter-section-start-->
     <div class="twitter">
         <a href="#"> <img src="/img/twitter.png" alt="twitter"> <span>“ E-commerce psd theme available ”</span></a>
     </div>
+    <!---twitter-section-end-->
+    <!---footer-start-->
     <footer>
         <h3>Trekking</h3>
         <br> <span class="text-footer">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
@@ -188,6 +226,7 @@
             <li><a href="#">about</a> | </li>
             <li><a href="#">contact</a></li>
         </ul> <span class="design">Design by gianluca cosetta</span> </footer>
+    <!---footer-end-->
 </body>
 <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 <script type="text/javascript" src="/js/scripts.js"></script>
