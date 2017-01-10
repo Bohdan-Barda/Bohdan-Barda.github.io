@@ -1,18 +1,18 @@
-<<<<<<< HEAD
+
 /*fonts*/
 
 @font-face {
     font-family: 'Quicksand-Bold';
-    src: url('/font/Quicksand-Bold.eot');
-    src: url('/font/Quicksand-Bold.woff2') format('woff2'), url('/font/Quicksand-Bold.woff') format('woff'), url('/font/Quicksand-Bold.ttf') format('truetype'), url('.../font/Quicksand-Bold.eot?#iefix') format('embedded-opentype');
+    src: url('Quicksand-Bold.eot');
+    src: url('Quicksand-Bold.woff2') format('woff2'), url('Quicksand-Bold.woff') format('woff'), url('Quicksand-Bold.ttf') format('truetype'), url('Quicksand-Bold.eot?#iefix') format('embedded-opentype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'QuicksandBook-Regular';
-    src: url('/font/QuicksandBook-Regular.eot');
-    src: url('/font/QuicksandBook-Regular.woff2') format('woff2'), url('/font/QuicksandBook-Regular.woff') format('woff'), url('/font/QuicksandBook-Regular.ttf') format('truetype'), url('/font/QuicksandBook-Regular.eot?#iefix') format('embedded-opentype');
+    src: url('QuicksandBook-Regular.eot');
+    src: url('QuicksandBook-Regular.woff2') format('woff2'), url('QuicksandBook-Regular.woff') format('woff'), url('QuicksandBook-Regular.ttf') format('truetype'), url('QuicksandBook-Regular.eot?#iefix') format('embedded-opentype');
     font-weight: normal;
     font-style: normal;
 }
@@ -20,248 +20,7 @@
 
 /*fonts-end*/
 
-body {
-    background-color: #00497F;
-    font-family: "Quicksand-Bold";
-    font-size: 14px;
-    background-color: white;
-}
 
-
-/*header-style*/
-
-header {
-    width: 100%;
-    height: 100vh;
-    background-image: url(/img/header-background-min.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-    position: relative;
-    text-align: center;
-    color: white;
-}
-
-header .logo {
-    top: 40px;
-    left: 60px;
-    position: absolute;
-}
-
-header .nav {
-    position: absolute;
-    right: 65px;
-    top: 40px;
-}
-
-header ul li {
-    display: inline-block;
-}
-
-header ul li a {
-    text-decoration: none;
-    font-size: 18px;
-    margin-left: 50px;
-    color: white;
-    font-family: "Quicksand-Bold";
-    -webkit-transition: all ease .3s;
-    -moz-transition: all ease .3s;
-    -o-transition: all ease .3s;
-    transition: all ease .3s;
-}
-
-header ul li a:hover {
-    text-decoration: none;
-    color: #B19C76;
-}
-
-header h1 {
-    position: absolute;
-    top: 35vh;
-    left: 0;
-    right: 0;
-    font-size: 60px;
-    margin: 0;
-    line-height: 1;
-}
-
-header span {
-    font-size: 20px;
-    position: absolute;
-    top: 50vh;
-    left: 0px;
-    right: 0px;
-    font-family: "QuicksandBook-Regular";
-    display: block;
-}
-
-header .arrow {
-    position: absolute;
-    bottom: 40px;
-    left: 0px;
-    right: 0px;
-}
-
-
-/*header-style-end*/
-
-
-/*selected-nav*/
-
-.selected {
-    height: 150px;
-    background-color: #F5F6F7;
-    position: relative;
-}
-
-.selected .nav {
-    position: absolute;
-    left: 100px;
-    display: table;
-    top: 50%;
-    margin-top: -12.5px;
-}
-
-.selected .nav span {
-    text-transform: uppercase;
-    font-size: 18px;
-    display: table-cell;
-    vertical-align: middle;
-    padding-left: 20px;
-    padding-right: 45px;
-}
-
-.selected input {
-    display: inline-block;
-    width: 25px;
-    height: 25px;
-    opacity: 0;
-    cursor: pointer;
-}
-
-.selected label {
-    width: 25px;
-    height: 25px;
-    border: solid 2px #B19C76;
-    display: block;
-    border-radius: 3px;
-    display: inline-block;
-    margin-left: -30px;
-}
-
-.selected input[type=checkbox]:checked + label {
-    background-image: url(/img/checked.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.selected .button {
-    text-transform: uppercase;
-    position: absolute;
-    right: 100px;
-    width: 200px;
-    height: 50px;
-    background-color: #B19C76;
-    border: none;
-    border-radius: 5px;
-    top: 50%;
-    margin-top: -25px;
-    text-align: center;
-    cursor: pointer;
-    display: inline-block;
-}
-
-.selected .button span {
-    font-size: 14px;
-    color: white;
-    display: inline-block;
-    margin-top: 15px;
-}
-
-
-/*selected-nav-end*/
-
-
-/*product*/
-
-.men,
-.women,
-.children {
-    background-color: #fff;
-    position: relative;
-    overflow: hidden;
-    text-align: center;
-}
-
-.men .numb-men,
-.women .numb-men,
-.children .numb-men {
-    position: relative;
-    left: 35px;
-}
-
-.men h2,
-.women h2,
-.children h2 {
-    text-transform: uppercase;
-    font-size: 20px;
-    margin: 0;
-    position: absolute;
-    top: 47px;
-    left: 8%;
-}
-
-.men hr,
-.women hr,
-.children hr {
-    width: 70%;
-    height: 2px;
-    display: block;
-    background-color: #E5E5E5;
-    position: relative;
-    top: 40px;
-    left: 100px;
-    right: 100px;
-}
-
-.men .nav-product,
-.women .nav-product,
-.children .nav-product {
-    right: 100px;
-    top: 80px;
-    position: absolute;
-}
-
-.men span,
-.women span,
-.children span {
-    font-size: 16px;
-    color: #B19C76;
-}
-
-.men .arrow,
-.women .arrow,
-.children .arrow {
-    position: relative;
-    top: 25px;
-}
-
-=======
-@font-face {
-  font-family: 'Quicksand-Bold';
-  src: url('.../font/Quicksand-Bold.eot');
-  src: url('.../font/Quicksand-Bold.woff2') format('woff2'), url('.../font/Quicksand-Bold.woff') format('woff'), url('.../font/Quicksand-Bold.ttf') format('truetype'), url('.../font/Quicksand-Bold.eot?#iefix') format('embedded-opentype');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'QuicksandBook-Regular';
-  src: url('.../font/QuicksandBook-Regular.eot');
-  src: url('.../font/QuicksandBook-Regular.woff2') format('woff2'), url('.../font/QuicksandBook-Regular.woff') format('woff'), url('.../font/QuicksandBook-Regular.ttf') format('truetype'), url('/font/QuicksandBook-Regular.eot?#iefix') format('embedded-opentype');
-  font-weight: normal;
-  font-style: normal;
-}
 body {
   background-color: #00497F;
   font-family: "Quicksand-Bold";
@@ -271,7 +30,7 @@ body {
 header {
   width: 100%;
   height: 100vh;
-  background-image: url(/img/header-background-min.png);
+  background-image: url(header-background-min.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -369,7 +128,7 @@ header .arrow {
   margin-left: -30px;
 }
 .selected input[type=checkbox]:checked + label {
-  background-image: url(img/checked.svg);
+  background-image: url(checked.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -449,7 +208,7 @@ header .arrow {
   position: relative;
   top: 25px;
 }
->>>>>>> 3e8ff8403dc65558eaffb0c59b51c9358abe2344
+
 .men .right,
 .women .right,
 .children .right,
@@ -462,29 +221,29 @@ header .arrow {
 .men .left-null,
 .women .left-null,
 .children .left-null {
-<<<<<<< HEAD
-    background-image: url(/img/arrow-product.png);
+
+    background-image: url(arrow-product.png);
     width: 10px;
     height: 12px;
     cursor: pointer;
     display: inline-block;
 }
 
-=======
-  background-image: url(img/arrow-product.png);
+
+  background-image: url(arrow-product.png);
   width: 10px;
   height: 12px;
   cursor: pointer;
   display: inline-block;
 }
->>>>>>> 3e8ff8403dc65558eaffb0c59b51c9358abe2344
+
 .men .right,
 .women .right,
 .children .right,
 .men .right-null,
 .women .right-null,
 .children .right-null {
-<<<<<<< HEAD
+
     transform: rotate(180deg);
     margin-left: 8px;
 }
@@ -561,7 +320,7 @@ header .arrow {
     border-radius: 10px;
     border: none;
     -webkit-appearance: none;
-    background-image: url('/img/size-arrow.png');
+    background-image: url('size-arrow.png');
     background-color: transparent;
     text-transform: uppercase;
     font-size: 16px;
@@ -894,7 +653,7 @@ footer .design {
         display: none;
     }
 }
-=======
+
   transform: rotate(180deg);
   margin-left: 8px;
 }
@@ -964,7 +723,7 @@ footer .design {
   border-radius: 10px;
   border: none;
   -webkit-appearance: none;
-  background-image: url('img/size-arrow.png');
+  background-image: url('size-arrow.png');
   background-color: transparent;
   text-transform: uppercase;
   font-size: 16px;
@@ -1239,4 +998,4 @@ footer .design {
   }
 }
 
->>>>>>> 3e8ff8403dc65558eaffb0c59b51c9358abe2344
+
