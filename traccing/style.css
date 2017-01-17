@@ -239,10 +239,11 @@ header .arrow {
 .women .right-null,
 .children .right-null {
 
-    transform: rotate(180deg);
+  
     -moz-transform: rotate(180deg);  /* FF3.5/3.6 */
 -o-transform: rotate(180deg);  /* Opera 10.5 */
 -webkit-transform: rotate(180deg);  /* Saf3.1+ */
+      transform: rotate(180deg);
     margin-left: 8px;
 }
 
