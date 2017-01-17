@@ -529,7 +529,7 @@ button {
 .team-foto .hover-3 .soc-1,
 .team-foto .hover-4 .soc-1 {
     background-image: url(sprite.jpg);
-    background-position: right;
+    background-position: left;
 }
 
 .team-foto .hover-1 .soc-2,
