@@ -243,6 +243,7 @@ header .arrow {
     -moz-transform: rotate(180deg);  /* FF3.5/3.6 */
 -o-transform: rotate(180deg);  /* Opera 10.5 */
 -webkit-transform: rotate(180deg);  /* Saf3.1+ */
+    -sand-transform: rotate(180deg);
       transform: rotate(180deg);
     margin-left: 8px;
 }
@@ -262,6 +263,7 @@ header .arrow {
     -moz-transition: all ease .3s;
     -o-transition: all ease .3s;
     transition: all ease .3s;
+    
     border: 5px solid transparent;
 }
 
