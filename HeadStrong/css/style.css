@@ -667,6 +667,7 @@ header h1 {
   .menu {
     width: 180px;
   }
+   .news-video .news-container,
   .kickboxing-video .kickboxing-container,
   .mma-video .mma-container,
   .boxing-video .boxing-container {
