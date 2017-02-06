@@ -10,7 +10,7 @@ body {
   height: 100%;
   -webkit-font-smoothing: subpixel-antialiased !important;
 -webkit-backface-visibility: hidden;
--moz-backface-visibility:    hidden;
+-moz-backface-visibility:    visible;
 -ms-backface-visibility:     hidden;
 }
 body a {
