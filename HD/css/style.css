@@ -391,13 +391,13 @@ header h1 {
   .shedule-list .list .fight-card {
     font-size: 10px;
     right: 5px;
-    top: 6px;
+    top: 5px;
   }
   .shedule-list .list .fight-list {
     margin-top: -10px;
   }
   .shedule-list .list .type-fight {
-    top: 15px;
+    top: 17px;
     right: 2px;
     font-size: 10px;
   }
