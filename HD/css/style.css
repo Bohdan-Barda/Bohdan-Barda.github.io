@@ -278,10 +278,10 @@ header h1 {
   .shedule-list .list .fight-card {
     font-size: 10px;
     right: 120px;
-    top: 12px;
+    top: 14px;
   }
   .shedule-list .list .type-fight {
-    top: 12px;
+    top: 13px;
   }
   .shedule-list .list hr {
     margin-top: 15px;
@@ -332,11 +332,11 @@ header h1 {
   }
   .shedule-list .list .fight-card {
     font-size: 10px;
-    top: 13px;
+    top: 15px;
     right: 80px;
   }
   .shedule-list .list .type-fight {
-    top: 13px;
+    top: 14px;
     right: 5px;
   }
   .shedule-list .list .fight-list {
@@ -359,13 +359,13 @@ header h1 {
   .shedule-list .list .fight-card {
     font-size: 10px;
     right: 20px;
-    top: 12px;
+    top: 15px;
   }
   .shedule-list .list .fight-list {
     margin-top: -9px;
   }
   .shedule-list .list .type-fight {
-    top: 22px;
+    top: 24px;
     right: 5px;
     font-size: 10px;
   }
@@ -391,13 +391,13 @@ header h1 {
   .shedule-list .list .fight-card {
     font-size: 10px;
     right: 5px;
-    top: 6px;
+    top: 7px;
   }
   .shedule-list .list .fight-list {
     margin-top: -10px;
   }
   .shedule-list .list .type-fight {
-    top: 17px;
+    top: 18px;
     right: 2px;
     font-size: 10px;
   }
