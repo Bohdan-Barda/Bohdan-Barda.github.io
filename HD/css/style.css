@@ -8,6 +8,10 @@ body {
   background-color: #212121;
   position: relative;
   height: 100%;
+  -webkit-font-smoothing: subpixel-antialiased !important;
+-webkit-backface-visibility: hidden;
+-moz-backface-visibility:    hidden;
+-ms-backface-visibility:     hidden;
 }
 body a {
   text-decoration: none;
