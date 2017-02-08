@@ -914,7 +914,7 @@ header h1 {
   .kickboxing-video,
   .mma-video,
   .boxing-video {
-    margin-top: 60px;
+    margin-top: 38px;
   }
   .news-video .video,
   .kickboxing-video .video,
@@ -924,10 +924,10 @@ header h1 {
     height: 200px;
   }
   .menu {
-    height: 50px;
+    height: 30px;
   }
   .menu ul {
-    padding-top: 40px;
+    padding-top: 50px;
   }
   .menu ul li {
     font-size: 12px;
