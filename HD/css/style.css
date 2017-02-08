@@ -1,13 +1,42 @@
+/* font-family: "RobotoRegular"; */
+@font-face {
+  font-family: "RobotoRegular";
+  src: url("../fonts/RobotoRegular.eot");
+  src: url("../fonts/RobotoRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoRegular.woff") format("woff"), url("../fonts/RobotoRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+/* font-family: "RobotoLight"; */
+@font-face {
+  font-family: "RobotoLight";
+  src: url("../fonts/RobotoLight.eot");
+  src: url("../fonts/RobotoLight.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoLight.woff") format("woff"), url("../fonts/RobotoLight.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+/* font-family: "RobotoMedium"; */
+@font-face {
+  font-family: "RobotoMedium";
+  src: url("../fonts/RobotoMedium.eot");
+  src: url("../fonts/RobotoMedium.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoMedium.woff") format("woff"), url("../fonts/RobotoMedium.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+/* font-family: "RobotoBold"; */
+@font-face {
+  font-family: "RobotoBold";
+  src: url("../fonts/RobotoBold.eot");
+  src: url("../fonts/RobotoBold.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoBold.woff") format("woff"), url("../fonts/RobotoBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
 body {
-  font-family: "Verdana", "Tahoma", "Arial";
+  font-family: "RobotoRegular", "Tahoma", "Arial";
   font-size: 14px;
   line-height: 1;
   margin: 0;
-  margin-left: auto;
-  margin-right: auto;
   background-color: #212121;
   position: relative;
-  height: 100%;
 }
 body a {
   text-decoration: none;
@@ -61,6 +90,14 @@ body button {
   left: 10px;
   position: absolute;
 }
+@-moz-document url-prefix() {
+  .minus:after {
+    content: "-";
+    left: 12px;
+    position: absolute;
+    top: 3px;
+  }
+}
 header {
   height: 60px;
   background-color: #E01B19;
@@ -68,6 +105,7 @@ header {
   color: #c0c0c0;
   border-bottom: solid 1px black;
   position: relative;
+  z-index: 100;
 }
 header span {
   text-transform: uppercase;
@@ -156,7 +194,7 @@ header h1 {
   background-color: #131313;
   overflow: hidden;
   transition: 0.3s ease-in-out;
-  z-index: 100;
+  z-index: 1000;
 }
 .shedule-list .list .time {
   display: inline-block;
@@ -226,6 +264,10 @@ header h1 {
     font-size: 12px;
     height: 89px;
   }
+  .shedule-list .list .time {
+    font-size: 10px;
+    width: 180px;
+  }
   .list {
     margin-bottom: -10px;
   }
@@ -241,7 +283,6 @@ header h1 {
     top: 5px;
   }
   .shedule-list .list .fight-card {
-    font-size: 10px;
     top: 10px;
   }
   .shedule-list .list .type-fight {
@@ -249,7 +290,7 @@ header h1 {
   }
   .shedule-list .list .fight-list {
     font-size: 10px;
-    margin-top: 10px;
+    margin-top: 15px;
   }
 }
 @media (max-width: 768px) {
@@ -275,13 +316,8 @@ header h1 {
     left: 170px;
     top: 5px;
   }
-  .shedule-list .list .fight-card {
-    font-size: 10px;
-    right: 120px;
-    top: 14px;
-  }
   .shedule-list .list .type-fight {
-    top: 13px;
+    top: 10px;
   }
   .shedule-list .list hr {
     margin-top: 15px;
@@ -332,11 +368,11 @@ header h1 {
   }
   .shedule-list .list .fight-card {
     font-size: 10px;
-    top: 15px;
+    top: 12px;
     right: 80px;
   }
   .shedule-list .list .type-fight {
-    top: 14px;
+    top: 12px;
     right: 5px;
   }
   .shedule-list .list .fight-list {
@@ -353,21 +389,18 @@ header h1 {
   .shedule-list .list .title {
     font-size: 10px;
     left: 185px;
-    width: 150px;
+    width: 100px;
     top: 12px;
   }
   .shedule-list .list .fight-card {
-    font-size: 10px;
-    right: 20px;
-    top: 15px;
+    right: 10px;
+    top: 10px;
   }
   .shedule-list .list .fight-list {
-    margin-top: -9px;
+    margin-top: -10px;
   }
   .shedule-list .list .type-fight {
-    top: 24px;
-    right: 5px;
-    font-size: 10px;
+    display: none;
   }
   .shedule-list .list hr {
     opacity: 0;
@@ -379,30 +412,29 @@ header h1 {
 @media (max-width: 360px) {
   .shedule-list .list .live {
     font-size: 15px;
-    left: 120px;
+    left: 115px;
     top: 12px;
   }
   .shedule-list .list .title {
     font-size: 10px;
     left: 170px;
-    width: 150px;
     top: 12px;
-  }
-  .shedule-list .list .fight-card {
-    font-size: 10px;
-    right: 5px;
-    top: 7px;
   }
   .shedule-list .list .fight-list {
     margin-top: -10px;
   }
-  .shedule-list .list .type-fight {
-    top: 18px;
-    right: 2px;
-    font-size: 10px;
-  }
   .shedule-list .list hr {
     background-color: #131313;
+  }
+  .shedule-list .list .fight-card {
+    right: 5px;
+    top: 10px;
+  }
+  .shedule-list .list .title {
+    font-size: 10px;
+    left: 165px;
+    width: 100px;
+    top: 12px;
   }
 }
 .menu {
@@ -410,8 +442,6 @@ header h1 {
   background-color: #131313;
   margin-top: 145px;
   float: left;
-  height: 100vh;
-  
 }
 .menu ul {
   list-style: none;
@@ -575,6 +605,7 @@ header h1 {
 .form-1 {
   display: none;
   text-align: center;
+  margin-top: 10%;
 }
 .form-1 input {
   width: 180px;
@@ -683,9 +714,6 @@ header h1 {
   .menu hr {
     display: none;
   }
-  .chat {
-    display: none;
-  }
   #wrapper {
     display: none;
   }
@@ -701,6 +729,8 @@ header h1 {
     z-index: 100;
     height: 40px;
     opacity: .9;
+    border-top: solid 4px #212121;
+    border-bottom: solid 4px #212121;
   }
   .menu ul {
     margin-top: -75px;
@@ -763,6 +793,9 @@ header h1 {
   .boxing-video {
     margin-top: 50px;
   }
+  .menu {
+    height: 34px;
+  }
   .menu ul li {
     display: inline-block;
     font-size: 14px;
@@ -802,15 +835,15 @@ header h1 {
     height: 250px;
   }
   .menu {
-    height: 80px;
+    height: 60px;
     position: relative;
   }
   .menu ul {
-    margin: -40px 0 0 -55px;
+    margin: -48px 0 0 -55px;
   }
   .menu ul li {
     margin-top: 10px;
-    font-size: 14px;
+    font-size: 16px;
   }
   .news-video .news-container,
   .kickboxing-video .kickboxing-container,
@@ -822,7 +855,7 @@ header h1 {
   .kickboxing-video,
   .mma-video,
   .boxing-video {
-    margin-top: 90px;
+    margin-top: 68px;
   }
   .live-video .video {
     margin-top: 0px;
@@ -876,14 +909,14 @@ header h1 {
   .kickboxing-video .video,
   .mma-video .video,
   .boxing-video .video {
-    width: 80vh;
-    height: 55vh;
+    width: 60vh;
+    height: 30vh;
   }
   .news-video span,
   .kickboxing-video span,
   .mma-video span,
   .boxing-video span {
-    width: 80vh;
+    width: 60vh;
     font-size: 20px;
   }
 }
@@ -892,7 +925,7 @@ footer {
   position: relative;
   height: 100px;
   z-index: 200;
-  margin-top: 50vh;
+  margin-top: 10%;
 }
 footer ul {
   position: absolute;
@@ -944,88 +977,4 @@ footer .soc li:nth-child(2) a {
 }
 footer .soc li:last-child a {
   background-position: right;
-}
-.chat {
-  width: 50px;
-  height: 100px;
-  top: 50px;
-  position: fixed;
-  right: 0px;
-  background: #242242;
-  cursor: pointer;
-  border-radius: 10px;
-  border: solid 2px transparent;
-  z-index: 2000;
-}
-.chat span {
-  color: white;
-  font-size: 16px;
-  transform: rotate(-90deg);
-  display: block;
-  margin-top: 40px;
-  text-transform: uppercase;
-}
-.chat:hover {
-  border: solid 2px white;
-  transition: ease-in-out 0.3s all;
-}
-#wrapper,
-#loginform {
-  background: #242242;
-  width: 250px;
-  position: fixed;
-  right: 5px;
-  bottom: 10px;
-  padding-bottom: 10px;
-}
-#loginform {
-  padding-top: 18px;
-}
-#exit {
-  color: #4d7bef;
-}
-#loginform p {
-  margin: 5px;
-  color: #4d7bef;
-}
-#submitmsg {
-  border: none;
-  cursor: pointer;
-}
-#chatbox {
-  text-align: left;
-  margin: 0 auto;
-  margin-bottom: 25px;
-  padding: 10px;
-  background: #DDDDDD;
-  height: 300px;
-  width: 210px;
-  border: 1px solid black;
-  overflow: auto;
-}
-#usermsg {
-  width: 170px;
-  border: 1px solid black;
-  margin-left: 15px;
-  background: #DDDDDD;
-}
-#submit {
-  width: 60px;
-  border: none;
-}
-.error {
-  color: #ff0000;
-}
-#menu {
-  padding: 0px 25px 0px 25px;
-}
-.welcome {
-  float: left;
-  color: white;
-}
-.logout {
-  float: right;
-}
-.msgln {
-  margin: 0 0 5px 0;
 }

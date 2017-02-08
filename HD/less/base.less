@@ -1,14 +1,11 @@
 //basic tags and general rules
 body {
-    font-family: "Verdana", "Tahoma", "Arial";
+    font-family: "RobotoRegular", "Tahoma", "Arial";
     font-size: 14px;
     line-height: 1;
     margin: 0;
-    margin-left: auto;
-    margin-right: auto;
     background-color: #212121;
     position: relative;
-    height: 100%;
     a {
         text-decoration: none;
     }
@@ -69,4 +66,13 @@ body {
     content: "+";
     left: 10px;
     position: absolute;
+}
+
+@-moz-document url-prefix() {
+    .minus:after {
+        content: "-";
+        left: 12px;
+        position: absolute;
+        top: 3px;
+    }
 }
