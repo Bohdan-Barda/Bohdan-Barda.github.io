@@ -122,4 +122,19 @@ $(document).ready(function () {
             }
         }
     })
+    $(window).scroll(function () {
+        var bo = $(window).scrollTop();
+        if ($(window).width() < 694) {
+            $(".menu").css("position", "inherit");
+            $(".menu").css("top", "0");
+        }
+    })
+    $(window).scroll(function () {
+        var bo = $(window).scrollTop();
+        if ($('.ind').hasClass('minus')) {
+            if ($(window).width() < 694) {
+                $(".menu").css("position", "inherit");
+            }
+        }
+    })
 });

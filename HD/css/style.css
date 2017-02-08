@@ -747,7 +747,7 @@ header h1 {
   .kickboxing-video,
   .mma-video,
   .boxing-video {
-    margin-top: 50px;
+    margin-top: 49px;
   }
   .news-video .news-container,
   .kickboxing-video .kickboxing-container,
@@ -775,7 +775,7 @@ header h1 {
     display: inline-block;
   }
   .live-video .live-container {
-    margin: 50px 0px 10px 0px;
+    margin: 49px 0px 10px 0px;
     text-align: center;
     position: relative;
   }
@@ -791,7 +791,7 @@ header h1 {
   .kickboxing-video,
   .mma-video,
   .boxing-video {
-    margin-top: 50px;
+    margin-top: 42px;
   }
   .menu {
     height: 34px;
@@ -813,10 +813,13 @@ header h1 {
     font-size: 16px;
   }
   .live-video .video {
-    margin-top: 10px;
+    margin-top: 0px;
     width: 450px;
     height: 250px;
     display: inline-block;
+  }
+  .live-video {
+    margin-top: -6px;
   }
 }
 @media (max-width: 485px) {
@@ -835,11 +838,11 @@ header h1 {
     height: 250px;
   }
   .menu {
-    height: 60px;
+    height: 34px;
     position: relative;
   }
   .menu ul {
-    margin: -48px 0 0 -55px;
+    margin: -62px 0 0 -55px;
   }
   .menu ul li {
     margin-top: 10px;
@@ -855,7 +858,7 @@ header h1 {
   .kickboxing-video,
   .mma-video,
   .boxing-video {
-    margin-top: 68px;
+    margin-top: 42px;
   }
   .live-video .video {
     margin-top: 0px;
@@ -865,6 +868,39 @@ header h1 {
   }
   .live-video ul {
     margin-left: -40px;
+  }
+}
+@media (max-width: 387px) {
+  .news-video span,
+  .kickboxing-video span,
+  .mma-video span,
+  .boxing-video span {
+    width: 310px;
+  }
+  .news-video .video,
+  .kickboxing-video .video,
+  .mma-video .video,
+  .boxing-video .video {
+    width: 300px;
+    height: 200px;
+  }
+  .news-video,
+  .kickboxing-video,
+  .mma-video,
+  .boxing-video {
+    margin-top: 38px;
+  }
+  .live-video {
+    margin-top: -10px;
+  }
+  .menu {
+    height: 30px;
+  }
+  .menu ul {
+    padding-top: 50px;
+  }
+  .menu ul li {
+    font-size: 12px;
   }
 }
 @media (max-width: 320px) {
@@ -884,7 +920,7 @@ header h1 {
   .kickboxing-video .video,
   .mma-video .video,
   .boxing-video .video {
-    width: 280px;
+    width: 270px;
     height: 200px;
   }
   .menu {
