@@ -31,7 +31,7 @@ a {
 /*==========HEADER==========*/
 
 .header {
-    background-image: url(img/header-background.png);
+    background-image: url(../img/header-background.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -153,7 +153,7 @@ a {
 /*==========CONTENT==========*/
 
 .content__wrapper {
-    background-image: url(img/main-background.png);
+    background-image: url(../img/main-background.png);
     background-repeat: no-repeat;
     background-size: cover;
     display: inline-block;
@@ -230,7 +230,7 @@ a {
 /*==========CONTACT==========*/
 
 .contact__wrapper {
-    background-image: url(img/map-background.png);
+    background-image: url(../img/map-background.png);
     background-repeat: no-repeat;
     background-size: cover;
     padding-bottom: 15px;
@@ -298,7 +298,7 @@ a {
     width: 70px;
     height: 70px;
     border-radius: 50%;
-    background-image: url(img/map-button.png);
+    background-image: url(../img/map-button.png);
     background-repeat: no-repeat;
     cursor: pointer;
     background-color: transparent;
