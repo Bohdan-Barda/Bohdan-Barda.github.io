@@ -77,9 +77,7 @@ body {
     margin: 0 auto;
 }
 
-.none {
-    display: none;
-}
+
 
 
 /*===media===*/
@@ -714,7 +712,9 @@ header {
     padding: 10px;
 }
 
-
+.none {
+    display: none;
+}
 /*===contact-sections===*/
 
 .contact {
