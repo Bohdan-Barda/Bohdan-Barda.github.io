@@ -494,7 +494,7 @@ header {
 
 .about__us {
     text-align: center;
-    background-image: url(../img/pizzeria-bg.jpg);
+    background-image: url(../img/pizzeria-bg-min.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
@@ -537,7 +537,7 @@ header {
 }
 
 .ground {
-    background-image: url(../img/pizza-png.png);
+    background-image: url(../img/pizza-png-min.png);
     background-size: cover;
     background-repeat: no-repeat;
     width: 400px;
@@ -580,28 +580,28 @@ header {
 /*===sections-bg===*/
 
 .bg-pizza {
-    background-image: url(../img/pizzeria-moncel.jpg);
+    background-image: url(../img/pizzeria-moncel-min.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .bg-beer {
-    background-image: url(../img/beer-bg.jpg);
+    background-image: url(../img/beer-bg-min.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .bg-ice-cream {
-    background-image: url(../img/ice-cream-bg.jpg);
+    background-image: url(../img/ice-cream-bg-min.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .bg-sushi {
-    background-image: url(../img/bg-sushi.jpg);
+    background-image: url(../img/bg-sushi-min.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -721,7 +721,7 @@ header {
 
 .contact {
     min-height: 400px;
-    background-image: url(../img/beer-bg.jpg);
+    background-image: url(../img/beer-bg-min.jpg);
 }
 
 
