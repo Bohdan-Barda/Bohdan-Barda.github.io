@@ -685,8 +685,7 @@ header {
     padding: 10px;
     display: inline-block;
     vertical-align: top;
-    position: relative;
-    padding-bottom: 60px;
+   
 }
 
 .sushi__item__img,
@@ -713,10 +712,8 @@ header {
     font-size: 1.529em;
     height: 20px;
     align-items: flex-start;
-   
-      position: absolute;
-    padding: 5px;
-    bottom: 10px;
+    padding: 10px;
+    
 }
 
 
