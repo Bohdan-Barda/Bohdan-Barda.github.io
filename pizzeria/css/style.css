@@ -651,7 +651,9 @@ header {
 
 
 /*===content-style-grid===*/
-
+.none {
+    display: none;
+}
 .pizza,
 .drink,
 .ice__cream,
@@ -717,9 +719,7 @@ header {
     bottom: 10px;
 }
 
-.none {
-    display: none;
-}
+
 /*===contact-sections===*/
 
 .contact {
