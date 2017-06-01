@@ -189,7 +189,7 @@ header {
 
 
 /*===logo-animations===*/
-
+/*
 @keyframes logo {
     to {
         transform: scale(1);
@@ -201,7 +201,7 @@ header {
         transform: scale(1);
     }
 }
-
+*/
 
 /*===menu===*/
 
