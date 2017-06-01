@@ -727,7 +727,8 @@ header {
 
 .contact {
     min-height: 400px;
-    background-image: url(../img/beer-bg-min.jpg);
+   /* background-image: url(../img/beer-bg-min.jpg); */
+    background-color:rgba(0,0,0,.8);
 }
 
 
