@@ -586,7 +586,7 @@ header {
     background-position: center;
     background-repeat: no-repeat; 
     
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.9);
    
    
 }
@@ -595,9 +595,9 @@ header {
   background-image: url(../img/beer-bg-min.jpg);
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; 
     
-     background-color: rgba(0, 0, 0, 0.6);
+     background-color: rgba(0, 0, 0, 0.9);
 }
 
 .bg-ice-cream {
@@ -674,9 +674,9 @@ header {
     font-size: 1.429em;
     margin-top: 20px;
     transition: ease-out;
-    display: flex;
+  /*  display: flex;
     flex-direction: row;
-    flex-wrap: wrap; 
+    flex-wrap: wrap; */
 }
 
 .sushi__item__h3,
