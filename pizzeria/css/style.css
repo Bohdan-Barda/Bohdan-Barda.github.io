@@ -575,7 +575,7 @@ header {
     min-height: 750px;
     position: relative;
     transition: 0.4s all ease-out;
-    margin-top:-20px;
+   
 }
 
 
@@ -587,7 +587,7 @@ header {
     background-position: center;
     background-repeat: no-repeat; 
     
-    background-color: rgba(0, 0, 0, 0.9);
+   
    
    
 }
@@ -598,7 +598,7 @@ header {
     background-position: center;
     background-repeat: no-repeat; 
     
-     background-color: rgba(0, 0, 0, 0.9);
+     
 }
 
 .bg-ice-cream {
@@ -607,7 +607,7 @@ header {
     background-position: center;
     background-repeat: no-repeat; 
     
-     background-color: rgba(0, 0, 0, 0.6);
+     
 }
 
 .bg-sushi {
@@ -615,7 +615,7 @@ header {
     background-size: cover;
     background-repeat: no-repeat; 
     
-     background-color: rgba(0, 0, 0, 0.6);
+     
 }
 
 .pizza__menu__h2 {
