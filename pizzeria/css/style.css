@@ -176,10 +176,10 @@ header {
     z-index: 200;
     right: 50px;
     bottom: 20px;
-    animation-name: logo;
+   /* animation-name: logo;
     animation-duration: 8s;
     animation-delay: 2s;
-    animation-iteration-count: infinite;
+    animation-iteration-count: infinite; */
 }
 
 .logo img {
@@ -628,6 +628,7 @@ header {
     flex-wrap: wrap;
     opacity: 0;
     transition: 0.7s ease-out;
+    display:none;
 }
 
 .check__menu img {
