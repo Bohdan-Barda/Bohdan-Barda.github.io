@@ -116,7 +116,7 @@ $(document).ready(function () {
 $(function () {
     $('.click__pizza , .click__sushi , .click__ice__cream , .click__drink').on('click', function (e) {
         $('html,body').stop().animate({
-            scrollTop: $('.check__menu').offset().top
+            scrollTop: $('.pizza__menu__h2').offset().top
         }, 1000);
         e.preventDefault();
     });
