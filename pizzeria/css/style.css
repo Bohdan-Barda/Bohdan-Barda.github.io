@@ -581,34 +581,40 @@ header {
 /*===sections-bg===*/
 
 .bg-pizza {
-   background-image: url(../img/pizzeria-moncel-min.jpg);
+/*   background-image: url(../img/pizzeria-moncel-min.jpg);
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat; */
+    
+    background-color: rgba(0, 0, 0, 0.6);
    
    
 }
 
 .bg-beer {
-   background-image: url(../img/beer-bg-min.jpg);
+ /*  background-image: url(../img/beer-bg-min.jpg);
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat; 
+    background-repeat: no-repeat; */
     
+     background-color: rgba(0, 0, 0, 0.6);
 }
 
 .bg-ice-cream {
-   background-image: url(../img/ice-cream-bg-min.jpg);
+ /*  background-image: url(../img/ice-cream-bg-min.jpg);
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat; 
+    background-repeat: no-repeat; */
     
+     background-color: rgba(0, 0, 0, 0.6);
 }
 
 .bg-sushi {
-    background-image: url(../img/bg-sushi-min.jpg);
+  /*  background-image: url(../img/bg-sushi-min.jpg);
     background-size: cover;
-    background-repeat: no-repeat; 
+    background-repeat: no-repeat;  */
     
+     background-color: rgba(0, 0, 0, 0.6;
 }
 
 .pizza__menu__h2 {
