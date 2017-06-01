@@ -574,6 +574,7 @@ header {
     min-height: 750px;
     position: relative;
     transition: 0.4s all ease-out;
+    margin-top:-20px;
 }
 
 
