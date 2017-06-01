@@ -662,9 +662,9 @@ header {
     font-size: 1.429em;
     margin-top: 20px;
     transition: ease-out;
-   /* display: flex;
+    display: flex;
     flex-direction: row;
-    flex-wrap: wrap; */
+    flex-wrap: wrap; 
 }
 
 .sushi__item__h3,
