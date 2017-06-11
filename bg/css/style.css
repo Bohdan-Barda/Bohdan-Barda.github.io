@@ -5,14 +5,14 @@
 
 @font-face {
     font-family: 'Open Sans';
-    src: local('Open Sans'), local('OpenSans'), url('/fonts/opensans.woff2') format('woff2'), url('/fonts/opensans.woff') format('woff'), url('/fonts/opensans.ttf') format('truetype');
+    src: local('Open Sans'), local('OpenSans'), url('../fonts/opensans.woff2') format('woff2'), url('../fonts/opensans.woff') format('woff'), url('../fonts/opensans.ttf') format('truetype');
     font-weight: 400;
     font-style: normal
 }
 
 @font-face {
     font-family: 'Open Sans-semibold';
-    src: local('Open Sans Semibold'), local('OpenSans-Semibold'), url('/fonts/opensanssemibold.woff2') format('woff2'), url('/fonts/opensanssemibold.woff') format('woff'), url('/fonts/opensanssemibold.ttf') format('truetype');
+    src: local('Open Sans Semibold'), local('OpenSans-Semibold'), url('../fonts/opensanssemibold.woff2') format('woff2'), url('../fonts/opensanssemibold.woff') format('woff'), url('../fonts/opensanssemibold.ttf') format('truetype');
     font-weight: 600;
     font-style: normal
 }
@@ -22,64 +22,64 @@
 
 @font-face {
     font-family: 'NotaBene-Normal';
-    src: url('/fonts/NotaBene-Normal.eot');
-    src: url('/fonts/NotaBene-Normal.eot?#iefix') format('embedded-opentype'), url('/fonts/NotaBene-Normal.woff') format('woff'), url('/fonts/NotaBene-Normal.ttf') format('truetype');
+    src: url('../fonts/NotaBene-Normal.eot');
+    src: url('../fonts/NotaBene-Normal.eot?#iefix') format('embedded-opentype'), url('../fonts/NotaBene-Normal.woff') format('woff'), url('../fonts/NotaBene-Normal.ttf') format('truetype');
     font-weight: 300;
     font-style: normal
 }
 
 @font-face {
     font-family: 'NotaBene-light';
-    src: url('/fonts/NotaBene-Light.eot');
-    src: url('/fonts/NotaBene-Light.eot?#iefix') format('embedded-opentype'), url('/fonts/NotaBene-Light.woff') format('woff'), url('/fonts/NotaBene-Light.ttf') format('truetype');
+    src: url('../fonts/NotaBene-Light.eot');
+    src: url('../fonts/NotaBene-Light.eot?#iefix') format('embedded-opentype'), url('../fonts/NotaBene-Light.woff') format('woff'), url('../fonts/NotaBene-Light.ttf') format('truetype');
     font-weight: 300;
     font-style: normal
 }
 
 @font-face {
     font-family: 'NotaBene-medium';
-    src: url('/fonts/NotaBene-Medium.eot');
-    src: url('/fonts/NotaBene-Medium.eot?#iefix') format('embedded-opentype'), url('/fonts/NotaBene-Medium.woff') format('woff'), url('/fonts/NotaBene-Medium.ttf') format('truetype');
+    src: url('../fonts/NotaBene-Medium.eot');
+    src: url('../fonts/NotaBene-Medium.eot?#iefix') format('embedded-opentype'), url('../fonts/NotaBene-Medium.woff') format('woff'), url('../fonts/NotaBene-Medium.ttf') format('truetype');
     font-weight: 500;
     font-style: normal
 }
 
 @font-face {
     font-family: 'NotaBene-bold';
-    src: url('/fonts/NotaBene-Bold.eot');
-    src: url('/fonts/NotaBene-Bold.eot?#iefix') format('embedded-opentype'), url('/fonts/NotaBene-Bold.woff') format('woff'), url('/fonts/NotaBene-Bold.ttf') format('truetype');
+    src: url('../fonts/NotaBene-Bold.eot');
+    src: url('../fonts/NotaBene-Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/NotaBene-Bold.woff') format('woff'), url('../fonts/NotaBene-Bold.ttf') format('truetype');
     font-weight: bold;
     font-style: normal
 }
 
 @font-face {
     font-family: 'NotaBene-BoldOblique';
-    src: url('/fonts/NotaBene-BoldOblique.eot');
-    src: url('/fonts/NotaBene-BoldOblique.eot?#iefix') format('embedded-opentype'), url('/fonts/NotaBene-BoldOblique.woff') format('woff'), url('/fonts/NotaBene-BoldOblique.ttf') format('truetype');
+    src: url('../fonts/NotaBene-BoldOblique.eot');
+    src: url('../fonts/NotaBene-BoldOblique.eot?#iefix') format('embedded-opentype'), url('../fonts/NotaBene-BoldOblique.woff') format('woff'), url('../fonts/NotaBene-BoldOblique.ttf') format('truetype');
     font-weight: bold;
     font-style: normal
 }
 
 @font-face {
     font-family: 'NotaBene-LightOblique';
-    src: url('/fonts/NotaBene-LightOblique.eot');
-    src: url('/fonts/NotaBene-LightOblique.eot?#iefix') format('embedded-opentype'), url('/fonts/NotaBene-LightOblique.woff') format('woff'), url('/fonts/NotaBene-LightOblique.ttf') format('truetype');
+    src: url('../fonts/NotaBene-LightOblique.eot');
+    src: url('../fonts/NotaBene-LightOblique.eot?#iefix') format('embedded-opentype'), url('../fonts/NotaBene-LightOblique.woff') format('woff'), url('../fonts/NotaBene-LightOblique.ttf') format('truetype');
     font-weight: 300;
     font-style: normal
 }
 
 @font-face {
     font-family: 'NotaBene-XLight';
-    src: url('/fonts/NotaBene-XLight.eot');
-    src: url('/fonts/NotaBene-XLight.eot?#iefix') format('embedded-opentype'), url('/fonts/NotaBene-XLight.woff') format('woff'), url('/fonts/NotaBene-XLight.ttf') format('truetype');
+    src: url('../fonts/NotaBene-XLight.eot');
+    src: url('../fonts/NotaBene-XLight.eot?#iefix') format('embedded-opentype'), url('../fonts/NotaBene-XLight.woff') format('woff'), url('../fonts/NotaBene-XLight.ttf') format('truetype');
     font-weight: 300;
     font-style: normal
 }
 
 @font-face {
     font-family: 'NotaBene-XLightOblique';
-    src: url('/fonts/NotaBene-XLightOblique.eot');
-    src: url('/fonts/NotaBene-XLightOblique.eot?#iefix') format('embedded-opentype'), url('/fonts/NotaBene-XLightOblique.woff') format('woff'), url('/fonts/NotaBene-XLightOblique.ttf') format('truetype');
+    src: url('../fonts/NotaBene-XLightOblique.eot');
+    src: url('../fonts/NotaBene-XLightOblique.eot?#iefix') format('embedded-opentype'), url('../fonts/NotaBene-XLightOblique.woff') format('woff'), url('../fonts/NotaBene-XLightOblique.ttf') format('truetype');
     font-weight: 300;
     font-style: normal
 }
@@ -94,7 +94,7 @@
 .services-icon-5,
 .services-icon-6 {
     display: inline-block;
-    background: url('/img/services-sprite.png') no-repeat;
+    background: url('../img/services-sprite.png') no-repeat;
     overflow: hidden;
     text-indent: -9999px;
     text-align: left
@@ -572,7 +572,7 @@ header {
     height: 50px;
     border-radius: 50%;
     background-color: #26c6da;
-    background-image: url(/img/about-us-icon.png);
+    background-image: url(../img/about-us-icon.png);
     background-repeat: no-repeat;
     background-position: center;
     position: absolute;
@@ -631,7 +631,7 @@ header {
 }
 
 .video .play {
-    background-image: url(/img/video-play.png);
+    background-image: url(../img/video-play.png);
     background-repeat: no-repeat;
     background-size: cover;
     width: 80px;
@@ -690,7 +690,7 @@ header {
 /*===services===*/
 
 .services {
-    background-image: url(/img/services-background-image.png);
+    background-image: url(../img/services-background-image.png);
     background-repeat: no-repeat;
     background-size: cover;
     color: #f6f8fa;
@@ -719,7 +719,7 @@ header {
 .services .services__block {
     max-width: 360px;
     min-height: 320px;
-    background-image: url(/img/services-background.png);
+    background-image: url(../img/services-background.png);
     background-repeat: no-repeat;
     background-size: cover;
     color: #363636;
