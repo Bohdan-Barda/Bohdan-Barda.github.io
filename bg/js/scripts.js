@@ -1,10 +1,3 @@
- /*===slider===*/
- $('.slider3').mobilyslider({
-     transition: 'fade',
-     animationSpeed: 600,
-     bullets: true,
-     arrowsHide: true
- });
  /*===burger===*/
  $('.burger').click(function () {
      $(".menu-responsive").slideToggle();
@@ -23,7 +16,7 @@
      var bo = $(document).scrollTop();
      if (bo > 710) {
          $(".menu__container").addClass("menu__scroll");
-         $(".logo").css("padding-left", "20px");
+         $(".logo").css("margin-left", "20px");
          $(".menu").css("padding-right", "20px");
 
      } else {

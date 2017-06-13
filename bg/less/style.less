@@ -1,11 +1,6 @@
     @import "fonts.less";
     @import "icons.less";
     @import "base.less";
-    header {
-        border-bottom: solid 10px #26c6da;
-        height: 710px;
-    }
-    
     .menu__container {
         width: 100%;
         z-index: 50;
@@ -22,14 +17,16 @@
         left: 0px;
         top: 20px;
         position: absolute;
+        background-image: url(/img/logo.png);
+        background-repeat: no-repeat;
     }
     
-    .logo p {
+    .logo h1 {
         float: right;
         font-size: 2.000em;
         text-transform: uppercase;
         font-weight: bold;
-        margin-left: 13px;
+        margin-left: 65px;
         font-family: 'NotaBene-bold';
     }
     
@@ -57,6 +54,8 @@
         padding-bottom: 20px;
         margin-left: 21.5px;
         font-family: 'Open Sans-semibold';
+        transition: 0.2s all;
+        border-bottom: transparent 2px solid;
     }
     
     .menu li:last-child {
@@ -70,7 +69,7 @@
         border-bottom: solid 2px #26c6da;
     }
     
-    .active {
+    .menu .active {
         border-bottom: solid 2px #26c6da;
     }
     
@@ -130,15 +129,19 @@
         padding: 10px 0;
     }
     
+    .slider-content {
+        background-image: url(/img/header-background-images.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
     .header_content_block {
-        position: absolute;
         z-index: 20;
         color: #fff;
         line-height: 0.69;
         text-align: left;
-        margin-top: 175px;
-        width: 100%;
-        h1 {
+        padding: 175px 0 85px 0;
+        h2 {
             font-size: 9.286em;
             font-weight: normal;
             text-transform: uppercase;
@@ -154,82 +157,25 @@
         p {
             font-size: 1.714em;
             font-family: "NotaBene-Normal";
-            margin: 33px 0px 0px -2px;
+            margin: 33px 0 0 -2px;
         }
     }
     
-    .telephone-number {
-        font-size: 1.3em;
+    .telephone-number p {
+        font-size: 2.2em;
         max-width: 705px;
         border-bottom: solid 2px #fff;
         padding-bottom: 20px;
         font-family: "NotaBene-medium";
-        margin: 180px 0px 0px -2px;
-    }
-    
-    #content {
-        width: 100%;
-        position: relative;
-    }
-    
-    .slider {
-        float: left;
-        width: 100%;
-        height: 710px;
-        position: relative
-    }
-    
-    .sliderContent {
-        float: left;
-        width: 100%;
-        height: 100%;
-        clear: both;
-        position: relative;
-        overflow: hidden
-    }
-    
-    .sliderContent .item {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        background: #fff
-    }
-    
-    .sliderBullets {
-        position: absolute;
-        bottom: 25px;
-        left: 50%;
-        margin-left: -32px;
-        z-index: 20
-    }
-    
-    .sliderBullets a {
-        display: block;
-        float: left;
-        text-indent: -9999px;
-        outline: none;
-        margin-left: 5px;
-        width: 8px;
-        height: 8px;
-        background-color: #fff;
-        border-radius: 50%
-    }
-    
-    .sliderBullets .active {
-        background-color: #1aa4b5;
-    }
-    
-    .sliderContent a {
-        outline: none
+        margin: 180px 0 0 0;
     }
     
     .about__us {
         background-color: #fafafa;
-        height: 100%;
-        width: 100%;
-        display: inline-block;
         text-align: left;
+        padding-top: 85px;
         padding-bottom: 125px;
+        border-top: 10px solid #1aa4b5;
     }
     
     .about__us_content {
@@ -237,24 +183,14 @@
         max-width: 750px;
     }
     
-    .about__us_content h2 {
-        font-size: 2.143em;
-        text-transform: uppercase;
-        padding-top: 85px;
-        margin-bottom: 35px;
-        font-family: "NotaBene-medium";
-        color: #363636;
-    }
-    
     .about__us_content p {
-        margin-top: 18px;
+        padding-top: 16px;
     }
     
     .about__us__text-1 {
         font-size: 1.143em;
         font-family: "NotaBene-medium";
         color: #565656;
-        margin-right: 10px;
         word-spacing: 2px;
     }
     
@@ -266,13 +202,6 @@
         a {
             color: #26c6da;
         }
-    }
-    
-    .about__us_content h3 {
-        font-size: 1.714em;
-        margin: 25px 0px 28px 0px;
-        font-family: "NotaBene-Normal";
-        color: #163337;
     }
     
     .calling {
@@ -309,26 +238,17 @@
     }
     
     .about__us_video {
-        display: inline-block;
         float: right;
         max-width: 360px;
-        min-height: 440px;
-        background-color: #1aa4b5;
     }
     
-    .about__us_video h2 {
-        font-size: 2.143em;
-        text-transform: uppercase;
-        padding: 84px 0px 35px 0px;
-        font-family: "NotaBene-medium";
-        color: #363636;
-        background-color: #fafafa;
+    .about__us_video h3 {
+        padding-bottom: 35px;
     }
     
     .video__block {
         max-width: 360px;
         height: 235px;
-        vertical-align: top;
     }
     
     .video {
@@ -362,24 +282,24 @@
     
     .video__text {
         color: #fff;
-        h3 {
+        padding: 0px 28px;
+        background-color: #1aa4b5;
+        h4 {
             font-size: 1.143em;
             font-family: "Open Sans-semibold";
-            margin: 28px;
-            padding-bottom: 25px;
             border-bottom: 1px solid #fff;
             display: block;
         }
         p {
-            padding: 0px 28px;
             margin-top: -5px;
             line-height: 1.5;
             font-family: "NotaBene-Normal";
             word-spacing: 0.4px;
             font-size: 1em;
+            padding-top: 25px;
         }
         a {
-            padding: 16px 30px 26px 30px;
+            padding: 16px 0 29px 0;
             display: inline-block;
             color: #fff;
             font-size: .8em;
@@ -394,16 +314,17 @@
         background-size: cover;
         color: #f6f8fa;
         padding-bottom: 100px;
+        padding-top: 50px;
         p {
             font-family: "NotaBene-Normal";
             font-size: 1.714em;
-            padding: 50px 0px 20px 0px;
+            padding: 0px 0px 20px 0px;
         }
         h2 {
             font-family: "NotaBene-LightOblique";
             font-size: 5.000em;
             text-transform: uppercase;
-            margin-bottom: 90px;
+            padding-bottom: 90px;
             b {
                 font-family: "NotaBene-BoldOblique";
                 font-size: 1em;
@@ -413,30 +334,27 @@
         .services__block {
             max-width: 360px;
             min-height: 320px;
-            background-image: url(/img/services-background.png);
-            background-repeat: no-repeat;
-            background-size: cover;
+            background-color: #f6f8fa;
             color: #363636;
             display: inline-block;
             margin: 0px 0px 40px 26px;
-            box-shadow: 2px 2px 10px 0px #000000;
+            box-shadow: 2px 2px 5px 0px #0c282b;
             text-align: center;
             font-family: "NotaBene-Normal";
             vertical-align: top;
             div {
                 width: 70px;
                 height: 69px;
-                margin: 35px 0px 20px 0px;
+                margin-top: 35px;
             }
-            h3 {
-                font-size: 1.714em;
+            h4 {
                 margin: 0 auto;
                 width: 170px;
                 line-height: 1.1;
+                padding-bottom: 25px;
             }
             p {
-                margin-top: 25px;
-                padding: 0 60px;
+                padding: 0px 60px 0px 60px;
                 line-height: 1.5;
                 font-size: 1em;
             }
@@ -446,9 +364,6 @@
                 color: #363636;
                 font-size: 1em;
             }
-        }
-        .services__block:hover {
-            transform: scale(1.02);
         }
         .services__block:first-child {
             margin-left: 0;
@@ -480,46 +395,50 @@
         border-radius: 2px;
         margin-top: 20px;
         display: inline-block;
+        transition: .3s;
     }
     
     .services__button:hover {
-        box-shadow: 0px 0px 5px 1px #000000;
+        box-shadow: inset 0px 0px 5px 1px #000000;
     }
     
     .news {
+        padding-top: 100px;
+        padding-bottom: 60px;
+        h3 {
+            padding-bottom: 20px;
+        }
         .latest__news {
-            margin-top: 100px;
             float: left;
-            h2 {
-                font-size: 2.143em;
-                text-transform: uppercase;
-                font-family: "NotaBene-medium";
-                text-align: left;
-                margin-bottom: 35px;
+            text-align: left;
+            a {
+                color: #fff;
+                text-decoration: none;
             }
             .news__post {
                 min-height: 200px;
-                max-width: 720px;
+                max-width: 750px;
                 background-color: #1aa4b5;
                 text-align: left;
                 margin-bottom: 30px;
-                padding-right: 30px;
-                a {
-                    text-decoration: none;
-                    color: #fff;
-                }
+                overflow: hidden;
+                margin-top: 15px;
                 img {
                     float: left;
                     width: 260px;
                     height: 200px;
-                    padding-right: 30px;
+                    transition: .3s ease-out;
                 }
-                h3 {
-                    text-transform: uppercase;
-                    font-size: 1.143em;
-                    font-family: "Open Sans-semibold";
-                    padding: 28px 0px 14px 0px;
-                    margin-left: 30px;
+                .news-container {
+                    float: right;
+                    padding: 0 30px 26px 0px;
+                    width: 57%;
+                    h4 {
+                        font-family: "Open Sans-semibold";
+                        text-transform: uppercase;
+                        font-size: 1.143em;
+                        padding-bottom: 15px;
+                    }
                 }
                 hr {
                     border: none;
@@ -530,23 +449,18 @@
                     font-family: "NotaBene-Normal";
                     font-size: 1em;
                     line-height: 1.5;
-                    padding: 15px 0px 0px 5px;
+                    padding-top: 17px;
                 }
             }
         }
-        .news__post:hover {
-            transform: scale(1.02);
+        .news__post:hover img {
+            transform: scale(1.1);
         }
         .twitter__container {
             float: right;
-            margin-top: 100px;
-            h2 {
-                font-size: 2.143em;
-                text-transform: uppercase;
-                font-family: "NotaBene-medium";
-                text-align: left;
-                margin-bottom: 45px;
-                letter-spacing: 0.5px;
+            text-align: left;
+            .twitter {
+                margin-top: 25px;
             }
             .twitter__widget {
                 width: 300px;
@@ -588,7 +502,6 @@
         padding: 28px 0px 25px 0px;
         width: 100%;
         display: inline-block;
-        margin-top: 60px;
         .footer__block__1 {
             max-width: 560px;
             text-align: left;
@@ -610,6 +523,10 @@
         .about__us .about__us_video {
             float: none;
         }
+        .about__us .about__us_content {
+            float: none;
+            margin-bottom: 40px;
+        }
         .services .services__block {
             margin: 0;
             margin-bottom: 10px;
@@ -617,15 +534,21 @@
         .services__button {
             width: 40%;
         }
-        .news .latest__news {
-            margin: 0;
-        }
         .news .twitter__container {
             float: none;
             width: 300px;
         }
         footer .footer__block__2 {
             margin-top: 50px;
+        }
+        .news__post {
+            padding: 5px!important;
+        }
+        .news-container {
+            padding: 0px!important;
+        }
+        .news {
+            padding-top: 35px;
         }
     }
     
@@ -650,12 +573,18 @@
         }
     }
     
+    @media (max-width:740px) {
+        .news__post .news-container {
+            width: 100% !important;
+        }
+        .news__post {
+            padding: 40px;
+        }
+    }
+    
     @media (max-width:660px) {
         .container {
             margin: 0 5px;
-        }
-        .news .latest__news img {
-            margin: 5px;
         }
         .news .latest__news h3 {
             display: inline-block;
@@ -666,7 +595,7 @@
         .news .latest__news p {
             display: inline-block;
         }
-        .header_content_block h1 {
+        .header_content_block h2 {
             font-size: 7em;
         }
         .news .twitter__container .twitter__widget {
@@ -679,6 +608,6 @@
             padding-right: 0px;
         }
         header .logo p {
-            font-size: 1.5em;
+            font-size: 1em;
         }
     }
