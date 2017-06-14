@@ -36,7 +36,7 @@
  });
  $('.about , .about-responsive').on('click', function (e) {
      $('html,body').stop().animate({
-         scrollTop: $('.about__us').offset().top
+         scrollTop: $('.about__us_content').offset().top
      }, 1000);
      e.preventDefault();
  });
