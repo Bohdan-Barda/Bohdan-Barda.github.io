@@ -14,7 +14,7 @@
  /*===anchor===*/
  $(window).scroll(function () {
      var bo = $(document).scrollTop();
-     if (bo > 750) {
+     if (bo > 700) {
          $(".menu__container").addClass("menu__scroll");
          $(".logo").css("margin-left", "20px");
          $(".menu").css("padding-right", "20px");
