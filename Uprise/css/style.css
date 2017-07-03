@@ -1,0 +1,1219 @@
+@font-face {
+    font-family: 'Fairview-Regular';
+    src: url('../fonts/Fairview-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/Fairview-Regular.otf') format('opentype'), url('../fonts/Fairview-Regular.woff') format('woff'), url('../fonts/Fairview-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FuturaBT-Bold';
+    src: url('../fonts/FuturaBT-Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/FuturaBT-Bold.woff') format('woff'), url('../fonts/FuturaBT-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MuseoSlab-700';
+    src: url('../fonts/MuseoSlab-700.eot?#iefix') format('embedded-opentype'), url('../fonts/MuseoSlab-700.otf') format('opentype'), url('../fonts/MuseoSlab-700.woff') format('woff'), url('../fonts/MuseoSlab-700.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MuseoSlab-900';
+    src: url('../fonts/MuseoSlab-900.eot?#iefix') format('embedded-opentype'), url('../fonts/MuseoSlab-900.otf') format('opentype'), url('../fonts/MuseoSlab-900.woff') format('woff'), url('../fonts/MuseoSlab-900.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MuseoSlab-700Italic';
+    src: url('../fonts/MuseoSlab-700Italic.eot?#iefix') format('embedded-opentype'), url('../fonts/MuseoSlab-700Italic.otf') format('opentype'), url('../fonts/MuseoSlab-700Italic.woff') format('woff'), url('../fonts/MuseoSlab-700Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FuturaBT-Medium';
+    src: url('../fonts/FuturaBT-Medium.eot?#iefix') format('embedded-opentype'), url('../fonts/FuturaBT-Medium.woff') format('woff'), url('../fonts/FuturaBT-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.icon-play-circle {
+    position: relative;
+}
+
+.icon-play-circle:before {
+    position: absolute;
+    left: 45%;
+    font-size: 1.3em;
+    bottom: 9px;
+}
+
+.icon-left-open,
+.icon-right-open {
+    font-size: 80px;
+    color: #221e35;
+    opacity: .33;
+    padding: 90px 0;
+}
+
+.icon-right-open-mini {
+    position: relative;
+    color: #000000;
+}
+
+.icon-right-open-mini:hover:before {
+    opacity: 0.36;
+    transition: .3s;
+}
+
+.icon-right-open-mini:before {
+    position: absolute;
+    left: 0px;
+    top: -2px;
+    font-size: 80px;
+    opacity: 0.15;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    font-weight: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+
+/* remember to define focus styles! */
+
+:focus {
+    outline: 0;
+}
+
+
+/* remember to highlight inserts somehow! */
+
+ins {
+    text-decoration: none;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+
+/* tables still need 'cellspacing="0"' in the markup */
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+body {
+    line-height: 1;
+    font-size: 30px;
+    max-width: 1450px;
+    font-family: "OpenSans", "Arial", "Tahoma";
+    margin: 0 auto;
+}
+
+body a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+}
+
+h2 {
+    font-size: 51px;
+    text-transform: uppercase;
+    color: #fff;
+    font-family: 'MuseoSlab-900';
+    font-weight: normal;
+    letter-spacing: 5px;
+    padding-bottom: 20px;
+}
+
+h3 {
+    padding: 30px 0;
+    font-family: 'FuturaBT-Medium';
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 30px;
+}
+
+h4 {
+    padding: 40px 0;
+    font-family: 'MuseoSlab-900';
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.shedule_tab_active {
+    background-color: #e9415c!important;
+    position: relative;
+    display: block;
+    transition: .1s;
+    z-index: 10;
+}
+
+.shedule_tab_active:before {
+    content: "";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 14px 13.5px 0 13.5px;
+    border-color: #e9415d transparent transparent transparent;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    margin-left: -13.5px;
+}
+
+.block {
+    display: block!important;
+}
+
+header {
+    background-image: url(../img/header_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 25px 0 65px 0;
+    text-align: center;
+    color: #fff;
+}
+
+header h1 {
+    font-family: 'Fairview-Regular';
+    font-size: 7.277em;
+    font-weight: normal;
+    letter-spacing: 20px;
+    text-transform: uppercase;
+}
+
+header h1 b {
+    color: #5cc3da;
+    font-weight: normal;
+    position: relative;
+    left: 12px;
+}
+
+header .september {
+    text-transform: uppercase;
+    font-family: 'MuseoSlab-900';
+    font-size: 34.46px;
+    letter-spacing: 7.2px;
+    padding: 8px 0 8px 5px;
+    max-width: 535px;
+    margin: 0 auto;
+    background-color: #e9415c;
+    position: relative;
+    margin-bottom: 20px;
+    top: -10px;
+}
+
+header .september:before {
+    content: "";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 35px 50px 35px;
+    border-color: transparent transparent #e9415d transparent;
+    position: absolute;
+    top: 0;
+    left: -35px;
+}
+
+header .september:after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 50px 35px 0 35px;
+    border-color: #e9415d transparent transparent transparent;
+    position: absolute;
+    top: 0;
+    right: -35px;
+}
+
+header .watch_video {
+    text-decoration: none;
+    font-family: 'MuseoSlab-900';
+    text-transform: uppercase;
+    letter-spacing: 3.5px;
+    padding: 15px 10px;
+    border: solid 2px #fff;
+    border-radius: 8px;
+    display: inline-block;
+    font-size: 30px;
+    word-spacing: 55px;
+    transition: .3s;
+    cursor: pointer;
+}
+
+header .watch_video:hover {
+    background-color: #e9415c;
+}
+
+.modal {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 300;
+    display: none;
+}
+
+.modal-dialog {
+    position: relative;
+    max-width: 50%;
+    top: 10%;
+    margin: 0 auto;
+    z-index: 400;
+    border: solid 20px #fff;
+    border-radius: 10px;
+}
+
+.btn-close {
+    right: -18px;
+    top: -22px;
+    color: #000002;
+    font-size: 30px;
+    position: absolute;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.btn-close:hover {
+    color: #5cc3da;
+}
+
+header .fun-filled {
+    font-family: 'MuseoSlab-700Italic';
+    font-size: 1.167em;
+    display: inline-block;
+    max-width: 890px;
+    text-align: justify;
+    padding: 30px 0 40px 0;
+    line-height: 1.3;
+}
+
+header .buy {
+    font-family: 'MuseoSlab-700';
+    font-size: 24px;
+    display: inline-block;
+    padding: 20px 60px;
+    background-color: #5cc3da;
+    border-radius: 10px;
+    transition: .3s;
+}
+
+header .buy:hover {
+    background-color: #e9415c;
+}
+
+.input {
+    text-align: center;
+    padding: 60px 0;
+    background-color: #1e2935;
+}
+
+form {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.input label[for="email"] {
+    font-size: 30px;
+    font-family: 'MuseoSlab-900';
+    color: #e9415c;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    align-self: center;
+    padding-right: 20px;
+}
+
+.input input[type="email"] {
+    font-family: 'MuseoSlab-700';
+    font-size: 24px;
+    padding: 20px 25px;
+    border: none;
+    border-radius: 10px;
+    max-width: 535px;
+    color: #626f7c;
+    flex-grow: 1;
+}
+
+.input .form_button {
+    border: none;
+    border-radius: 10px;
+    margin-left: -70px;
+    background-color: #e9415c;
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
+}
+
+.input a {
+    width: 70px;
+    padding: 17px 0 5px 0;
+    font-size: 42px;
+    background-color: #5cc3da;
+    border-radius: 10px;
+    margin-left: 10px;
+    transition: .3s;
+}
+
+.input a:hover {
+    background-color: #e9415c;
+}
+
+.lineup {
+    background-image: url(../img/lineup-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 30px 0 55px 0;
+    text-align: center;
+}
+
+.foto_container {
+    position: relative;
+    max-height: 300px;
+    padding-bottom: 320px;
+}
+
+.lineup .foto_container div:first-child,
+.lineup .foto_container div:last-child {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    z-index: 20;
+}
+
+.lineup .foto_container div:first-child {
+    top: 65px;
+    left: -12px;
+}
+
+.lineup .foto_container div:last-child {
+    top: 65px;
+    right: -5px;
+}
+
+.lineup .foto_container div:nth-child(2),
+.lineup .foto_container div:nth-child(4) {
+    width: 255px;
+    height: 255px;
+    border-radius: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+}
+
+.lineup .foto_container div:nth-child(2) {
+    top: 0px;
+    left: 145px;
+}
+
+.lineup .foto_container div:nth-child(4) {
+    top: 0px;
+    right: 145px;
+}
+
+.lineup .foto_container div:nth-child(3) {
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    z-index: 20;
+}
+
+.lineup .foto_container div:nth-child(3) {
+    left: 50%;
+    margin-left: -140.5px;
+    top: 15px;
+}
+
+.lineup h2 {
+    padding-bottom: 35px;
+}
+
+.artist {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.lineup .artist li {
+    display: inline-block;
+    margin-bottom: 10px;
+    padding: 10px 15px;
+    background-color: #4adcfd;
+    border-radius: 5px;
+    transition: .3s;
+}
+
+.lineup .artist li:hover {
+    background-color: #e9415c;
+}
+
+.lineup .artist li a {
+    font-family: 'MuseoSlab-700';
+    font-size: 30px;
+}
+
+.slider {
+    border-top: solid 15px #1e2935;
+    border-bottom: solid 15px #1e2935;
+    max-height: 255px;
+}
+
+.swiper-slide {
+    height: 255px;
+    background-size: cover;
+    background-position: center;
+}
+
+.swiper-pagination,
+.swiper-scrollbar {
+    display: none;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    background-color: #653081;
+    opacity: 0.85;
+    width: 80px;
+    background-image: none;
+    transition: .3s;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+    opacity: 1;
+}
+
+.swiper-button-next {
+    right: 0px;
+    top: 22px;
+    height: 100%;
+}
+
+.swiper-button-prev {
+    top: 22px;
+    left: 0px;
+    height: 100%;
+}
+
+.schedule {
+    text-align: center;
+    padding: 50px 0 75px 0;
+}
+
+.schedule h2 {
+    color: #1e2935;
+}
+
+.schedule span {
+    font-family: 'MuseoSlab-700Italic';
+    font-size: 30px;
+    color: #1e2935;
+    display: block;
+}
+
+.items_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-top: 35px;
+    max-width: 810px;
+    margin: 0 auto;
+}
+
+.schedule .items {
+    padding: 12px 0px;
+    background-color: #1e2935;
+    border-radius: 10px;
+    width: 190px;
+    color: #fff;
+}
+
+.items {
+    cursor: pointer;
+}
+
+.items span:first-child {
+    font-size: 18px;
+    text-transform: uppercase;
+    font-family: 'MuseoSlab-700';
+}
+
+.items span {
+    color: #fff;
+    font-family: 'MuseoSlab-700';
+    font-size: 25px;
+}
+
+.items_content {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    justify-content: flex-end;
+    margin: 0 auto;
+    padding-top: 40px;
+    display: none;
+}
+
+.line {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 5px 60px;
+    height: 335px;
+}
+
+.items_content ul {
+    width: 365px;
+}
+
+.items_content ul li {
+    font-family: 'MuseoSlab-700';
+    margin: 12px 0;
+    line-height: 1.2;
+}
+
+.items_content ul:first-child {
+    color: #653081;
+    text-align: right;
+}
+
+.items_content ul:last-child {
+    padding-right: 50px;
+    color: #1e2935;
+}
+
+.line div {
+    width: 10px;
+    height: 10px;
+    background-color: #653081;
+    transform: rotate(45deg);
+    position: relative;
+}
+
+.line div:not(:last-child):before {
+    content: "";
+    width: 2px;
+    height: 40px;
+    background-color: #653081;
+    position: absolute;
+    top: 0px;
+    left: 19px;
+    transform: rotate(135deg);
+}
+
+.items_content.current {
+    display: block;
+    display: flex;
+}
+
+.tickets {
+    background-image: url(../img/tickets_bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 60px;
+    text-align: center;
+    color: #fff;
+}
+
+.big_link {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 20px;
+}
+
+.big_link a {
+    padding: 50px 70px;
+    width: 320px;
+    line-height: 1.1;
+    background-color: #1e2935;
+    border-radius: 5px;
+    transition: .3s;
+    font-size: 30px;
+    font-family: 'MuseoSlab-700Italic';
+    margin: 0 auto;
+    margin-bottom: 5px;
+}
+
+.big_link a b {
+    font-family: 'FuturaBT-Medium';
+    font-size: 100px;
+    display: block;
+}
+
+.tickets a:hover {
+    background-color: #5cc3da;
+}
+
+.small_link {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-bottom: 35px;
+}
+
+.small_link a {
+    font-family: 'MuseoSlab-700Italic';
+    font-size: 20px;
+    padding: 30px 0px;
+    background-color: #1e2935;
+    border-radius: 5px;
+    transition: .3s;
+    width: 180px;
+    line-height: 1.1;
+    margin: 0 auto;
+    margin-bottom: 5px;
+}
+
+.small_link a:last-child b {
+    font-size: 32px;
+    line-height: 1.6;
+}
+
+.small_link a b {
+    font-family: 'FuturaBT-Medium';
+    font-size: 45px;
+    display: block;
+    vertical-align: middle;
+}
+
+.small_link a span {
+    font-size: 15px;
+    display: block;
+}
+
+.tickets .button {
+    font-family: 'MuseoSlab-700';
+    font-size: 24px;
+    padding: 20px 0px;
+    background-color: #5cc3da;
+    margin: 0px 10px;
+    border-radius: 5px;
+    min-width: 310px;
+    transition: .3s;
+    display: inline-block;
+}
+
+.tickets .button:hover {
+    background-color: #e9415c;
+}
+
+.tickets .tickets_text {
+    display: block;
+    margin: 20px auto 10px auto;
+    font-family: 'MuseoSlab-700Italic';
+    font-size: 24px;
+    max-width: 630px;
+    line-height: 1.2;
+}
+
+.more_information {
+    color: #fff;
+    background-color: #1e2935;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.more_information h3 {
+    font-family: 'MuseoSlab-900';
+    font-size: 32px;
+    letter-spacing: 3px;
+    font-weight: normal;
+}
+
+.tabs_control {
+    padding-bottom: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: relative;
+    max-width: 865px;
+    margin: 0 auto;
+}
+
+.tabs_control:before {
+    content: "";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 55px 67.5px 0 67.5px;
+    border-color: #1e2935 transparent transparent transparent;
+    position: absolute;
+    bottom: -50px;
+    left: 45px;
+}
+
+.tabs_container {
+    background-image: url(../img/more-information-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: left;
+}
+
+.tabs_control span {
+    display: block;
+    font-family: 'MuseoSlab-700';
+    font-size: 23.95px;
+    padding: 15px 0px;
+    background-color: #2a3b4c;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 160px;
+    transition: .3s;
+}
+
+.tabs_control span:hover {
+    background-color: #405162;
+}
+
+.tabs_content {
+    display: none;
+    padding: 45px 0 100px 0;
+    text-align: left;
+}
+
+.tabs_content p {
+    font-size: 17px;
+    font-family: 'MuseoSlab-700';
+    line-height: 1.6;
+    padding: 0 65px;
+}
+
+.tabs_content h4 {
+    position: relative;
+    margin-left: 60px;
+    font-weight: normal;
+    font-size: 31.90px;
+}
+
+.tabs_content h4:before {
+    content: "x";
+    font-size: 18px;
+    color: #1e2935;
+    position: absolute;
+    z-index: 200;
+    padding: 5px 2px 4px 8px;
+    background-color: #e9415c;
+    border-radius: 50%;
+    cursor: pointer;
+    font-weight: normal;
+    left: -50px;
+}
+
+.location {
+    background-image: url(../img/location-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+    color: #fff;
+    padding: 80px 0;
+}
+
+.location span {
+    font-family: 'MuseoSlab-700Italic';
+    display: inline-block;
+    padding: 12px 50px 55px 50px;
+    line-height: 1.5;
+}
+
+.location a {
+    font-family: 'MuseoSlab-700';
+    padding: 20px 6px;
+    background-color: #1e2935;
+    width: 180px;
+    display: inline-block;
+    border-radius: 10px;
+    transition: .3s;
+    font-size: 24px;
+    margin: 0 5px 5px 5px;
+}
+
+.location a:hover {
+    background-color: #5cc3da;
+}
+
+.help_kids {
+    padding: 50px 0;
+}
+
+.kids_content {
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+    padding: 0 12px;
+}
+
+.kids_content h3 {
+    color: #1e2935;
+    font-size: 35px;
+    letter-spacing: 2px;
+    padding: 15px 0 40px 0;
+    font-family: 'FuturaBT-Bold';
+}
+
+.kids_content .logo_kids {
+    padding-top: 25px;
+}
+
+.kids_content a {
+    min-width: 230px;
+    padding: 18px 25px;
+    background-color: #e9415c;
+    border-radius: 10px;
+    transition: .3s;
+    font-family: 'MuseoSlab-700';
+    font-size: 24px;
+}
+
+.kids_content a:hover {
+    background-color: #1e2935;
+}
+
+footer {
+    background-color: #2b3845;
+    text-align: center;
+    padding: 90px 0;
+    font-family: 'MuseoSlab-700Italic';
+    font-size: 18px;
+}
+
+footer span {
+    color: #fff;
+    display: block;
+    line-height: 1.6;
+    letter-spacing: 0.4px;
+}
+
+footer span a {
+    color: #5cc3da;
+}
+
+footer img {
+    padding: 10px 0 0 0;
+}
+
+@media (max-width: 1024px) {
+    .container {
+        padding: 0 5px;
+    }
+    .modal-dialog {
+        max-width: 70%;
+    }
+    .items_container .items span {
+        font-size: 20px;
+    }
+    .items_container .items {
+        width: 150px;
+    }
+    .line {
+        visibility: hidden;
+        padding: 5px 20px;
+        height: 0px;
+    }
+    .tabs_control span {
+        margin-bottom: 10px;
+    }
+    .items_content ul {
+        width: 100%;
+    }
+    .tabs_control {
+        justify-content: center;
+    }
+    .tabs_control span {
+        margin: 5px;
+    }
+}
+
+@media (max-width: 820px) {
+    .schedule .items_content ul {
+        font-size: 20px;
+    }
+    .input form {
+        justify-content: center;
+    }
+    .modal-dialog {
+        max-width: 80%;
+    }
+}
+
+@media (max-width: 740px) {
+    body {
+        font-size: 16px;
+    }
+    header .september:before,
+    header .september:after {
+        display: none;
+    }
+    header .september {
+        margin-top: 20px;
+    }
+    .input a,
+    .input input[type="email"] {
+        margin-top: 10px;
+    }
+    .input .form_button {
+        position: relative;
+        top: 9.1px;
+    }
+    .artist li a {
+        font-size: 20px!important;
+    }
+    .foto_container {
+        display: none;
+    }
+    .tickets .button {
+        margin-bottom: 5px;
+    }
+    .tabs_content p {
+        padding: 0;
+        text-align: center;
+    }
+    .kids_content img {
+        width: 70%;
+    }
+    .modal-dialog {
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 640px) {
+    .items_container .items span {
+        font-size: 15px;
+    }
+    .items_container .items {
+        width: 100px;
+    }
+    .schedule .items_content ul {
+        font-size: 14px;
+    }
+    .tickets .big_link b {
+        font-size: 40px;
+    }
+    .tickets .big_link a {
+        padding: 30px;
+        font-size: 20px;
+        width: 150px;
+    }
+    .tickets .big_link a {
+        justify-content: center;
+    }
+    .tabs_content h4:before,
+    .tabs_content h4:after {
+        display: none;
+    }
+    .schedule .tabs_groups .items_content ul:last-child li {
+        padding: 0;
+        width: 180px;
+        text-align: left;
+    }
+    .schedule .tabs_groups .items_content ul {
+        text-align: center;
+    }
+    .line {
+        display: none;
+    }
+}
+
+@media (max-width: 440px) {
+    body {
+        font-size: 12px;
+    }
+    body h2 {
+        font-size: 30px;
+    }
+    body h3 {
+        font-size: 20px;
+    }
+    header h1 {
+        font-size: 60px;
+    }
+    header h1 b {
+        left: 0;
+    }
+    header .watch_video {
+        font-size: 20px;
+    }
+    .swiper-button-prev,
+    .swiper-button-next {
+        display: none;
+    }
+    .icon-play-circle:before {
+        bottom: 14px;
+    }
+    .input label[for="email"] {
+        padding: 0px;
+    }
+    .input input[type="email"] {
+        max-width: 250px;
+    }
+    .input .form_button .icon-right-open-mini {
+        margin: 0;
+    }
+    .items_container .items span {
+        font-size: 12px!important;
+    }
+    .input .form_button {
+        padding-bottom: 10px;
+    }
+    .items_container .items {
+        width: 70px;
+    }
+    .tickets .button {
+        font-size: 20px;
+        min-width: 150px;
+        padding: 10px;
+    }
+    .tabs_content h4 {
+        font-size: 30px;
+        text-align: center;
+        margin: 0;
+    }
+    .tickets {
+        padding: 40px 10px;
+    }
+    .items_content ul:last-child {
+        padding-right: 0;
+    }
+    .items_content ul {
+        width: 100%;
+    }
+    .tabs_control:before {
+        left: 50%;
+        margin-left: -67.5px;
+    }
+}

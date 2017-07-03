@@ -1,0 +1,202 @@
+//basic tags and general rules
+//===RESET_CSS==
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    font-weight: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+
+/* remember to define focus styles! */
+
+:focus {
+    outline: 0;
+}
+
+
+/* remember to highlight inserts somehow! */
+
+ins {
+    text-decoration: none;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+
+/* tables still need 'cellspacing="0"' in the markup */
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+body {
+    line-height: 1;
+    font-size: 30px;
+    max-width: 1450px;
+    font-family: "OpenSans", "Arial", "Tahoma";
+    margin: 0 auto;
+}
+
+body a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+}
+
+h2 {
+    font-size: 51px;
+    text-transform: uppercase;
+    color: #fff;
+    font-family: 'MuseoSlab-900';
+    font-weight: normal;
+    letter-spacing: 5px;
+    padding-bottom: 20px;
+}
+
+h3 {
+    padding: 30px 0;
+    font-family: 'FuturaBT-Medium';
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 30px;
+}
+
+h4 {
+    padding: 40px 0;
+    font-family: 'MuseoSlab-900';
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.shedule_tab_active {
+    background-color: #e9415c!important;
+    position: relative;
+    display: block !impotant;
+    transition: .1s;
+    z-index: 10;
+}
+
+.shedule_tab_active:before {
+    content: "";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 14px 13.5px 0 13.5px;
+    border-color: #e9415d transparent transparent transparent;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    margin-left: -13.5px;
+}
+
+.block {
+    display: block!important;
+}
