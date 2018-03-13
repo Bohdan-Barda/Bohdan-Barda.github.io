@@ -458,6 +458,50 @@ a img {
   border: none;
 }
 
+#p_prldr{
+  position: fixed;
+  left: 0;
+  top: 0;
+  right:0;
+  bottom:0;
+  background: #0e3e8d;
+  z-index: 30;
+  svg {
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+  }
+}
+
+.contpre small{font-size:25px;}
+
+.contpre{
+  width: 250px;
+  height: 100px;
+  position: absolute;
+  left: 50%;top: 48%;
+  margin-left:-125px;
+  margin-top:-75px;
+  color:#fff;
+  font-size:30px;
+  letter-spacing:-2px;
+  text-align:center;
+  line-height:35px;
+  background: url(../images/logo.svg) center center no-repeat;
+}
+
+#p_prldr {
+  .svg_anm {
+    position: absolute;
+    width: 41px;
+    height: 41px;
+    background-size: 41px;
+    margin: -16px 0 0 -16px;
+  }
+}
+
+
+
 /****Front-page****/
 
 .burger-menu {
@@ -607,7 +651,6 @@ a img {
 
 .menu-toggle {
   right: 0;
-
 }
 
 .block-1 {
@@ -634,6 +677,7 @@ a img {
           text-decoration: none;
           position: relative;
           width: 140px;
+          height: 10px;
           display: block;
           &:before {
             content: '\e800';
@@ -962,6 +1006,7 @@ a img {
     .swiper-wrapper {
       height: 100vh;
       .swiper-slide {
+        background-position: 50% 20%;
       }
     }
   }
@@ -1056,6 +1101,36 @@ a img {
       left: 15%;
       bottom: 10%;
     }
+    .info{
+      font-size: 20px;
+      font-weight: lighter;
+      max-width: 230px;
+      opacity: .40;
+      padding-top: 0;
+      min-height: 0;
+      bottom:-200%;
+      @include transition();
+      position: absolute;
+    }
+    .next{
+      min-height: 0;
+      font-size: 14px;
+      text-transform: uppercase;
+      padding-top: 0;
+      position: absolute;
+      padding-right: 20px;
+      left:-100%;
+      bottom:3.5%;
+      @include transition();
+      &:before{
+        content: '\e80f';
+        font-family: "ic-diesel";
+        right:0;
+        top:3px;
+        position: absolute;
+        font-size: 8px;
+      }
+    }
   }
   .box-1 {
     height: 100vh;
@@ -1063,15 +1138,11 @@ a img {
       background-image: url(../images/box1.jpg);
       @include background-size(cover);
       @include transition();
-      &:hover {
-        width: 105%;
-        height: 105%;
-      }
     }
-    a span {
+    .title {
       color: #000;
       position: relative;
-      margin-bottom: 10%;
+      @include transition();
       &:before {
         content: '\e805';
         font-family: $icon;
@@ -1081,6 +1152,10 @@ a img {
         font-size: 45px;
         color: #95aaca;
       }
+    }
+    .info{
+      color:#000;
+      opacity: .8;
     }
     &:before {
       background: #000;
@@ -1094,6 +1169,22 @@ a img {
       bottom: 10%;
       left: 0;
     }
+    &:hover{
+      .info{
+        bottom:110px;
+      }
+      .title{
+        margin-bottom: 40px;
+        position: relative;
+      }
+      .next{
+        bottom:3.5%;
+        @include center(true,false);
+        &:before{
+          color:#95aaca;
+        }
+      }
+    }
   }
   .box-2 {
     height: 100vh;
@@ -1101,14 +1192,10 @@ a img {
       background-image: url(../images/box2.jpg);
       @include background-size(cover);
       @include transition();
-      &:hover {
-        width: 105%;
-        height: 105%;
-      }
     }
-    span {
+    .title {
       position: relative;
-      margin-bottom: 10%;
+      @include transition();
       &:before {
         content: '\e803';
         font-family: $icon;
@@ -1128,6 +1215,22 @@ a img {
       bottom: 10%;
       left: 0;
     }
+    &:hover{
+      .info{
+        bottom:110px;
+      }
+      .title{
+        margin-bottom: 80px;
+        position: relative;
+      }
+      .next{
+        bottom:3.5%;
+        @include center(true,false);
+        &:before{
+          color:#8d6f1b
+        }
+      }
+    }
   }
   .box-3 {
     height: 100vh;
@@ -1135,14 +1238,10 @@ a img {
       background-image: url(../images/box3.jpg);
       @include background-size(cover);
       @include transition();
-      &:hover {
-        width: 105%;
-        height: 105%;
-      }
     }
-    span {
-      margin-bottom: 10%;
+    .title {
       position: relative;
+      @include transition();
       &:before {
         content: '\e804';
         font-family: $icon;
@@ -1161,6 +1260,22 @@ a img {
       position: absolute;
       bottom: 10%;
       left: 0;
+    }
+    &:hover{
+      .info{
+        bottom:110px;
+      }
+      .title{
+        margin-bottom: 80px;
+        position: relative;
+      }
+      .next{
+        bottom:3.5%;
+        @include center(true,false);
+        &:before{
+          color:#5a687d;
+        }
+      }
     }
   }
 }
@@ -1185,7 +1300,7 @@ a img {
     font-family: "Museo Sans Cyrl 900";
     font-size: 40px;
     color: #000;
-    margin-bottom: 20px;
+    margin-bottom: 5%;
   }
 
   .info {
@@ -1415,7 +1530,7 @@ a img {
     text-decoration: none;
     display: inline-block;
     padding: 0 6%;
-    margin: 20px auto 0 auto;
+    margin: 5% auto 0 auto;
     font-size: 14px;
     font-family: 'Open Sans Condensed Bold';
     text-transform: uppercase;
@@ -1556,6 +1671,7 @@ a img {
         margin-left: 5%;
         span {
           display: inline-block;
+          cursor: pointer;
         }
         .active {
           color: #0e4194;
@@ -1620,7 +1736,8 @@ a img {
           span {
             display: block;
             font-size: 15px;
-            color: #295cab;
+            color: #0e4194;
+            opacity: .6;
             padding-bottom: 15px;
           }
           a {
@@ -1628,6 +1745,7 @@ a img {
             text-decoration: none;
             margin-bottom: 20px;
             display: inline-block;
+            font-size: 20px;
           }
         }
       }
@@ -1642,7 +1760,7 @@ a img {
       text-decoration: none;
       letter-spacing: 3px;
       text-transform: uppercase;
-      padding: 0 14%;
+      padding: 0 8%;
       margin-top: 10%;
       @include transition();
       cursor: pointer;
@@ -1690,10 +1808,10 @@ a img {
   left: 0;
   right: 0;
   pointer-events: none;
-  z-index: 18;
+  z-index: 19;
   .lines-framework__line {
     position: absolute;
-    background: rgba(214, 208, 212, 0.4)
+    background: rgba(168, 168, 168, 0.2)
   }
   .lines-framework__top-1 {
     top: 35px;
@@ -1782,6 +1900,7 @@ a img {
   header .box .bosch .partner {
     &:before {
       color: #fff;
+      margin-top: 5px;
     }
   }
   .link-2 {
@@ -1802,6 +1921,12 @@ a img {
       color: #fff;
       @include center(false, true);
       left: 0;
+      @include transition();
+    }
+    &:hover{
+      &:before{
+        color:#1da1f2;
+      }
     }
 
   }
@@ -1954,6 +2079,11 @@ a img {
           }
         }
       }
+      .fixed{
+        position: fixed;
+        top:29.5%;
+        left:7.5%;
+      }
     }
   }
   footer {
@@ -1976,6 +2106,22 @@ a img {
   .top-info {
     position: relative;
     overflow: hidden;
+    .title{
+      font-size: 65px;
+      padding-bottom: 70px;
+      margin: 0 auto;
+      color:#000;
+      font-weight: 500;
+      font-family: 'Geometria';
+      .news , .shares{
+        border-bottom: dashed 1px #86a0c9;
+        cursor: pointer;
+        @include transition();
+        &:hover{
+          color: #0e4194;
+        }
+      }
+    }
   }
 
   .lines-framework {
@@ -1999,6 +2145,9 @@ a img {
         width: 1120px;
         margin: 0 auto;
         max-width: 94%;
+      }
+      .box .bosch .partner:before{
+        margin-top: 5px;
       }
     }
     .top-info {
@@ -2234,7 +2383,8 @@ a img {
     background-size: cover;
     .lines-framework {
       .lines-framework__line {
-        background-color: #8ea1bf;
+        background-color: #0e4194;
+        opacity: 0.12;
       }
     }
     .top-info {
@@ -2267,6 +2417,16 @@ a img {
         color: #2a3b50;
         max-width: 495px;
         padding-bottom: 40px;
+        position: relative;
+        &:before {
+          content: '';
+          position: absolute;
+          width: 35px;
+          height: 2px;
+          background-color: #7f96be;
+          left: 0;
+          bottom: -130px;
+        }
       }
       .button {
         font-size: 14px;
@@ -2282,15 +2442,6 @@ a img {
         position: relative;
         letter-spacing: 2px;
         cursor: pointer;
-        &:before {
-          content: '';
-          position: absolute;
-          width: 35px;
-          height: 2px;
-          background-color: #7f96be;
-          left: 0;
-          bottom: -50px;
-        }
       }
     }
   }
@@ -2400,14 +2551,14 @@ a img {
         width: 33.4%;
         background-color: #fff;
         top: 0;
-        left: 50%;
+        left: 49.99%;
         z-index: 200;
         @include flexbox();
         @include flex-direction(column);
         @include justify-content(space-between);
         ul {
           text-align: left;
-          padding: 10%;
+          padding: 9%;
           li {
             font-size: 20px;
             color: #1d1d1d;
@@ -2491,12 +2642,18 @@ a img {
               font-size: 20px;
               position: relative;
               padding-left: 25px;
+              &:hover{
+                &:before{
+                  color: #bf9e26;
+                }
+              }
               &:before {
                 content: '\e806';
                 font-family: "ic-bosch";
                 @include center(true, false);
                 left: 5px;
                 color: #947722;
+                @include transition();
               }
             }
             .price-2 {
@@ -2505,12 +2662,18 @@ a img {
               font-size: 20px;
               position: relative;
               padding-left: 25px;
+              &:hover{
+                &:before{
+                  color: #b4d6ff;
+                }
+              }
               &:before {
                 content: '\e806';
                 font-family: "ic-bosch";
                 @include center(true, false);
                 left: 5px;
                 color: #84b2ff;
+                @include transition();
               }
             }
           }
@@ -2519,7 +2682,7 @@ a img {
       .control {
         position: absolute;
         top: 40%;
-        left: 16.6%;
+        left: 16.7%;
         margin-left: -75px;
         width: 150px;
         z-index: 350;
@@ -2660,7 +2823,7 @@ a img {
 
       &:before {
         content: '';
-        width: 16.6%;
+        width: 16.7%;
         height: 100%;
         position: absolute;
         top: 0;
@@ -2670,7 +2833,7 @@ a img {
       }
       &:after {
         content: '';
-        width: 16.6%;
+        width: 16.7%;
         height: 100%;
         position: absolute;
         top: 0;
@@ -2686,6 +2849,9 @@ a img {
       padding: 0;
       margin-top: 45px;
       cursor: pointer;
+      @include transition();
+      &:hover{
+      }
     }
     .swiper-pagination-g {
       position: absolute;
@@ -3336,6 +3502,12 @@ a img {
 }
 
 .autoservice {
+  .lines-framework .lines-framework__line
+  {
+    background-color: #0e4194;
+    opacity: .12;
+
+  }
   .block-1 {
     position: relative;
     header .box .bosch {
@@ -3361,12 +3533,6 @@ a img {
     background-size: cover;
     position: relative;
     @include flexbox();
-    .lines-framework {
-      .lines-framework__line {
-        background-color: #23529e;
-        opacity: .12;
-      }
-    }
     .top-info {
       @include flexbox();
       height: 100%;
@@ -4933,7 +5099,6 @@ a img {
       position: relative;
       &:before {
         display: inline-block;
-        margin-top: 8px;
       }
     }
     span {
@@ -5485,6 +5650,12 @@ a img {
   .price-info-slider .price-slider .info-text{
     margin: 0;
   }
+  .block-3 .button{
+    margin-top: 20px;
+  }
+  .autoservice .block-4 .wrap-1 .wrap .title , .diesel-center .block-4 .wrap-1 .wrap .title{
+    padding-bottom: 0;
+  }
 }
 
 @media screen and (max-height: 760px) {
@@ -5492,6 +5663,15 @@ a img {
     form {
       height: 370px;
     }
+  }
+  .diesel-center .banner .wrap-1 .top-info-2 .box ul li{
+    margin-bottom: 40px;
+  }
+  .block-2 .box-1 > a{
+    background-position: 50% 20%;
+  }
+  .block-2 .box-1 .title{
+    color: rgb(255, 255, 255);
   }
 }
 
@@ -5563,6 +5743,9 @@ a img {
         width: 100%;
         &:before {
           left: 5%;
+        }
+        .info , .next{
+          display: none;
         }
         span {
           margin-bottom: 100px;
@@ -5909,6 +6092,10 @@ a img {
     display: none;
   }
 }
+
+
+
+
 
 
 @media screen and (max-width: 500px) {

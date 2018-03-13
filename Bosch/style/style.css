@@ -174,6 +174,44 @@ a img {
   text-decoration: none;
   border: none; }
 
+#p_prldr {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: #0e3e8d;
+  z-index: 30; }
+  #p_prldr svg {
+    width: 100%;
+    height: 100%;
+    visibility: hidden; }
+
+.contpre small {
+  font-size: 25px; }
+
+.contpre {
+  width: 250px;
+  height: 100px;
+  position: absolute;
+  left: 50%;
+  top: 48%;
+  margin-left: -125px;
+  margin-top: -75px;
+  color: #fff;
+  font-size: 30px;
+  letter-spacing: -2px;
+  text-align: center;
+  line-height: 35px;
+  background: url(../images/logo.svg) center center no-repeat; }
+
+#p_prldr .svg_anm {
+  position: absolute;
+  width: 41px;
+  height: 41px;
+  background-size: 41px;
+  margin: -16px 0 0 -16px; }
+
 /****Front-page****/
 .burger-menu {
   width: 100%;
@@ -387,6 +425,7 @@ a img {
           text-decoration: none;
           position: relative;
           width: 140px;
+          height: 10px;
           display: block; }
           .block-1 header .box .bosch .partner:before {
             content: '\e800';
@@ -729,6 +768,8 @@ a img {
     height: 450px !important; }
   .block-1 .top-slider .swiper-wrapper {
     height: 100vh; }
+    .block-1 .top-slider .swiper-wrapper .swiper-slide {
+      background-position: 50% 20%; }
   .block-1 .down {
     position: absolute;
     padding-bottom: 70px;
@@ -848,6 +889,41 @@ a img {
       position: absolute;
       left: 15%;
       bottom: 10%; }
+    .block-2 .box-mid .info {
+      font-size: 20px;
+      font-weight: lighter;
+      max-width: 230px;
+      opacity: .40;
+      padding-top: 0;
+      min-height: 0;
+      bottom: -200%;
+      -webkit-transition: all 0.4s ease;
+      -moz-transition: all 0.4s ease;
+      -ms-transition: all 0.4s ease;
+      -o-transition: all 0.4s ease;
+      transition: all 0.4s ease;
+      position: absolute; }
+    .block-2 .box-mid .next {
+      min-height: 0;
+      font-size: 14px;
+      text-transform: uppercase;
+      padding-top: 0;
+      position: absolute;
+      padding-right: 20px;
+      left: -100%;
+      bottom: 3.5%;
+      -webkit-transition: all 0.4s ease;
+      -moz-transition: all 0.4s ease;
+      -ms-transition: all 0.4s ease;
+      -o-transition: all 0.4s ease;
+      transition: all 0.4s ease; }
+      .block-2 .box-mid .next:before {
+        content: '\e80f';
+        font-family: "ic-diesel";
+        right: 0;
+        top: 3px;
+        position: absolute;
+        font-size: 8px; }
   .block-2 .box-1 {
     height: 100vh; }
     .block-2 .box-1 > a {
@@ -862,14 +938,15 @@ a img {
       -ms-transition: all 0.4s ease;
       -o-transition: all 0.4s ease;
       transition: all 0.4s ease; }
-      .block-2 .box-1 > a:hover {
-        width: 105%;
-        height: 105%; }
-    .block-2 .box-1 a span {
+    .block-2 .box-1 .title {
       color: #000;
       position: relative;
-      margin-bottom: 10%; }
-      .block-2 .box-1 a span:before {
+      -webkit-transition: all 0.4s ease;
+      -moz-transition: all 0.4s ease;
+      -ms-transition: all 0.4s ease;
+      -o-transition: all 0.4s ease;
+      transition: all 0.4s ease; }
+      .block-2 .box-1 .title:before {
         content: '\e805';
         font-family: iconfont;
         position: absolute;
@@ -877,6 +954,9 @@ a img {
         left: 0;
         font-size: 45px;
         color: #95aaca; }
+    .block-2 .box-1 .info {
+      color: #000;
+      opacity: .8; }
     .block-2 .box-1:before {
       background: #000; }
     .block-2 .box-1:after {
@@ -887,6 +967,21 @@ a img {
       position: absolute;
       bottom: 10%;
       left: 0; }
+    .block-2 .box-1:hover .info {
+      bottom: 110px; }
+    .block-2 .box-1:hover .title {
+      margin-bottom: 40px;
+      position: relative; }
+    .block-2 .box-1:hover .next {
+      bottom: 3.5%;
+      position: absolute;
+      left: 50%;
+      -webkit-transform: translate(-50%, 0);
+      -ms-transform: translate(-50%, 0);
+      transform: translate(-50%, 0);
+      transform: translate(-50%, 0); }
+      .block-2 .box-1:hover .next:before {
+        color: #95aaca; }
   .block-2 .box-2 {
     height: 100vh; }
     .block-2 .box-2 > a {
@@ -901,13 +996,14 @@ a img {
       -ms-transition: all 0.4s ease;
       -o-transition: all 0.4s ease;
       transition: all 0.4s ease; }
-      .block-2 .box-2 > a:hover {
-        width: 105%;
-        height: 105%; }
-    .block-2 .box-2 span {
+    .block-2 .box-2 .title {
       position: relative;
-      margin-bottom: 10%; }
-      .block-2 .box-2 span:before {
+      -webkit-transition: all 0.4s ease;
+      -moz-transition: all 0.4s ease;
+      -ms-transition: all 0.4s ease;
+      -o-transition: all 0.4s ease;
+      transition: all 0.4s ease; }
+      .block-2 .box-2 .title:before {
         content: '\e803';
         font-family: iconfont;
         position: absolute;
@@ -923,6 +1019,21 @@ a img {
       position: absolute;
       bottom: 10%;
       left: 0; }
+    .block-2 .box-2:hover .info {
+      bottom: 110px; }
+    .block-2 .box-2:hover .title {
+      margin-bottom: 80px;
+      position: relative; }
+    .block-2 .box-2:hover .next {
+      bottom: 3.5%;
+      position: absolute;
+      left: 50%;
+      -webkit-transform: translate(-50%, 0);
+      -ms-transform: translate(-50%, 0);
+      transform: translate(-50%, 0);
+      transform: translate(-50%, 0); }
+      .block-2 .box-2:hover .next:before {
+        color: #8d6f1b; }
   .block-2 .box-3 {
     height: 100vh; }
     .block-2 .box-3 a {
@@ -937,13 +1048,14 @@ a img {
       -ms-transition: all 0.4s ease;
       -o-transition: all 0.4s ease;
       transition: all 0.4s ease; }
-      .block-2 .box-3 a:hover {
-        width: 105%;
-        height: 105%; }
-    .block-2 .box-3 span {
-      margin-bottom: 10%;
-      position: relative; }
-      .block-2 .box-3 span:before {
+    .block-2 .box-3 .title {
+      position: relative;
+      -webkit-transition: all 0.4s ease;
+      -moz-transition: all 0.4s ease;
+      -ms-transition: all 0.4s ease;
+      -o-transition: all 0.4s ease;
+      transition: all 0.4s ease; }
+      .block-2 .box-3 .title:before {
         content: '\e804';
         font-family: iconfont;
         position: absolute;
@@ -959,6 +1071,21 @@ a img {
       position: absolute;
       bottom: 10%;
       left: 0; }
+    .block-2 .box-3:hover .info {
+      bottom: 110px; }
+    .block-2 .box-3:hover .title {
+      margin-bottom: 80px;
+      position: relative; }
+    .block-2 .box-3:hover .next {
+      bottom: 3.5%;
+      position: absolute;
+      left: 50%;
+      -webkit-transform: translate(-50%, 0);
+      -ms-transform: translate(-50%, 0);
+      transform: translate(-50%, 0);
+      transform: translate(-50%, 0); }
+      .block-2 .box-3:hover .next:before {
+        color: #5a687d; }
 
 /****PAGE3****/
 .block-3 {
@@ -983,7 +1110,7 @@ a img {
     font-family: "Museo Sans Cyrl 900";
     font-size: 40px;
     color: #000;
-    margin-bottom: 20px; }
+    margin-bottom: 5%; }
   .block-3 .info {
     width: 1120px;
     max-width: 94%;
@@ -1239,7 +1366,7 @@ a img {
     text-decoration: none;
     display: inline-block;
     padding: 0 6%;
-    margin: 20px auto 0 auto;
+    margin: 5% auto 0 auto;
     font-size: 14px;
     font-family: 'Open Sans Condensed Bold';
     text-transform: uppercase;
@@ -1377,7 +1504,8 @@ a img {
         display: inline-block;
         margin-left: 5%; }
         .block-4 .info .top-info .check span {
-          display: inline-block; }
+          display: inline-block;
+          cursor: pointer; }
         .block-4 .info .top-info .check .active {
           color: #0e4194; }
         .block-4 .info .top-info .check .ck {
@@ -1442,13 +1570,15 @@ a img {
         .block-4 .info .cont .box .left-box span, .block-4 .info .cont .box .right-box span {
           display: block;
           font-size: 15px;
-          color: #295cab;
+          color: #0e4194;
+          opacity: .6;
           padding-bottom: 15px; }
         .block-4 .info .cont .box .left-box a, .block-4 .info .cont .box .right-box a {
           color: #1d1d1d;
           text-decoration: none;
           margin-bottom: 20px;
-          display: inline-block; }
+          display: inline-block;
+          font-size: 20px; }
     .block-4 .info .button {
       font-size: 14px;
       font-family: 'Open Sans Condensed Bold';
@@ -1459,7 +1589,7 @@ a img {
       text-decoration: none;
       letter-spacing: 3px;
       text-transform: uppercase;
-      padding: 0 14%;
+      padding: 0 8%;
       margin-top: 10%;
       -webkit-transition: all 0.4s ease;
       -moz-transition: all 0.4s ease;
@@ -1498,10 +1628,10 @@ a img {
   left: 0;
   right: 0;
   pointer-events: none;
-  z-index: 18; }
+  z-index: 19; }
   .lines-framework .lines-framework__line {
     position: absolute;
-    background: rgba(214, 208, 212, 0.4); }
+    background: rgba(168, 168, 168, 0.2); }
   .lines-framework .lines-framework__top-1 {
     top: 35px;
     left: 0;
@@ -1608,7 +1738,8 @@ a img {
   .news-single header .box .bosch span {
     color: #fff; }
   .news-single header .box .bosch .partner:before {
-    color: #fff; }
+    color: #fff;
+    margin-top: 5px; }
   .news-single .link-2 {
     text-transform: uppercase;
     font-size: 14px;
@@ -1631,7 +1762,14 @@ a img {
       -moztransform: translate(0, -50%);
       -ms-transform: translate(0, -50%);
       transform: translate(0, -50%);
-      left: 0; }
+      left: 0;
+      -webkit-transition: all 0.4s ease;
+      -moz-transition: all 0.4s ease;
+      -ms-transition: all 0.4s ease;
+      -o-transition: all 0.4s ease;
+      transition: all 0.4s ease; }
+    .news-single .link-2:hover:before {
+      color: #1da1f2; }
   .news-single .top-info {
     margin: 0 15%;
     display: -webkit-box;
@@ -1808,6 +1946,10 @@ a img {
             -ms-transform: rotate(90deg);
             -o-transform: rotate(90deg);
             transform: rotate(90deg); }
+      .news-single .main aside .fixed {
+        position: fixed;
+        top: 29.5%;
+        left: 7.5%; }
   .news-single footer {
     border-top: solid 1px #f2f2f2;
     padding: 45px 15% 45px 0;
@@ -1824,6 +1966,23 @@ a img {
   .news-page .top-info {
     position: relative;
     overflow: hidden; }
+    .news-page .top-info .title {
+      font-size: 65px;
+      padding-bottom: 70px;
+      margin: 0 auto;
+      color: #000;
+      font-weight: 500;
+      font-family: 'Geometria'; }
+      .news-page .top-info .title .news, .news-page .top-info .title .shares {
+        border-bottom: dashed 1px #86a0c9;
+        cursor: pointer;
+        -webkit-transition: all 0.4s ease;
+        -moz-transition: all 0.4s ease;
+        -ms-transition: all 0.4s ease;
+        -o-transition: all 0.4s ease;
+        transition: all 0.4s ease; }
+        .news-page .top-info .title .news:hover, .news-page .top-info .title .shares:hover {
+          color: #0e4194; }
   .news-page .lines-framework .lines-framework__line {
     background-color: #e6ecf4; }
   .news-page .lines-framework .lines-framework__left, .news-page .lines-framework .lines-framework__v-right {
@@ -1838,6 +1997,8 @@ a img {
       width: 1120px;
       margin: 0 auto;
       max-width: 94%; }
+    .news-page .block-1 header .box .bosch .partner:before {
+      margin-top: 5px; }
     .news-page .block-1 .top-info {
       width: 1120px;
       margin: 0 auto;
@@ -2098,7 +2259,8 @@ a img {
   -webkit-background-size: cover;
   background-size: cover; }
   .bosch-equipment .banner .lines-framework .lines-framework__line {
-    background-color: #8ea1bf; }
+    background-color: #0e4194;
+    opacity: 0.12; }
   .bosch-equipment .banner .top-info {
     margin: 0 15%;
     display: -webkit-box;
@@ -2138,7 +2300,16 @@ a img {
       font-size: 25px;
       color: #2a3b50;
       max-width: 495px;
-      padding-bottom: 40px; }
+      padding-bottom: 40px;
+      position: relative; }
+      .bosch-equipment .banner .top-info .text:before {
+        content: '';
+        position: absolute;
+        width: 35px;
+        height: 2px;
+        background-color: #7f96be;
+        left: 0;
+        bottom: -130px; }
     .bosch-equipment .banner .top-info .button {
       font-size: 14px;
       color: #fff;
@@ -2153,14 +2324,6 @@ a img {
       position: relative;
       letter-spacing: 2px;
       cursor: pointer; }
-      .bosch-equipment .banner .top-info .button:before {
-        content: '';
-        position: absolute;
-        width: 35px;
-        height: 2px;
-        background-color: #7f96be;
-        left: 0;
-        bottom: -50px; }
 
 .bosch-equipment .block-2 {
   margin: 0 15%;
@@ -2284,7 +2447,7 @@ a img {
       width: 33.4%;
       background-color: #fff;
       top: 0;
-      left: 50%;
+      left: 49.99%;
       z-index: 200;
       display: -webkit-box;
       display: -webkit-flex;
@@ -2304,7 +2467,7 @@ a img {
       justify-content: space-between; }
       .bosch-equipment .block-3 .gallery-slider .info-box ul {
         text-align: left;
-        padding: 10%; }
+        padding: 9%; }
         .bosch-equipment .block-3 .gallery-slider .info-box ul li {
           font-size: 20px;
           color: #1d1d1d;
@@ -2369,6 +2532,8 @@ a img {
             font-size: 20px;
             position: relative;
             padding-left: 25px; }
+            .bosch-equipment .block-3 .gallery-slider .info-box .files span .price-1:hover:before {
+              color: #bf9e26; }
             .bosch-equipment .block-3 .gallery-slider .info-box .files span .price-1:before {
               content: '\e806';
               font-family: "ic-bosch";
@@ -2379,13 +2544,20 @@ a img {
               transform: translate(-50%, 0);
               transform: translate(-50%, 0);
               left: 5px;
-              color: #947722; }
+              color: #947722;
+              -webkit-transition: all 0.4s ease;
+              -moz-transition: all 0.4s ease;
+              -ms-transition: all 0.4s ease;
+              -o-transition: all 0.4s ease;
+              transition: all 0.4s ease; }
           .bosch-equipment .block-3 .gallery-slider .info-box .files span .price-2 {
             color: #fff;
             text-decoration: none;
             font-size: 20px;
             position: relative;
             padding-left: 25px; }
+            .bosch-equipment .block-3 .gallery-slider .info-box .files span .price-2:hover:before {
+              color: #b4d6ff; }
             .bosch-equipment .block-3 .gallery-slider .info-box .files span .price-2:before {
               content: '\e806';
               font-family: "ic-bosch";
@@ -2396,11 +2568,16 @@ a img {
               transform: translate(-50%, 0);
               transform: translate(-50%, 0);
               left: 5px;
-              color: #84b2ff; }
+              color: #84b2ff;
+              -webkit-transition: all 0.4s ease;
+              -moz-transition: all 0.4s ease;
+              -ms-transition: all 0.4s ease;
+              -o-transition: all 0.4s ease;
+              transition: all 0.4s ease; }
     .bosch-equipment .block-3 .gallery-slider .control {
       position: absolute;
       top: 40%;
-      left: 16.6%;
+      left: 16.7%;
       margin-left: -75px;
       width: 150px;
       z-index: 350; }
@@ -2552,7 +2729,7 @@ a img {
             transform: rotate(45deg); }
     .bosch-equipment .block-3 .gallery-slider:before {
       content: '';
-      width: 16.6%;
+      width: 16.7%;
       height: 100%;
       position: absolute;
       top: 0;
@@ -2561,7 +2738,7 @@ a img {
       background: rgba(255, 255, 255, 0.8); }
     .bosch-equipment .block-3 .gallery-slider:after {
       content: '';
-      width: 16.6%;
+      width: 16.7%;
       height: 100%;
       position: absolute;
       top: 0;
@@ -2574,7 +2751,12 @@ a img {
     width: 235px;
     padding: 0;
     margin-top: 45px;
-    cursor: pointer; }
+    cursor: pointer;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease; }
   .bosch-equipment .block-3 .swiper-pagination-g {
     position: absolute;
     bottom: 35px;
@@ -3220,6 +3402,10 @@ a img {
         width: 65px;
         margin-left: 5px; }
 
+.autoservice .lines-framework .lines-framework__line {
+  background-color: #0e4194;
+  opacity: .12; }
+
 .autoservice .block-1 {
   position: relative; }
   .autoservice .block-1 header .box .bosch {
@@ -3246,9 +3432,6 @@ a img {
   display: -moz-flex;
   display: -ms-flexbox;
   display: flex; }
-  .autoservice .banner .lines-framework .lines-framework__line {
-    background-color: #23529e;
-    opacity: .12; }
   .autoservice .banner .top-info {
     display: -webkit-box;
     display: -webkit-flex;
@@ -4868,8 +5051,7 @@ a img {
       height: 15px;
       position: relative; }
       .block-1 header .box .bosch a:before {
-        display: inline-block;
-        margin-top: 8px; }
+        display: inline-block; }
     .block-1 header .box .bosch span {
       margin-top: 15px; }
   .autoservice .block-3 .wrap .bg-2 {
@@ -5254,11 +5436,21 @@ a img {
   .price-info-slider figure {
     display: none; }
   .price-info-slider .price-slider .info-text {
-    margin: 0; } }
+    margin: 0; }
+  .block-3 .button {
+    margin-top: 20px; }
+  .autoservice .block-4 .wrap-1 .wrap .title, .diesel-center .block-4 .wrap-1 .wrap .title {
+    padding-bottom: 0; } }
 
 @media screen and (max-height: 760px) {
   .form .wrap form, .no-vin .wrap form {
-    height: 370px; } }
+    height: 370px; }
+  .diesel-center .banner .wrap-1 .top-info-2 .box ul li {
+    margin-bottom: 40px; }
+  .block-2 .box-1 > a {
+    background-position: 50% 20%; }
+  .block-2 .box-1 .title {
+    color: white; } }
 
 @media screen and (max-width: 767px) {
   .block-1 header {
@@ -5313,6 +5505,8 @@ a img {
     width: 100%; }
     .block-2 .content-wrap .box-mid:before {
       left: 5%; }
+    .block-2 .content-wrap .box-mid .info, .block-2 .content-wrap .box-mid .next {
+      display: none; }
     .block-2 .content-wrap .box-mid span {
       margin-bottom: 100px;
       font-size: 30px; }

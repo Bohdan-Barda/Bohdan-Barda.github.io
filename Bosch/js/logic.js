@@ -1,3 +1,108 @@
+TweenMax.set('#circlePath', {
+    attr: {
+        r: document.querySelector('#mainCircle').getAttribute('r')
+    }
+})
+MorphSVGPlugin.convertToPath('#circlePath');
+
+var xmlns = "http://www.w3.org/2000/svg",
+    xlinkns = "http://www.w3.org/1999/xlink",
+    select = function (s) {
+        return document.querySelector(s);
+    },
+    selectAll = function (s) {
+        return document.querySelectorAll(s);
+    },
+    mainCircle = select('#mainCircle'),
+    mainContainer = select('#mainContainer'),
+    car = select('#car'),
+    mainSVG = select('.mainSVG'),
+    mainCircleRadius = Number(mainCircle.getAttribute('r')),
+    //radius = mainCircleRadius,
+    numDots = mainCircleRadius / 2,
+    step = 360 / numDots,
+    dotMin = 0,
+    circlePath = select('#circlePath')
+
+//
+//mainSVG.appendChild(circlePath);
+TweenMax.set('svg', {
+    visibility: 'visible'
+})
+TweenMax.set([car], {
+    transformOrigin: '50% 50%'
+})
+TweenMax.set('#carRot', {
+    transformOrigin: '0% 0%',
+    rotation: 30
+})
+
+var circleBezier = MorphSVGPlugin.pathDataToBezier(circlePath.getAttribute('d'), {
+    offsetX: -20,
+    offsetY: -5
+})
+
+
+//console.log(circlePath)
+var mainTl = new TimelineMax();
+
+function makeDots() {
+    var d, angle, tl;
+    for (var i = 0; i < numDots; i++) {
+
+        d = select('#puff').cloneNode(true);
+        mainContainer.appendChild(d);
+        angle = step * i;
+        TweenMax.set(d, {
+            //attr: {
+            x: (Math.cos(angle * Math.PI / 180) * mainCircleRadius) + 400,
+            y: (Math.sin(angle * Math.PI / 180) * mainCircleRadius) + 300,
+            rotation: Math.random() * 360,
+            transformOrigin: '50% 50%'
+            //}
+        })
+
+        tl = new TimelineMax({
+            repeat: -1
+        });
+        tl
+            .from(d, 0.2, {
+                scale: 0,
+                ease: Power4.easeIn
+            })
+            .to(d, 1.8, {
+                scale: Math.random() + 2,
+                alpha: 0,
+                ease: Power4.easeOut
+            })
+
+        mainTl.add(tl, i / (numDots / tl.duration()))
+    }
+    var carTl = new TimelineMax({
+        repeat: -1
+    });
+    carTl.to(car, tl.duration(), {
+        bezier: {
+            type: "cubic",
+            values: circleBezier,
+            autoRotate: true
+        },
+        ease: Linear.easeNone
+    })
+    mainTl.add(carTl, 0.05)
+}
+
+makeDots();
+mainTl.time(120);
+TweenMax.to(mainContainer, 20, {
+    rotation: -360,
+    svgOrigin: '400 300',
+    repeat: -1,
+    ease: Linear.easeNone
+});
+mainTl.timeScale(1.1)
+
+
 $(document).ready(function () {
 
     if ($('#datepicker').length > 0) {
@@ -173,7 +278,6 @@ $(document).ready(function () {
     }
 
 
-
     $(".autoservice .block-2 .wrap .info .box , .button-form , .diesel-center .block-2 .wrap .info .box .wrap").click(function () {
         $('.section').addClass('bg-full');
         $('body').addClass('overflow');
@@ -212,7 +316,9 @@ $(document).ready(function () {
     });
 
 
-    $('.lines-framework').addClass("lines-anim");
+    setTimeout(function () {
+        $('.lines-framework').addClass("lines-anim");
+    }, 1000);
 
 
     var widthEk = document.body.clientWidth;
@@ -259,6 +365,38 @@ $(document).ready(function () {
                 }
             });
         }
+
+
+        /*  jQuery(window).scroll(function() {
+              var the_top = jQuery(document).scrollTop();
+              if (the_top > 100vh) {
+                  jQuery('.news-single .main aside .social').addClass('fixed');
+              }
+              else {
+                  jQuery('.news-single .main aside .social').removeClass('fixed');
+              }
+          }); */
+
+
+        jQuery(function ($) {
+
+            var $nav = $('.news-single .main aside .social');
+            var $win = $(window);
+            var winH = $win.height();   // Get the window height.
+
+            $win.on("scroll", function () {
+                if ($(this).scrollTop() > winH) {
+                    $nav.addClass("fixed");
+                } else {
+                    $nav.removeClass("fixed");
+                }
+            }).on("resize", function () { // If the user resizes the window
+                winH = $(this).height(); // you'll need the new height value
+            });
+
+        });
+
+
     }
 
     wow.init();
@@ -344,7 +482,7 @@ $(document).ready(function () {
     }*/
 
 
-    function map($location) {
+    function map($location, markerIndex) {
         var map,
             marker,
             latlng = new google.maps.LatLng(44.224810, 42.044176),
@@ -477,9 +615,6 @@ $(document).ready(function () {
                 geocoder.geocode({'address': data.address}, function (results, status) {
 
                     if (status == google.maps.GeocoderStatus.OK) {
-
-                        map.setCenter(results[0].geometry.location);
-
                         // Add the markers
                         marker = new google.maps.Marker({
                             map: map,
@@ -488,19 +623,16 @@ $(document).ready(function () {
                         });
 
                         markers.push(marker);
+                        if (index == markerIndex) {
+                            map.setCenter(markers[markerIndex].position);
 
-
-                        // Use the results to set the bounds
-                        markerBounds.extend(results[0].geometry.location);
-                        map.setCenter(markers[markerIndex].position);
-
-                        //if main page
-                        if ($(window).width() < 1200 && $(window).width() > 1024) {
-                            offsetCenter(map.getCenter(), 0, 180);
-                        } else if ($(window).width() < 1025) {
-                            offsetCenter(map.getCenter(), 20, -350);
-                        } else {
-                            offsetCenter(map.getCenter(), 300, -200);
+                            if ($(window).width() < 1200 && $(window).width() > 1024) {
+                                offsetCenter(map.getCenter(), 0, 180);
+                            } else if ($(window).width() < 1025) {
+                                offsetCenter(map.getCenter(), 20, -350);
+                            } else {
+                                offsetCenter(map.getCenter(), 300, -200);
+                            }
                         }
                     } else {
                         console.log('Geocode was not successful for the following reason: ' + status);
@@ -543,19 +675,18 @@ $(document).ready(function () {
     if ($('#mapLviv').length > 0) {
         getScript(sUrl, function () {
             var $location = $('#mapLviv').data('locations');
-            map($location);
+            map($location, markerIndex);
         });
     }
-
 
     $(".check .ck ").click(function () {
         var $location = $('#mapLviv').data('locations');
         if (markerIndex === 0) {
             markerIndex = 1;
-            map($location);
+            map($location, markerIndex);
         } else {
             markerIndex = 0;
-            map($location);
+            map($location, markerIndex);
         }
 
         $(".ck").toggleClass('tog');
@@ -564,6 +695,31 @@ $(document).ready(function () {
         $(".check span").toggleClass('active');
 
     });
+    $(".block-4 .info .top-info .check .ck-1 ").click(function () {
+        var $location = $('#mapLviv').data('locations');
+        markerIndex = 0;
+        map($location , markerIndex);
+        console.log($location);
+        $(".check .ck-1").addClass('active');
+        $(".check .ck-2").removeClass('active');
+        $(".ck").removeClass('tog');
+        $(".bartativ-info").slideUp();
+        $(".lviv-info").slideDown();
+     });
+
+    $(".block-4 .info .top-info .check .ck-2 ").click(function () {
+        var $location = $('#mapLviv').data('locations');
+        markerIndex = 1;
+        map($location , markerIndex);
+        $(".check .ck-2").addClass('active');
+        $(".check .ck-1").removeClass('active');
+        if ( $(".check .ck-2").hasClass('active')){
+            $(".ck").addClass('tog');
+        }
+        $(".bartativ-info").slideDown();
+        $(".lviv-info").slideUp();
+        });
+
 
 
     $(".bosch-equipment .button-form, .autoservice .button-form , .diesel-center .button-form ,.price-info-slider .info .button ,.block-4 .info .button").click(function () {
@@ -601,6 +757,12 @@ $(document).ready(function () {
             top = $(id).offset().top;
         $('body,html').animate({scrollTop: top}, 500);
     });
+});
 
+$(window).on('load', function () {
+    var $preloader = $('#p_prldr'),
+        $svg_anm = $preloader.find('.svg_anm');
+    $svg_anm.fadeOut();
+    $preloader.delay(500).fadeOut('slow');
 });
 
