@@ -1,0 +1,330 @@
+//Responsive Web Design
+@media screen and (max-width: 1024px) {
+  .about-us .left-column {
+    padding-right: 20px;
+  }
+  footer .contact-box .contact-wrap .left-column {
+    padding-right: 20px;
+  }
+  footer .contact-box .contact-wrap {
+    height: 100%;
+    width: 100%;
+  }
+  footer .contact-box {
+    height: 415px;
+  }
+  header .burger {
+    visibility: visible;
+    position: relative;
+  }
+  header .menu-wrap {
+    position: absolute;
+    background: #fff;
+    top: 69px;
+    left: 0;
+    width: 100%;
+    display: block;
+    padding: 0 0 20px 8px;
+  }
+  header .menu-wrap .menu {
+    display: block;
+    width: 100%;
+  }
+  header .menu-wrap .menu {
+    overflow: scroll;
+    height: 100%;
+  }
+  header .menu-wrap form {
+    display: inline-block;
+  }
+  header .menu-wrap .menu li {
+    padding: 10px;
+    a{
+      padding-left: 35px;
+    }
+  }
+  header .menu-wrap .menu li .sub-menu {
+    width: 100%;
+    padding-left: 30px;
+    transition: none;
+  }
+  header .menu-wrap {
+    left: -200%;
+    @include transition();
+    height: calc(100vh - 70px);
+  }
+  header .menu-wrap .menu li .sub-menu li a {
+    display: initial;
+    text-align: center;
+    &:before {
+      display: none;
+    }
+    &:after {
+      display: none;
+    }
+  }
+  header .menu-wrap .menu li .sub-menu .sub-menu{
+    visibility: visible;
+    opacity: 1;
+  }
+  header .menu-wrap .menu li .sub-menu {
+    display: none;
+    visibility: visible;
+    opacity: 1;
+    background: #fff;
+    border-top: none;
+    position: static;
+    li {
+      a {
+        color: #232323;
+      }
+    }
+  }
+  header .menu-wrap .menu li span{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 15px;
+    top: 11px;
+    &:before{
+      top: 10px;
+      left: 5px;
+      content: '';
+      width: 12px;
+      height: 2px;
+      background: $c3;
+      position: absolute;
+    }
+    &:after{
+      top: 5px;
+      left: 10px;
+      content: '';
+      width: 2px;
+      height: 12px;
+      background: $c3;
+      position: absolute;
+    }
+  }
+  header .menu-wrap .menu li .sub-menu li .sub-menu {
+    padding-left: 20px;
+    li {
+      span {
+        display: none;
+      }
+      a {
+        font-size: 12px;
+        &:before {
+          display: none;
+        }
+        &:after {
+          display: none;
+        }
+      }
+    }
+  }
+  header .menu-wrap .menu li .sub-menu li span {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 0;
+    top: 10px;
+  }
+  header .menu-wrap .menu li .sub-menu li span:before {
+    top: 10px;
+    left: 5px;
+    content: '';
+    width: 12px;
+    height: 2px;
+    background: $c3;
+    position: absolute;
+  }
+  header .menu-wrap .menu li .sub-menu li span:after {
+    top: 5px;
+    left: 10px;
+    content: '';
+    width: 2px;
+    height: 12px;
+    background: $c3;
+    position: absolute;
+  }
+  header .menu-wrap form {
+    display: none;
+  }
+
+  header .menu-toggle {
+    left: 0;
+  }
+
+  header .sub-active {
+    &:after {
+      display: none;
+    }
+  }
+
+  header .burger-toggle {
+    &:after {
+      bottom: 9px;
+      transform: rotate(-45deg);
+    }
+    span {
+      width: 0;
+    }
+    &:before {
+      top: 8px;
+      transform: rotate(45deg);
+    }
+  }
+
+  header {
+    .menu-toggle {
+      left: 0 ;
+    }
+
+    .sub-active {
+      &:after {
+        display: none;
+      }
+    }
+
+    .burger-toggle {
+      &:after {
+        bottom: 9px;
+        transform: rotate(-45deg);
+      }
+      span {
+        width: 0;
+      }
+      &:before {
+        top: 8px;
+        transform: rotate(45deg);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .about-us .right-column {
+    display: none;
+  }
+  .about-us .left-column {
+    max-width: 100%;
+  }
+  .choose-us-block .slider .swiper-container {
+    height: 235px;
+    padding: 10px;
+  }
+  .choose-us-block .slider .swiper-container .swiper-slide .box {
+    margin: 0 auto;
+  }
+  .about-us {
+    padding: 50px 0;
+  }
+  .about-us .info-box {
+    padding-bottom: 50px;
+  }
+  .choose-us-block .slider {
+    padding: 200px 0 70px 0;
+  }
+  footer .contact-box .contact-wrap {
+    display: block;
+  }
+  footer .contact-box .contact-wrap .left-column {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+  footer .contact-box .contact-wrap .right-column .wrap {
+    max-width: 100%;
+    display: block;
+    width: 100%;
+  }
+  footer .contact-box .contact-wrap .right-column .wrap div {
+    display: block;
+    a {
+      display: block;
+    }
+  }
+  footer .contact-box .contact-wrap {
+    height: 100%;
+    max-width: 100%;
+  }
+  footer .contact-box {
+    height: 600px;
+  }
+  .slider .swiper-container {
+    height: 400px;
+  }
+  .slider .swiper-container .swiper-slide .info .title {
+    font-size: 45px;
+  }
+  .slider .swiper-container .swiper-slide .description {
+    max-width: 485px;
+  }
+  .slider .swiper-container .swiper-button-prev {
+    display: none;
+  }
+  .slider .swiper-container .swiper-button-next {
+    display: none;
+  }
+  footer .footer-bottom {
+    .alc {
+      display: block;
+      text-align: center;
+    }
+  }
+  footer .footer-bottom .copyright {
+    margin-bottom: 10px;
+  }
+  .about-us .left-column h2 {
+    text-align: center;
+  }
+  .about-us .left-column .text p {
+    text-align: center;
+  }
+  footer .contact-box .contact-wrap .right-column .wrap {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .slider .swiper-container .swiper-slide .info .title {
+    font-size: 35px;
+  }
+  footer .contact-box .contact-wrap {
+    padding: 70px 10px;
+  }
+  footer .contact-box .contact-wrap .left-column form .flex {
+    display: block;
+  }
+  footer .contact-box .contact-wrap .left-column form .alc {
+    display: block;
+  }
+  footer .contact-box .contact-wrap .left-column form .button {
+    display: block;
+    margin-top: 15px;
+  }
+  footer .contact-box .contact-wrap .left-column form input {
+    width: 100%;
+  }
+  footer .contact-box .contact-wrap .left-column form .selectric-wrapper {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  footer .contact-box {
+    height: 720px;
+  }
+  .about-us .left-column {
+    padding: 0;
+  }
+  footer .contact-box .contact-wrap .left-column form .selectric-wrapper .selectric .button {
+    margin-top: 0;
+  }
+  footer .footer-bottom .social {
+    display: inline-block;
+  }
+
+}
+
+@media screen and (max-width: 320px) {
+
+}
